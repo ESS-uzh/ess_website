@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container mt-5">
+    <h2 class="mb-4 text-center">Our Team</h2>
+
+    {% set groups = page.people | groupby('group') %}
+
+    {% for group_name, group_people in groups %}
+
+    {% if not loop.first %}
+    <!-- Group Title (skip for first group) -->
+    <h4 class="mt-5 mb-3 text-center">{{ group_name }}</h4>
+    {% else %}
+    <!-- Add spacing before first row but no title -->
+    <div class="mt-4"></div>
+    {% endif %}
+
+    <!-- One Row per Group -->
+    <div class="row g-4 justify-content-center">
+        {% for person in group_people %}
+        <div class="col-6 col-md-3 col-lg-2">
+            <div class="card h-100 text-center shadow-sm">
+                {% if person.img %}
+                <img src="{{ SITEURL }}/theme/images/{{ person.img }}" class="team-photo" alt="{{ person.name }}">
+                {% endif %}
+                <div class="card-body">
+                    <h5 class="card-title">{{ person.name }}</h5>
+                    <p class="card-text">{{ person.role }}</p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+    {% endfor %}
+</div>
+{% endblock %}

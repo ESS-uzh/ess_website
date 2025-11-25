@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+
+{{ recent_projects }}
+{{ all_topics }}
+
+{% block welcome_message %}
+<div class="text-center container-welcome mt-4">
+    <h1 class="welcome-text">Earth System Science Research Group</h1>
+    <p class="lead"><strong>Discover projects, data and publications</strong> in our different research areas</p>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+
+    <!-- Carousel Section for Recent Projects -->
+    <div class="mb-5">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                {% for project in recent_projects %}
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="{{ loop.index0 }}"
+                    {% if loop.first %}class="active" aria-current="true" {% endif %}
+                    aria-label="Slide {{ loop.index }}">
+                </button>
+                {% endfor %}
+            </div>
+
+            <div class="carousel-inner">
+                {% for project in recent_projects %}
+                <div class="carousel-item {% if loop.first %}active{% endif %}">
+                    <a href="{{ SITEURL }}/projects/{{ project.id }}.html" class="carousel-link">
+                        <div class="carousel-image-container">
+                            <img src="{{ SITEURL }}/theme/images/{{ project.img }}" class="d-block w-100"
+                                alt="{{ project.name }}">
+                            <div class="carousel-text">
+                                <h3>{{ project.name }}</h3>
+                                <p>{{ project.short_description }}</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                {% endfor %}
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Research Topics Section -->
+    <div class="my-5">
+        <div class="section-title-container">
+            <h3 class="section-title">Explore our research topics</h3>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-2 g-4 mb-5">
+            {% for topic in all_topics %}
+            <div class="col d-flex align-items-stretch">
+                <div class="card shadow-sm h-100">
+                    <img src="{{ SITEURL }}/theme/images/{{ topic.img }}" class="card-img-top" alt="{{ topic.name }}">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">{{ topic.name }}</h5>
+                    </div>
+                    <a href="{{ SITEURL }}/topics/{{ topic.name | slugify }}/index.html" class="stretched-link"></a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+</div>
+{% endblock %}

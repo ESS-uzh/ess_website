@@ -1,0 +1,538 @@
+[
+    {
+        "id": 1,
+        "name": "Obsgession",
+        "description": "The OBSGESSION project will help address the challenges of declining freshwater and terrestrial biodiversity through a multi-faceted approach aimed at integrating existing methods and technologies for assessing and predicting biodiversity change and its drivers. Its results will be used to help inform efforts like the CBD, IPBES and the European Green Deal and EU Biodiversity Strategy for 2030, and provide state-of-the-art ecological models on biodiversity change on a case study and EU-level.",
+        "short_description": "Addressing the challenges of declining freshwater and terrestrial biodiversity..",
+        "img": "frog.jpg",
+        "lat": 47.119485,
+        "lon": 7.156640,
+        "location": "Europe",
+        "tags": [
+            "Biodiversity",
+            "Sustainable Development"
+        ],
+        "participants": [
+            "Tiziana Koch",
+            "Dr. Andreas Hüni",
+            "Dr. Christian Rossi",
+            "Prof. Maria J. Santos"
+        ],
+        "doi_data": "",
+        "doi_pub": "",
+        "funding": [
+            [
+                "Horizon2020",
+                "Horizon Europe"
+            ],
+            [
+                "EU",
+                "European Union"
+            ]
+        ],
+        "polygon": [
+            [
+                47.4576,
+                8.4468
+            ],
+            [
+                47.4870,
+                8.4473
+            ],
+            [
+                47.4882,
+                8.2975
+            ],
+            [
+                47.4576,
+                8.4468
+            ]
+        ]
+    },
+    {
+        "id": 2,
+        "name": "The Circle Future Earth",
+        "description": "Where/how do transitions in ecosystems occur? What is the land biosphere response? Literature review to establish the current and future use of earth observation to answer these questions",
+        "short_description": "Where/how do transitions in ecosystems occur? What is the land biosphere response?",
+        "img": "pappagalli.jpg",
+        "lat": 0,
+        "lon": 0,
+        "location": "Global",
+        "tags": [
+            "Biodiversity",
+            "Ecosystem Services"
+        ],
+        "participants": [
+            "Dr. Martin O. Reader",
+            "Prof. Maria J. Santos"
+        ],
+        "doi_data": "",
+        "doi_pub": "",
+        "funding": [
+            [
+                "esa",
+                "European Space agency"
+            ]
+        ],
+        "polygon": [
+            [
+                35.8732,
+                -118.5952
+            ],
+            [
+                35.1114,
+                -118.1984
+            ],
+            [
+                35.4818,
+                -117.9338
+            ],
+            [
+                35.8732,
+                -118.5952
+            ]
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Sustainability Discourses",
+        "description": "Understanding and tracking urban sustainability discourses. We develop automated models to analyse urban sustainability discourses based on media data. In particular, we are interested in the rise and fall of different topics, who positions themselves in which way and in the stories that are told about urban sustainability over time. We also look back - how has the discourse around urban sustainability developed over time?",
+        "short_description": "Understanding and tracking urban sustainability discourses..",
+        "img": "river.jpg",
+        "lat": 47.377964,
+        "lon": 8.551129,
+        "location": "Europe",
+        "tags": [
+            "Social Ecological Systems"
+        ],
+        "participants": [
+            "Myriam Pham-Truffert",
+            "Dr. Mario"
+        ],
+        "doi_data": "",
+        "doi_pub": "",
+        "funding": [
+            [
+                "DIZH",
+                "Digitalization Initiative of the Zurich Higher Education Ins"
+            ]
+        ],
+        "polygon": []
+    },
+    {
+        "id": 4,
+        "name": "Modelling biodiversity and ecosystem services loss scenarios",
+        "description": "Better understanding the impacts of biodiversity loss and ecosystem degradation is important for our society and economy. Healthy ecosystems underpin all the UN SDGs; and our economies and businesses remain dependent on the robustness of natural assets. The BES (Biodiversity and Ecosystem Services) Scenarios Modelling Initiative aims to provide meaningful and quantified BES futures at a highly granular level and agglomerate data to provide globally applicable regional views.",
+        "lat": 0,
+        "lon": 0,
+        "location": "Global",
+        "tags": [
+            "Biodiversity",
+            "Ecosystem Services"
+        ],
+        "participants": [
+            "Dr. Martin O. Reader",
+            "Prof. Maria J. Santos"
+        ],
+        "doi_data": "",
+        "doi_pub": "",
+        "funding": [
+            [
+                "WWF",
+                "World Wildlife Fund"
+            ],
+            [
+                "Swiss-Re",
+                "Swiss-Re"
+            ],
+            [
+                "AXA",
+                "Insurance and pension provisioning in Switzerland"
+            ],
+            [
+                "EY",
+                "Ernst & Yung"
+            ]
+        ],
+        "polygon": [
+            [
+                35.8732,
+                -118.5952
+            ],
+            [
+                35.1114,
+                -118.1984
+            ],
+            [
+                35.4818,
+                -117.9338
+            ],
+            [
+                35.8732,
+                -118.5952
+            ]
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Agroforestry for food security",
+        "description": "",
+        "short_description": "",
+        "img": "kerela_india.jpg",
+        "lat": 10.7139,
+        "lon": 76.1974,
+        "location": "Kerela, India",
+        "tags": [
+            "Biodiversity",
+            "Ecosystem Services",
+            "Social Ecological Systems"
+        ],
+        "participants": [
+            "Mary Ann George",
+            "Prof. Maria J. Santos"
+        ],
+        "doi_data": "",
+        "doi_pub": "",
+        "funding": [
+            [
+                "URPP",
+                "URPP Global Change and Biodiversity"
+            ]
+        ],
+        "polygon": "polygon_id_5.geojson"
+    },
+    {
+        "id": 6,
+        "name": "Impacts of drought on ecosystem resilience, biodiversity and functioning in the Mediterranean Basin",
+        "description": "",
+        "lat": 47.214344,
+        "lon": 9.340093,
+        "location": "Mediterranean Basin",
+        "tags": [
+            "Biodiversity",
+            "Climate Change"
+        ],
+        "participants": [
+            "Matilde Torrassa",
+            "Prof. Maria J. Santos"
+        ],
+        "doi_data": "",
+        "doi_pub": "",
+        "funding": [
+            [
+                "pnrr",
+                "Piano Nazionale di Ripresa and Resilienza"
+            ],
+            [
+                "CIMA",
+                "CIMA research foundation"
+            ],
+            [
+                "UNIGEN",
+                "University of Genova"
+            ]
+        ],
+        "polygon": [
+            [
+                35.8732,
+                -118.5952
+            ],
+            [
+                35.1114,
+                -118.1984
+            ],
+            [
+                35.4818,
+                -117.9338
+            ],
+            [
+                35.8732,
+                -118.5952
+            ]
+        ]
+    },
+    {
+        "id": 7,
+        "name": "Fire-vegetation model parametrization using hyperspectral data",
+        "description": "",
+        "img": "sierra_nevada.jpg",
+        "lat": 39.141232,
+        "lon": -121.052109,
+        "location": "Sierra Nevada, California",
+        "tags": [
+            "Biodiversity",
+            "Climate Change"
+        ],
+        "participants": [
+            "Matilde Torrassa",
+            "Tiziana Koch",
+            "Prof. Maria J. Santos"
+        ],
+        "doi_data": "https://www.geo.uzh.ch/en/units/ess/news/nexus-report.html",
+        "doi_pub": "https://www.geo.uzh.ch/en/units/ess/news/nexus-report.html",
+        "funding": [
+            [
+                "pnrr",
+                "Piano Nazionale di Ripresa and Resilienza"
+            ],
+            [
+                "CIMA",
+                "CIMA research foundation"
+            ],
+            [
+                "UNIGEN",
+                "University of Genova"
+            ]
+        ],
+        "polygon": "polygon_id_7.geojson"
+    },
+    {
+        "id": 8,
+        "name": "EO4Resilience",
+        "description": "",
+        "img": "",
+        "lat": 45.864002,
+        "lon": 6.849683,
+        "location": "Switzerland, France, Italy",
+        "tags": [
+            "Biodiversity",
+            "Climate Change"
+        ],
+        "participants": [
+            "Dr. Andreas Hüni",
+            "Prof. Maria J. Santos"
+        ],
+        "doi_data": "",
+        "doi_pub": "",
+        "funding": [
+            [
+                "esa",
+                "European Space agency"
+            ]
+        ],
+        "polygon": ""
+    },
+    {
+        "id": 9,
+        "name": "SES archetypes",
+        "description": "",
+        "img": "",
+        "lat": 0,
+        "lon": 0,
+        "location": "Global",
+        "tags": [
+            "Biodiversity",
+            "Climate Change"
+        ],
+        "participants": [
+            "Gupta Aman",
+            "Dr. Eppinga Maarten",
+            "Prof. Maria J. Santos"
+        ],
+        "doi_data": "",
+        "doi_pub": "",
+        "funding": [
+            [
+                "URPP",
+                "URPP Global Change and Biodiversity"
+            ]
+        ],
+        "polygon": ""
+    },
+    {
+        "id": 10,
+        "name": "Human Traits",
+        "description": "",
+        "img": "",
+        "lat": 0.961883,
+        "lon": 114.554848,
+        "location": "Borneo",
+        "tags": [
+            "Biodiversity",
+            "Climate Change"
+        ],
+        "participants": [
+            "Pérez Nathalia",
+            "Dr. Eppinga Maarten",
+            "Prof. Meredith Schuman",
+            "Prof. Maria J. Santos"
+        ],
+        "doi_data": "",
+        "doi_pub": "",
+        "funding": [
+            [
+                "EU_response",
+                "EU response"
+            ],
+            [
+                "URPP",
+                "URPP Global Change and Biodiversity"
+            ]
+        ],
+        "polygon": ""
+    },
+    {
+        "id": 11,
+        "name": "Moisture recycling in Amazon",
+        "description": "",
+        "img": "",
+        "lat": -2.796339700963394,
+        "lon": -62.456257789622406,
+        "location": "Borneo",
+        "tags": [
+            "Biodiversity",
+            "Climate Change"
+        ],
+        "participants": [
+            "Nguyen Kien",
+            "Prof. Maria J. Santos"
+        ],
+        "doi_data": "",
+        "doi_pub": "",
+        "funding": [
+            [
+                "UZH",
+                "UZH"
+            ]
+        ],
+        "polygon": ""
+    },
+    {
+        "id": 12,
+        "name": "SIF in Amazon",
+        "description": "",
+        "img": "",
+        "lat": -2.796339700963394,
+        "lon": -62.456257789622406,
+        "location": "Amazon",
+        "tags": [
+            "Biodiversity",
+            "Climate Change"
+        ],
+        "participants": [
+            "Carlijn",
+            "Gerbrand",
+            "Stefan",
+            "Prof. Maria J. Santos"
+        ],
+        "doi_data": "",
+        "doi_pub": "",
+        "funding": [
+            [
+                "NWO",
+                ""
+            ]
+        ],
+        "polygon": ""
+    },
+    {
+        "id": 13,
+        "name": "Charcoal in SSA",
+        "description": "",
+        "img": "",
+        "lat": -31.881249,
+        "lon": 28.262839,
+        "location": "Sub-Sharan Africa",
+        "tags": [
+            "Biodiversity",
+            "Climate Change"
+        ],
+        "participants": [
+            "Sakala Dadwiso",
+            "Prof. Maria J. Santos"
+        ],
+        "doi_data": "",
+        "doi_pub": "",
+        "funding": [
+            [
+                "UZH",
+                "UZH"
+            ],
+            [
+                "EU_response",
+                "EU response"
+            ]
+        ],
+        "polygon": ""
+    },
+    {
+        "id": 14,
+        "name": "Species diversity in Amazon",
+        "description": "",
+        "img": "",
+        "lat": -2.796339700963394,
+        "lon": -62.456257789622406,
+        "location": "Amazon",
+        "tags": [
+            "Biodiversity",
+            "Climate Change"
+        ],
+        "participants": [
+            "Dr. Villamaina Diego",
+            "Prof. Maria J. Santos"
+        ],
+        "doi_data": "",
+        "doi_pub": "",
+        "funding": [
+            [
+                "UZH",
+                "UZH"
+            ]
+        ],
+        "polygon": ""
+    },
+    {
+        "id": 15,
+        "name": "BioSCape",
+        "description": "",
+        "img": "",
+        "lat": -30.559483,
+        "lon": 22.937506,
+        "location": "South Africa",
+        "tags": [
+            "Biodiversity",
+            "Climate Change"
+        ],
+        "participants": [
+            "Mary Ann George",
+            "Dr. Andreas Hüni"
+        ],
+        "doi_data": "",
+        "doi_pub": "",
+        "funding": [
+            [
+                "UZH",
+                "UZH"
+            ]
+        ],
+        "polygon": ""
+    },
+    {
+        "id": 16,
+        "name": "Demand4Restoration",
+        "description": "",
+        "img": "",
+        "lat": -18.766947,
+        "lon": 46.869106,
+        "location": "Madagascar",
+        "tags": [
+            "Biodiversity",
+            "Climate Change"
+        ],
+        "participants": [
+            "Dr. Estelle Raveloaritiana",
+            "Sebastian",
+            "Dr. Dominic Martin",
+            "Dr. Andreas Hüni"
+        ],
+        "doi_data": "",
+        "doi_pub": "",
+        "funding": [
+            [
+                "UZH",
+                "UZH"
+            ]
+        ],
+        "polygon": ""
+    }
+]

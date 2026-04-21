@@ -12,7 +12,7 @@
         "group": ""
     },
     {
-        "name": "Dr. Diego villamaina",
+        "name": "Dr. Diego Villamaina",
         "role": "Engineer",
         "img": "diego_villamaina.png",
         "group": ""
@@ -82,5 +82,89 @@
         "role": "Postdoc",
         "img": "eugenie_limoges.png",
         "group": "Earth System Processes"
+    },
+    {
+        "name": "Estelle Raveloaritiana",
+        "role": "Postdoc",
+        "img": "estelle_raveloaritiana.png",
+        "group": "Social-Ecological Processes"
+    },
+    {
+        "name": "Marlene Barille",
+        "role": "BSc researcher",
+        "img": "marlena_barille.png",
+        "group": "Social-Ecological Processes"
+    },
+    {
+        "name": "Moritz Wissmann",
+        "role": "BSc researcher",
+        "img": "moritz_wissmann.png",
+        "group": "Social-Ecological Processes"
+    },
+    {
+        "name": "Christian Rossi",
+        "role": "Postdoc",
+        "img": "christian_rossi.png",
+        "group": "Remote sensing of Biodiversity"
+    },
+    {
+        "name": "Tiziana Koch",
+        "role": "Postdoc",
+        "img": "tiziana_koch.png",
+        "group": "Remote sensing of Biodiversity"
+    },
+    {
+        "name": "Kaan Karaman",
+        "role": "Postdoc",
+        "img": "kaan_karaman.png",
+        "group": "Remote sensing of Biodiversity"
+    },
+    {
+        "name": "Jennifer Adams",
+        "role": "Postdoc",
+        "img": "jennifer_adams.png",
+        "group": "Remote sensing of Biodiversity"
+    },
+    {
+        "name": "Nargiz Ruter",
+        "role": "PhD",
+        "img": "nargiz_ruter.png",
+        "group": "Remote sensing of Biodiversity"
+    },
+    {
+        "name": "Carmen Meiller",
+        "role": "PhD",
+        "img": "carmen_meiller.png",
+        "group": "Remote sensing"
+    },
+    {
+        "name": "Mike Werferli",
+        "role": "PhD",
+        "img": "mike_werferli.png",
+        "group": "Remote sensing"
+    },
+    {
+        "name": "Leon Hauser",
+        "role": "Postdoc",
+        "img": "leon_hauser.png",
+        "group": "Sustainable Finance"
+    },
+    {
+        "name": "Mario Angst",
+        "role": "Asst Professor",
+        "img": "mario_angst.png",
+        "group": "Urban System"
+    },
+    {
+        "name": "Myriam Truffert",
+        "role": "PhD",
+        "img": "myriam_truffert.png",
+        "group": "Urban System"
+    },
+    {
+        "name": "Hoda Allahbakhshi",
+        "role": "Group Leader",
+        "img": "hoda_allahbakhshi.png",
+        "group": "Urban System"
     }
 ]

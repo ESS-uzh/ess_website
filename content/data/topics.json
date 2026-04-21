@@ -1,22 +1,22 @@
 [
     {
         "name": "Biodiversity",
-        "img": "biodiversity_img.png",
+        "img": "biodiv_img_m.png",
         "description": "Biodiversity refers to the variety of life forms on Earth, encompassing different species, ecosystems, and genetic diversity."
     },
     {
         "name": "Climate Change",
-        "img": "climate_change_img.jpg",
+        "img": "clim_cha_img_m.png",
         "description": "Climate change is ..."
     },
     {
         "name": "Ecosystem Services",
-        "img": "ecosystem_services_img.png",
+        "img": "eco_sys_img_m.png",
         "description": "Ecosystem services are ..."
     },
     {
         "name": "Social Ecological Systems",
-        "img": "sus_dev_img.jpg",
+        "img": "soc_eco_sys_img_m.png",
         "description": "Sustainable development is ..."
     }
 ]

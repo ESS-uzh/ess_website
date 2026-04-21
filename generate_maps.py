@@ -32,7 +32,12 @@ def generate_map(project):
         center = [10.245731, -28.782217]
         zoom_start = 2
 
-    m = folium.Map(location=center, zoom_start=zoom_start, tiles="OpenStreetMap")
+    m = folium.Map(
+        location=center,
+        zoom_start=zoom_start,
+        tiles="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+        attr="&copy; OpenStreetMap contributors & CARTO",
+    )
 
     if polygon:
         folium.Polygon(

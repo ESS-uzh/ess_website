@@ -327,27 +327,26 @@
 </div>
 
 <script>
-    // Filtering function for projects
     function filterProjects() {
         const locationFilter = document.getElementById('location-filter').value.toLowerCase().trim();
         const projects = document.querySelectorAll('#project-list .project-card');
 
         projects.forEach(project => {
-            const projectLocation = project.getAttribute('data-location');
-            const matchesLocation = !locationFilter || projectLocation === locationFilter;
+            const projectLocation = (project.getAttribute('data-location') || '').toLowerCase().trim();
 
-            // Show only projects that match the filter
+            const matchesLocation =
+                !locationFilter ||
+                projectLocation.includes(locationFilter);
+
             project.style.display = matchesLocation ? 'block' : 'none';
         });
     }
 
-    // Reset filters to show all projects
     function resetFilters() {
         document.getElementById('filter-form').reset();
-        const projects = document.querySelectorAll('#project-list .project-card');
-        projects.forEach(project => {
-            project.style.display = 'block';
-        });
+
+        document.querySelectorAll('#project-list .project-card')
+            .forEach(project => project.style.display = 'block');
     }
 </script>
 

@@ -454,23 +454,34 @@ img.object-fit-cover {
     color: #007bff;
 }
 
+
+.funding-title {
+    margin-bottom: 40px;
+}
+
 .funding-logos {
-    display: flex;
-    flex-wrap: wrap;
-    /* Allows logos to wrap if there are too many */
-    gap: 10px;
-    /* Adds spacing between logos */
-    align-items: left;
-    /* Aligns logos vertically */
-    justify-content: left;
-    /* Centers them horizontally */
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
 }
 
 .funding-logo {
-    height: 50px;
-    /* Ensure all logos have the same height */
+    width: 120px;
+    height: 60px;
     object-fit: contain;
-    /* Prevents stretching */
+    padding: 8px;
+    background: #ffffff;
+    border-radius: 6px;
+    filter: grayscale(100%);
+    transition: all 0.3s ease;
+}
+
+.funding-logo:hover {
+    filter: grayscale(0%);
+    transform: scale(1.05);
 }
 
 .team-photo {

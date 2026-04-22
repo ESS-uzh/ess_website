@@ -13,11 +13,13 @@
             "Sustainable Development"
         ],
         "participants": [
-            "Tiziana Koch",
+            "Dr. Tiziana Koch",
+            "Dr. Kaan Karaman",
             "Dr. Andreas Hüni",
             "Dr. Christian Rossi",
             "Prof. Maria J. Santos"
         ],
+        "info": "https://obsgession.eu/about",
         "doi_data": "",
         "doi_pub": "",
         "funding": [
@@ -28,6 +30,14 @@
             [
                 "EU",
                 "European Union"
+            ],
+            [
+                "swiss",
+                "Swiss Confederation"
+            ],
+            [
+                "UKRI",
+                "UK Research and Innovation"
             ]
         ],
         "polygon": [

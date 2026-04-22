@@ -47,11 +47,18 @@
     {% if page.project.funding or page.project.doi_data or page.project.doi_pub %}
     <div class="col-md-6 mt-4">
         <div class="mt-3 doi-section">
+            {% if page.project.info %}
+            <p><strong>Info:</strong> <a href="{{ page.project.info }}" target="_blank">{{ page.project.info
+                    }}</a>
+            </p>
+            {% endif %}
+
             {% if page.project.doi_data %}
             <p><strong>Data DOI:</strong> <a href="{{ page.project.doi_data }}" target="_blank">{{ page.project.doi_data
                     }}</a>
             </p>
             {% endif %}
+
             {% if page.project.doi_pub %}
             <p><strong>Publication DOI:</strong> <a href="{{ page.project.doi_pub }}" target="_blank">{{
                     page.project.doi_pub }}</a></p>
@@ -59,7 +66,7 @@
         </div>
 
         {% if page.project.funding %}
-        <h4>Funding Organization</h4>
+        <h4 class="funding-title">Funding Organization</h4>
         <div class="funding-logos">
             {% for fund in page.project.funding %}
             <img src="{{ SITEURL }}/theme/images/logos_resized/{{ fund[0] }}" class="funding-logo" alt="Funding Logo">

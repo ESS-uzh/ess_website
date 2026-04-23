@@ -415,6 +415,16 @@ img.object-fit-cover {
 .project-description {
     font-size: 1.2rem;
     color: #555;
+    text-align: justify;
+    hyphens: auto;
+}
+
+.project-findings-text {
+    max-width: 900px;
+    line-height: 1.7;
+    font-size: 1.05rem;
+    text-align: justify;
+    hyphens: auto;
 }
 
 /* Responsive adjustments */
@@ -460,23 +470,40 @@ img.object-fit-cover {
 }
 
 .funding-logos {
-    margin-top: 30px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    justify-items: center;
+    align-items: stretch;
+}
+
+.funding-logos.single-logo {
+    grid-template-columns: 1fr;
+    justify-items: start;
+}
+
+.funding-logo-wrapper {
+    display: flex;
+    justify-content: center;
     align-items: center;
+
+    height: 120px;
+
+    background: #fff;
+    border-radius: 6px;
+    padding: 10px;
+
+    overflow: hidden;
 }
 
 .funding-logo {
-    width: 120px;
-    height: 60px;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+
     object-fit: contain;
-    padding: 8px;
-    background: #ffffff;
-    border-radius: 6px;
-    filter: grayscale(100%);
-    transition: all 0.3s ease;
+    display: block;
+
 }
 
 .funding-logo:hover {

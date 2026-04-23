@@ -1,6 +1,138 @@
 [
     {
         "id": 1,
+        "name": "Pangea",
+        "description": "The tropics are experiencing dramatic changes as a result of climate change and land-use change. Shifts in carbon flux dynamics, water cycling, and species composition are resulting in feedbacks with globally important consequences. However, tropical forests are not a monolith. They vary enormously in terms of species diversity, climate, soils, human impact, and much more. As a result, tropical forest ecosystems will almost certainly vary in response to climate change and land-use change. Yet, these differences remain highly uncertain and poorly understood. In 2024, we engaged over 800 people in an effort to scope a NASA decadal Terrestrial Ecology campaign in the tropics.",
+        "short_description": "",
+        "img": "",
+        "lat": 0,
+        "lon": 0,
+        "location": "",
+        "tags": [
+            ""
+        ],
+        "participants": [
+            "",
+            ""
+        ],
+        "doi_data": "",
+        "doi_pub": "",
+        "funding": [
+            [
+                "",
+                ""
+            ]
+        ],
+        "polygon": []
+    },
+    {
+        "id": 2,
+        "name": "RediLEEP",
+        "description": "Ecosystem resilience is the capacity of an ecosystem to withstand natural and human-induced changes while maintaining core functions over time and space. Response diversity (RD)—the variability in responses to environmental changes among ecosystem components—is a crucial mechanism underpinning ecosystem resilience. By enhancing adaptive capacity, RD contributes to ecosystem stability and long-term functionality. Despite this, RD remains insufficiently understood and underutilized in ecological management, conservation, and policy design. Researchers have identified several critical uncertainties that hinder the scientific advancement and practical application of RD. In addition, and perhaps due to the research gaps, despite a wide consensus of RD’s importance for ecosystem resilience, RD is often overlooked in policy frameworks, restoration practices, and monitoring and management schemes. ReDiLEEP aims to close these gaps by establishing an interdisciplinary Doctoral Network. By conducting cutting-edge research and equipping doctoral candidates with specialized expertise, ReDiLEEP will catalyse long-term advancements in ecosystem resilience and management. In particular, the program will - build theoretical foundations - develop measurable approaches - connect research to practice. ReDiLEEP will serve as a pivotal initiative, creating a robust science-policy-practice interface that firmly establishes RD as a cornerstone of ecosystem resilience. The program employs an integrated approach, empowering doctoral candidates with a comprehensive learning experience that spans theoretical, empirical, and practical domains. Through interdisciplinary collaboration, ReDiLEEP bridges critical gaps between ecological research, policy design, and practical application. Furthermore, participants will actively contribute to transformative change by aligning their work with the EU Biodiversity Strategy for 2030 and supporting the objectives of the UN Decade on Ecosystem Restoration.",
+        "short_description": "",
+        "img": "",
+        "lat": 0,
+        "lon": 0,
+        "location": "",
+        "tags": [
+            ""
+        ],
+        "participants": [
+            "",
+            ""
+        ],
+        "doi_data": "",
+        "doi_pub": "",
+        "funding": [
+            [
+                "",
+                ""
+            ]
+        ],
+        "polygon": []
+    },
+    {
+        "id": 3,
+        "name": "EO4Resilience",
+        "description": "In this project we aim to (i) derive a set of EBVs using a combination of existing airborne and spaceborne hyperspectral optical and SAR data, representative of CHIME and ROSE-L upcoming missions, (ii) test the set of EBVs over a gradient of drought exposure represented by three test sites, (iii) develop and test two approaches to integrate multiple EBVs, namely (a) a data-driven approach and (b) a causal inference and discovery approach based on hypothesized relationships and on the discovery of potential new causal links, (iv) simulate and develop a novel integrative metric that captures the trade-offs between photosynthesis and water exchange that responds to the need to couple hydraulic and photosynthesis traits, and (v) use these approaches (single EBV analysis, multiple EBV analysis and novel integrated metric) to examine under which conditions there is biodiversity-enabled drought resilience.",
+        "findings": "Together these results will not only advance our understanding of drought effects, but also enable us to test the use of EBVs towards process understanding, the development of seamless products that will make use of new data delivered by upcoming missions, and to deliver products aimed at the different actors from civil society to land managers, first as early adopters but later as general users, so that our understanding of the biodiversity-enabled ecosystem response and resilience to drought can translate to actionable knowledge across scales.",
+        "img": "",
+        "lat": 45.864002,
+        "lon": 6.849683,
+        "location": "Laegern, Switzerland; Ticino, Italy; Puéchabon, France",
+        "tags": [
+            "Biodiversity"
+        ],
+        "participants": [
+            "Dr. Vladimir Wingate",
+            "Dr. Martin O. Reader",
+            "Prof. Maria J. Santos"
+        ],
+        "info": "https://eo4society.esa.int/projects/eo4resilience/",
+        "doi_data": "",
+        "doi_pub": "",
+        "funding": [
+            [
+                "esa",
+                "European Space agency"
+            ]
+        ],
+        "polygon": ""
+    },
+    {
+        "id": 4,
+        "name": "Scanning4Africa",
+        "description": "Forests and agroforestry systems in the Global South are critical for biodiversity, carbon storage, and local livelihoods. Yet, affordable and sustainable systems to monitor their three-dimensional structure are lack-ing. Current approaches either rely on expensive, high-end sensors operated by external experts, which leads to limited temporal coverage, dependency on external providers, and loss of local data sovereignty. Or on conventional manual methods such as measuring tree diameters and heights with tapes and hypsometers, which are labour-intensive, time-consuming, and unable to capture the full structural complexity of ecosystems. Mission: To enable sustained, high-resolution monitoring of the three-dimensional structure of forests and agroforestry systems in the Global South. We will design and deploy a fully open, low-cost, easy-to-operate mobile laser scanning package, complete with a medium-range laptop, pre-installed processing software, and offline training materials. Coupled with capacity-building programmes and community data govern-ance frameworks, this system will empower local practitioners and researchers to independently collect, process, and own structural data, enabling repeated monitoring over time and contributing to both local management and global observation missions.",
+        "short_description": "",
+        "img": "",
+        "lat": 0,
+        "lon": 0,
+        "location": "",
+        "tags": [
+            ""
+        ],
+        "participants": [
+            "",
+            ""
+        ],
+        "doi_data": "",
+        "doi_pub": "",
+        "funding": [
+            [
+                "",
+                ""
+            ]
+        ],
+        "polygon": []
+    },
+    {
+        "id": 5,
+        "name": "HiBiDiS",
+        "description": "With this Proposal, SITAEL and its subcontractors answer to ITT and illustrate how the team intends, within the SCOUT initiative, to consolidate the HiBiDiS mission concept, a small satellite hyperspectral LEO Earth Observation mission aiming at assessing Essential Biodiversity Variables of selected ecosystems.",
+        "short_description": "",
+        "img": "",
+        "lat": 0,
+        "lon": 0,
+        "location": "",
+        "tags": [
+            ""
+        ],
+        "participants": [
+            "",
+            ""
+        ],
+        "doi_data": "",
+        "doi_pub": "",
+        "funding": [
+            [
+                "",
+                ""
+            ]
+        ],
+        "polygon": []
+    },
+    {
+        "id": 6,
         "name": "Obsgession",
         "description": "The OBSGESSION project will help address the challenges of declining freshwater and terrestrial biodiversity through a multi-faceted approach aimed at integrating existing methods and technologies for assessing and predicting biodiversity change and its drivers. Its results will be used to help inform efforts like the CBD, IPBES and the European Green Deal and EU Biodiversity Strategy for 2030, and provide state-of-the-art ecological models on biodiversity change on a case study and EU-level.",
         "short_description": "Addressing the challenges of declining freshwater and terrestrial biodiversity..",
@@ -60,10 +192,37 @@
         ]
     },
     {
-        "id": 2,
+        "id": 7,
+        "name": "Sustainability Discourses",
+        "description": "Understanding and tracking urban sustainability discourses. We develop automated models to analyse urban sustainability discourses based on media data. In particular, we are interested in the rise and fall of different topics, who positions themselves in which way and in the stories that are told about urban sustainability over time. We also look back - how has the discourse around urban sustainability developed over time?",
+        "short_description": "Understanding and tracking urban sustainability discourses..",
+        "img": "river.jpg",
+        "lat": 47.377964,
+        "lon": 8.551129,
+        "location": "Europe",
+        "tags": [
+            "Sustainable Development"
+        ],
+        "participants": [
+            "Myriam Pham-Truffert",
+            "Dr. Mario"
+        ],
+        "info": "https://sustainability.discourses.ch",
+        "doi_data": "",
+        "doi_pub": "",
+        "funding": [
+            [
+                "DIZH",
+                "Digitalization Initiative of the Zurich Higher Education Ins"
+            ]
+        ],
+        "polygon": []
+    },
+    {
+        "id": 8,
         "name": "The Circle Future Earth",
-        "description": "Where/how do transitions in ecosystems occur? What is the land biosphere response? Literature review to establish the current and future use of earth observation to answer these questions",
-        "short_description": "Where/how do transitions in ecosystems occur? What is the land biosphere response?",
+        "description": "The strategic goal, 'A living Earth Observation (EO) ecosystem for a living planet,' necessitates investigating new EO domains based on scientific users' needs. This comprehensive approach must cover the entire EO ecosystem, integrating satellite fleets, in-situ data, applications, and digital infrastructure. The focus is on identifying innovative methods, addressing gaps, and proposing solutions grounded in scientific requirements. The development of a science-driven EO reference architecture, prioritized across different EO systems, and analyzed over varying timelines (today, 2030, 2050), will support a dynamic, evolving EO ecosystem to meet future demands (EO blueprint looking at the time horizon 2050).Within the project, we perform a literature review to assess the current use and future scientific needs of EO to answer the following questions: Where/how do transitions in ecosystems occur? What is the land biosphere response to human activities?",
+        "short_description": "",
         "img": "pappagalli.jpg",
         "lat": 0,
         "lon": 0,
@@ -102,32 +261,6 @@
                 -118.5952
             ]
         ]
-    },
-    {
-        "id": 3,
-        "name": "Sustainability Discourses",
-        "description": "Understanding and tracking urban sustainability discourses. We develop automated models to analyse urban sustainability discourses based on media data. In particular, we are interested in the rise and fall of different topics, who positions themselves in which way and in the stories that are told about urban sustainability over time. We also look back - how has the discourse around urban sustainability developed over time?",
-        "short_description": "Understanding and tracking urban sustainability discourses..",
-        "img": "river.jpg",
-        "lat": 47.377964,
-        "lon": 8.551129,
-        "location": "Europe",
-        "tags": [
-            "Social Ecological Systems"
-        ],
-        "participants": [
-            "Myriam Pham-Truffert",
-            "Dr. Mario"
-        ],
-        "doi_data": "",
-        "doi_pub": "",
-        "funding": [
-            [
-                "DIZH",
-                "Digitalization Initiative of the Zurich Higher Education Ins"
-            ]
-        ],
-        "polygon": []
     },
     {
         "id": 4,
@@ -295,32 +428,6 @@
             ]
         ],
         "polygon": "polygon_id_7.geojson"
-    },
-    {
-        "id": 8,
-        "name": "EO4Resilience",
-        "description": "",
-        "img": "",
-        "lat": 45.864002,
-        "lon": 6.849683,
-        "location": "Switzerland, France, Italy",
-        "tags": [
-            "Biodiversity",
-            "Climate Change"
-        ],
-        "participants": [
-            "Dr. Andreas Hüni",
-            "Prof. Maria J. Santos"
-        ],
-        "doi_data": "",
-        "doi_pub": "",
-        "funding": [
-            [
-                "esa",
-                "European Space agency"
-            ]
-        ],
-        "polygon": ""
     },
     {
         "id": 9,

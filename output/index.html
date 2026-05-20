@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap JavaScript Bundle (includes Popper.js for dropdowns) -->
@@ -48,7 +49,7 @@
                                 </li>
                                 <li>
                                     <a class="dropdown-item"
-                                        href="./topics/social-ecological-systems/index.html">Social Ecological Systems</a>
+                                        href="./topics/sustainable-development/index.html">Sustainable Development</a>
                                 </li>
                             </ul>
                         </li>
@@ -78,43 +79,28 @@ class="active" aria-current="true"                     aria-label="Slide 1">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
                     aria-label="Slide 2">
                 </button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                    aria-label="Slide 3">
-                </button>
             </div>
 
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <a href="./projects/1.html" class="carousel-link">
+                    <a href="./projects/6.html" class="carousel-link">
                         <div class="carousel-image-container">
-                            <img src="./theme/images/frog.jpg" class="d-block w-100"
+                            <img src="./theme/images/proj_6_obsgession.PNG" class="d-block w-100"
                                 alt="Obsgession">
                             <div class="carousel-text">
                                 <h3>Obsgession</h3>
-                                <p>Addressing the challenges of declining freshwater and terrestrial biodiversity..</p>
+                                <p></p>
                             </div>
                         </div>
                     </a>
                 </div>
                 <div class="carousel-item ">
-                    <a href="./projects/2.html" class="carousel-link">
+                    <a href="./projects/8.html" class="carousel-link">
                         <div class="carousel-image-container">
-                            <img src="./theme/images/pappagalli.jpg" class="d-block w-100"
+                            <img src="./theme/images/proj_8_circle.png" class="d-block w-100"
                                 alt="The Circle Future Earth">
                             <div class="carousel-text">
                                 <h3>The Circle Future Earth</h3>
-                                <p>Where/how do transitions in ecosystems occur? What is the land biosphere response?</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="carousel-item ">
-                    <a href="./projects/5.html" class="carousel-link">
-                        <div class="carousel-image-container">
-                            <img src="./theme/images/kerela_india.jpg" class="d-block w-100"
-                                alt="Agroforestry for food security">
-                            <div class="carousel-text">
-                                <h3>Agroforestry for food security</h3>
                                 <p></p>
                             </div>
                         </div>
@@ -134,6 +120,8 @@ class="active" aria-current="true"                     aria-label="Slide 1">
             </button>
         </div>
     </div>
+
+
 
     <!-- Research Topics Section -->
     <div class="my-5">
@@ -171,17 +159,419 @@ class="active" aria-current="true"                     aria-label="Slide 1">
             </div>
             <div class="col d-flex align-items-stretch">
                 <div class="card shadow-sm h-100">
-                    <img src="./theme/images/soc_eco_sys_img_m.png" class="card-img-top" alt="Social Ecological Systems">
+                    <img src="./theme/images/soc_eco_sys_img_m.png" class="card-img-top" alt="Sustainable Development">
                     <div class="card-body">
-                        <h5 class="card-title text-center">Social Ecological Systems</h5>
+                        <h5 class="card-title text-center">Sustainable Development</h5>
                     </div>
-                    <a href="./topics/social-ecological-systems/index.html" class="stretched-link"></a>
+                    <a href="./topics/sustainable-development/index.html" class="stretched-link"></a>
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- Project Map Section -->
+    <div class="my-5">
+        <div class="section-title-container">
+            <h3 class="section-title">Our Research around the world</h3>
+            <p class="text-center text-muted">
+                Explore where our research projects are located
+            </p>
+        </div>
+
+        <div id="projects-map"></div>
+    </div>
+
+    <section class="global-projects">
+        <h2 class="section-title">Global Projects</h2>
+
+        <div class="global-grid">
+            <a class="global-card" href="./projects/1.html">
+
+                <div class="global-card-content">
+                    <h3>Pangea</h3>
+
+                </div>
+
+            </a>
+            <a class="global-card" href="./projects/2.html">
+
+                <div class="global-card-content">
+                    <h3>RediLEEP</h3>
+
+                </div>
+
+            </a>
+            <a class="global-card" href="./projects/4.html">
+
+                <div class="global-card-content">
+                    <h3>Scanning4Africa</h3>
+
+                </div>
+
+            </a>
+            <a class="global-card" href="./projects/5.html">
+
+                <div class="global-card-content">
+                    <h3>HiBiDiS</h3>
+
+                </div>
+
+            </a>
+            <a class="global-card" href="./projects/8.html">
+
+                <div class="global-card-content">
+                    <h3>The Circle Future Earth</h3>
+
+                    <div class="tags">
+                        <span class="tag">Biodiversity</span>
+                        <span class="tag">Ecosystem Services</span>
+                    </div>
+                </div>
+
+            </a>
+            <a class="global-card" href="./projects/9.html">
+
+                <div class="global-card-content">
+                    <h3>Modelling biodiversity and ecosystem services loss scenarios</h3>
+
+                    <div class="tags">
+                        <span class="tag">Biodiversity</span>
+                        <span class="tag">Ecosystem Services</span>
+                        <span class="tag">Sustainable Development</span>
+                    </div>
+                </div>
+
+            </a>
+            <a class="global-card" href="./projects/14.html">
+
+                <div class="global-card-content">
+                    <h3>Spatial Sustainable Finance</h3>
+
+                    <div class="tags">
+                        <span class="tag">Biodiversity</span>
+                    </div>
+                </div>
+
+            </a>
+            <a class="global-card" href="./projects/18.html">
+
+                <div class="global-card-content">
+                    <h3>SES archetypes</h3>
+
+                    <div class="tags">
+                        <span class="tag">Biodiversity</span>
+                        <span class="tag">Climate Change</span>
+                    </div>
+                </div>
+
+            </a>
+        </div>
+    </section>
+
+
 </div>
+
+...
+
+</div>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        const map = L.map('projects-map');
+
+        L.tileLayer(
+            'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png',
+            {
+                attribution: '&copy; OpenStreetMap & CartoDB'
+            }
+        ).addTo(map);
+
+        const bounds = [];
+
+        const projects = [
+        {
+            id: 1,
+        name: `Pangea`,
+        img: `./theme/images/`,
+        description: `The tropics are experiencing dramatic changes as a result of climate change and land-use change. Shifts in carbon flux dynamics, water cycling, and species composition are resulting in feedbacks with globally important c`,
+        lat: 0,
+        lon: 0,
+        location: ``,
+        tags: [],
+        polygon: []
+        },
+        {
+            id: 2,
+        name: `RediLEEP`,
+        img: `./theme/images/`,
+        description: `Ecosystem resilience is the capacity of an ecosystem to withstand natural and human-induced changes while maintaining core functions over time and space. Response diversity (RD)—the variability in responses to environmen`,
+        lat: 0,
+        lon: 0,
+        location: ``,
+        tags: [],
+        polygon: []
+        },
+        {
+            id: 3,
+        name: `EO4Resilience`,
+        img: `./theme/images/proj_3_eo4resilience.png`,
+        description: `In this project we aim to (i) derive a set of EBVs using a combination of existing airborne and spaceborne hyperspectral optical and SAR data, representative of CHIME and ROSE-L upcoming missions, (ii) test the set of EB`,
+        lat: 46.41,
+        lon: 8.75,
+        location: `Laegern, Switzerland; Ticino, Italy; Puéchabon, France`,
+        tags: ["Biodiversity"],
+        polygon: []
+        },
+        {
+            id: 4,
+        name: `Scanning4Africa`,
+        img: `./theme/images/`,
+        description: `Forests and agroforestry systems in the Global South are critical for biodiversity, carbon storage, and local livelihoods. Yet, affordable and sustainable systems to monitor their three-dimensional structure are lack-ing`,
+        lat: 0,
+        lon: 0,
+        location: ``,
+        tags: [],
+        polygon: []
+        },
+        {
+            id: 5,
+        name: `HiBiDiS`,
+        img: `./theme/images/`,
+        description: `With this Proposal, SITAEL and its subcontractors answer to ITT and illustrate how the team intends, within the SCOUT initiative, to consolidate the HiBiDiS mission concept, a small satellite hyperspectral LEO Earth Obse`,
+        lat: 0,
+        lon: 0,
+        location: ``,
+        tags: [],
+        polygon: []
+        },
+        {
+            id: 6,
+        name: `Obsgession`,
+        img: `./theme/images/proj_6_obsgession.PNG`,
+        description: `The OBSGESSION project aims to advance our understanding of freshwater and terrestrial biodiversity dynamics and their underlying drivers. Within the ESS group at UZH, we mainly focus on the insufficient characterization`,
+        lat: 54.526,
+        lon: 15.2551,
+        location: `Europe`,
+        tags: ["Biodiversity", "Sustainable Development"],
+        polygon: [[47.4576, 8.4468], [47.487, 8.4473], [47.4882, 8.2975], [47.4576, 8.4468]]
+        },
+        {
+            id: 7,
+        name: `Sustainability Discourses`,
+        img: `./theme/images/river.jpg`,
+        description: `Understanding and tracking urban sustainability discourses. We develop automated models to analyse urban sustainability discourses based on media data. In particular, we are interested in the rise and fall of different t`,
+        lat: 47.377964,
+        lon: 8.551129,
+        location: `Europe`,
+        tags: ["Sustainable Development"],
+        polygon: []
+        },
+        {
+            id: 8,
+        name: `The Circle Future Earth`,
+        img: `./theme/images/proj_8_circle.png`,
+        description: `The strategic goal, &#39;A living Earth Observation (EO) ecosystem for a living planet,&#39; necessitates investigating new EO domains based on scientific users&#39; needs. This comprehensive approach must cover the entire EO ecosys`,
+        lat: 0,
+        lon: 0,
+        location: `Global`,
+        tags: ["Biodiversity", "Ecosystem Services"],
+        polygon: [[35.8732, -118.5952], [35.1114, -118.1984], [35.4818, -117.9338], [35.8732, -118.5952]]
+        },
+        {
+            id: 9,
+        name: `Modelling biodiversity and ecosystem services loss scenarios`,
+        img: `./theme/images/proj_9_modellingbiodiv.png`,
+        description: `Swiss Re Foundation, AXA Research Fund, and WWF as enabling partners, with EY as a service contributor to Swiss Re, are excited to announce the launch of the BES (Biodiversity and Ecosystem Services) Scenarios Modelling`,
+        lat: 0,
+        lon: 0,
+        location: `Global`,
+        tags: ["Biodiversity", "Ecosystem Services", "Sustainable Development"],
+        polygon: [[35.8732, -118.5952], [35.1114, -118.1984], [35.4818, -117.9338], [35.8732, -118.5952]]
+        },
+        {
+            id: 10,
+        name: `ACTNOW`,
+        img: `./theme/images/`,
+        description: `The Amazon forest is the largest tropical forest and is undergoing rapid transformations because of climate change. The uptake of carbon is affected by increasing temperatures, elevated CO2 concentrations, but also by th`,
+        lat: -3.4653,
+        lon: -62.2159,
+        location: `Amazon`,
+        tags: ["Biodiversty"],
+        polygon: []
+        },
+        {
+            id: 11,
+        name: `BioScape`,
+        img: `./theme/images/`,
+        description: `BioSCape is a research project that uses remote sensing and field data to understand the distribution, function, and importance of biodiversity on land and in the water in the Greater Cape Floristic Region (GCFR), one of`,
+        lat: -30.559483,
+        lon: 22.937506,
+        location: `South Africa`,
+        tags: ["Biodiversty"],
+        polygon: []
+        },
+        {
+            id: 12,
+        name: `Demand4Restoration`,
+        img: `./theme/images/proj_12_dmandxrest.JPG`,
+        description: `Demand4Restoration is a research project that explores how integrating local, regional, and national restoration demands can improve the social and ecological effectiveness of restoration in Madagascar. By analyzing over`,
+        lat: -18.766947,
+        lon: 46.869106,
+        location: `Madagascar`,
+        tags: ["Biodiversity", "Climate Change", "Ecosystem Services"],
+        polygon: []
+        },
+        {
+            id: 13,
+        name: `Green4Climate`,
+        img: `./theme/images/`,
+        description: `Green4Clim uses the UZH Irchel campus as a real-world laboratory to investigate how vegetation composition and distribution may mitigate carbon impacts of campus activities. The project focuses on direct and indirect eff`,
+        lat: 47.3769,
+        lon: 8.5417,
+        location: `Zurich`,
+        tags: ["Biodiversity", "Climate Change", "Ecosystem Services"],
+        polygon: []
+        },
+        {
+            id: 14,
+        name: `Spatial Sustainable Finance`,
+        img: `./theme/images/proj_14_spacial_sus_fin.png`,
+        description: `Biodiversity loss and water scarcity are occurring at an unprecedented pace. Environmental degradation caused by economic activity induces long-lasting consequences affecting global health, food security and quality, pov`,
+        lat: 0,
+        lon: 0,
+        location: `Global`,
+        tags: ["Biodiversity"],
+        polygon: []
+        },
+        {
+            id: 15,
+        name: `RESPONSE: Human Traits`,
+        img: `./theme/images/`,
+        description: ``,
+        lat: 0.961883,
+        lon: 114.554848,
+        location: `Borneo`,
+        tags: ["Biodiversity", "Climate Change"],
+        polygon: []
+        },
+        {
+            id: 16,
+        name: `RESPONSE: Charcoal in SSA`,
+        img: `./theme/images/`,
+        description: ``,
+        lat: 0.0,
+        lon: 20.0,
+        location: `Sub-Sharan Africa`,
+        tags: ["Biodiversity", "Climate Change"],
+        polygon: []
+        },
+        {
+            id: 17,
+        name: `Impacts of drought on ecosystem resilience, biodiversity and functioning in the Mediterranean Basin`,
+        img: `./theme/images/`,
+        description: ``,
+        lat: 36.0,
+        lon: 18.0,
+        location: `Mediterranean Basin`,
+        tags: ["Biodiversity", "Climate Change"],
+        polygon: [[35.8732, -118.5952], [35.1114, -118.1984], [35.4818, -117.9338], [35.8732, -118.5952]]
+        },
+        {
+            id: 18,
+        name: `SES archetypes`,
+        img: `./theme/images/`,
+        description: ``,
+        lat: 0,
+        lon: 0,
+        location: `Global`,
+        tags: ["Biodiversity", "Climate Change"],
+        polygon: []
+        },
+        {
+            id: 19,
+        name: `Moisture recycling in Amazon`,
+        img: `./theme/images/`,
+        description: ``,
+        lat: -3.4653,
+        lon: -62.2159,
+        location: `Amazon`,
+        tags: ["Biodiversity", "Climate Change"],
+        polygon: []
+        },
+    ];
+
+    const mapProjects = [];
+    const globalProjects = [];
+
+    // Split logic
+    projects.forEach(p => {
+
+        const isGlobal =
+            p.lat === null ||
+            p.lon === null ||
+            (p.lat === 0 && p.lon === 0);
+
+        if (isGlobal) {
+            globalProjects.push(p);
+            return;
+        }
+
+        mapProjects.push(p);
+
+        const marker = L.marker([p.lat, p.lon]).addTo(map);
+
+        marker.bindPopup(`
+            <div class="map-popup">
+                <img src="${p.img}" alt="${p.name}">
+                <h5>${p.name}</h5>
+                <p>${p.description || ''}...</p>
+
+                <p>
+                    <strong>Location:</strong><br>
+                    ${p.location || ''}
+                </p>
+
+                ${p.tags && p.tags.length
+                ? `<div class="project-tag">${p.tags.join(", ")}</div>`
+                : ''
+            }
+
+                <div class="mt-3">
+                    <a href="./projects/${p.id}.html"
+                       class="btn btn-sm btn-primary">
+                        View Project
+                    </a>
+                </div>
+            </div>
+        `);
+
+        bounds.push([p.lat, p.lon]);
+
+        if (p.polygon && p.polygon.length > 0) {
+            L.polygon(p.polygon, {
+                color: '#0d6efd',
+                weight: 2,
+                fillOpacity: 0.15
+            }).addTo(map)
+                .bindPopup(`<strong>${p.name}</strong>`);
+        }
+    });
+
+    // Fit map
+    if (bounds.length > 0) {
+        map.fitBounds(bounds, { padding: [50, 50] });
+    } else {
+        map.setView([46.8, 8.3], 5);
+    }
+
+    // Optional debug
+    console.log("Global projects:", globalProjects);
+});
+</script>
+
+
         </div>
     </div>
     <!-- Footer Section -->
@@ -205,7 +595,7 @@ class="active" aria-current="true"                     aria-label="Slide 1">
             </div>
         </div>
     </footer>
-
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 </body>
 
 </html>

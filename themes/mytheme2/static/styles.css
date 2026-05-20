@@ -204,14 +204,16 @@ p {
 .carousel-image-container {
     position: relative;
     width: 100%;
-    height: 500px;
-    /* Adjust height as needed */
+    aspect-ratio: 16 / 9;
+    background-color: #eafaea;
 }
 
 .carousel-image-container img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
+    background-color: ;
+    /* optional */
 }
 
 /* Styles the text overlay */
@@ -261,6 +263,40 @@ p {
 
 .carousel-link:hover img {
     filter: brightness(90%);
+}
+
+#projects-map {
+    height: 650px;
+    width: 100%;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.map-popup img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.map-popup h5 {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.map-popup p {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.project-tag {
+    display: inline-block;
+    background: #e9f2ff;
+    color: #0d6efd;
+    padding: 2px 8px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    margin-top: 6px;
 }
 
 /* Style for the research topic titles */
@@ -349,12 +385,6 @@ p {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-img.object-fit-cover {
-    height: 100%;
-    object-fit: cover;
-    /* Ensures image covers its space */
-}
-
 .row.g-0 {
     margin-left: 0;
     margin-right: 0;
@@ -371,38 +401,6 @@ img.object-fit-cover {
     /* Make it bigger compared to the right column */
     max-height: 600px;
     /* Prevent excessive stretching */
-}
-
-/* Make the image fill the column */
-.col-md-6 img {
-    height: 100%;
-    /* Make sure it takes up full height */
-    object-fit: cover;
-    /* Ensures it fills the space nicely */
-}
-
-/* Increase the size of the map */
-.map-overlay {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    width: 60%;
-    /* Increase width */
-    min-width: 300px;
-    /* Ensure minimum size */
-    height: 40%;
-    /* Increase height */
-    min-height: 200px;
-    /* Prevent excessive shrinking */
-    border-radius: 8px;
-    overflow: hidden;
-    z-index: 2;
-}
-
-/* Make the map-container-project fully use the overlay */
-.map-container-project {
-    width: 100%;
-    height: 100%;
 }
 
 /* Style the title and description */
@@ -427,16 +425,63 @@ img.object-fit-cover {
     hyphens: auto;
 }
 
-/* Responsive adjustments */
-@media (max-width: 1000px) {
-    .map-overlay {
-        width: 50%;
-        min-width: 200px;
-        max-width: 200px;
-        right: 5px;
-        /* Adjust positioning for smaller screens */
-    }
+.global-projects {
+    margin-top: 3rem;
 }
+
+/* smaller + green title */
+.global-projects .section-title {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    color: #6fbf8f !important;
+    /* light green */
+}
+
+.global-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1rem;
+}
+
+.global-card {
+    display: block;
+    padding: 1rem;
+    border-radius: 12px;
+    border: 1px solid #e5e5e5;
+    background: #fff;
+    text-decoration: none;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.global-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.global-card h3 {
+    font-size: 1rem;
+    /* slightly smaller */
+    margin-bottom: 0.5rem;
+    color: #1f2d1f;
+}
+
+.tags {
+    margin-top: 0.5rem;
+}
+
+.tag {
+    display: inline-block;
+    font-size: 0.75rem;
+    padding: 2px 8px;
+    border-radius: 999px;
+    background: #e8f5ee;
+    /* light green tint */
+    color: #2f7d4a;
+    margin-right: 4px;
+    margin-top: 4px;
+}
+
 
 /* DOI Buttons */
 .btn-outline-primary,
@@ -464,6 +509,10 @@ img.object-fit-cover {
     color: #007bff;
 }
 
+.participants-list li {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
 
 .funding-title {
     margin-bottom: 40px;

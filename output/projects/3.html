@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap JavaScript Bundle (includes Popper.js for dropdowns) -->
@@ -48,7 +49,7 @@
                                 </li>
                                 <li>
                                     <a class="dropdown-item"
-                                        href="../topics/social-ecological-systems/index.html">Social Ecological Systems</a>
+                                        href="../topics/sustainable-development/index.html">Sustainable Development</a>
                                 </li>
                             </ul>
                         </li>
@@ -65,69 +66,83 @@
 
 <div class="container">
     <div class="container-fluid px-0">
+
+        <!-- TOP SECTION: Image + Project Info -->
         <div class="row g-0 d-flex align-items-stretch">
 
-            <!-- Left Column: Image with Map Overlay -->
+            <!-- Left column Image -->
             <div class="col-md-6 position-relative">
-                <img src="../theme/images/river.jpg" class="img-fluid w-100 object-fit-cover"
-                    alt="Sustainability Discourses">
-
-                <!-- Map Overlay -->
-                <div class="map-overlay">
-                    <div class="map-container-project">
-                        
-    <div id="project-map-3" style="width:100%; height:300px;"></div>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-    <script>
-        const map = L.map('project-map-3');
-        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            maxZoom: 19
-        }).addTo(map);
-
-        
-        L.marker([47.377964, 8.551129]).addTo(map)
-            .bindPopup("Sustainability Discourses");
-        map.setView([47.377964, 8.551129], 5);  // default zoom
-        
-    </script>
-    
-                    </div>
-                </div>
+                <img src="../theme/images/proj_3_eo4resilience.png" class="img-fluid mx-auto d-block"
+                    style="max-height: 500px; object-fit: cover;" alt="EO4Resilience">
             </div>
 
             <!-- Right Column: Project Info -->
             <div class="col-md-6 d-flex flex-column justify-content-center px-4">
-                <h1 class="project-title">Sustainability Discourses</h1>
-                <p class="project-description">Understanding and tracking urban sustainability discourses. We develop automated models to analyse urban sustainability discourses based on media data. In particular, we are interested in the rise and fall of different topics, who positions themselves in which way and in the stories that are told about urban sustainability over time. We also look back - how has the discourse around urban sustainability developed over time?</p>
+                <h1 class="project-title">EO4Resilience</h1>
+                <p class="project-description">In this project we aim to (i) derive a set of EBVs using a combination of existing airborne and spaceborne hyperspectral optical and SAR data, representative of CHIME and ROSE-L upcoming missions, (ii) test the set of EBVs over a gradient of drought exposure represented by three test sites, (iii) develop and test two approaches to integrate multiple EBVs, namely (a) a data-driven approach and (b) a causal inference and discovery approach based on hypothesized relationships and on the discovery of potential new causal links, (iv) simulate and develop a novel integrative metric that captures the trade-offs between photosynthesis and water exchange that responds to the need to couple hydraulic and photosynthesis traits, and (v) use these approaches (single EBV analysis, multiple EBV analysis and novel integrated metric) to examine under which conditions there is biodiversity-enabled drought resilience.</p>
+            </div>
 
-                <!-- Participants -->
-                <h3 class="mt-4">Participants</h3>
-                <ul>
-                    <li>Myriam Pham-Truffert</li>
-                    <li>Dr. Mario</li>
+        </div>
+
+        <!-- BOTTOM SECTION: Participants + Keywords -->
+        <div class="row mt-5">
+
+            <!-- Participants -->
+            <div class="col-md-6">
+                <h3>Participants</h3>
+                <ul class="participants-list">
+                    <li>
+                        <a href="https://www.geo.uzh.ch/en/units/ess/staff/vladimirwingate" target="_blank">
+                            Dr. Vladimir Wingate
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.geo.uzh.ch/en/units/ess/staff/martinoliverreader" target="_blank">
+                            Dr. Martin O. Reader
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.geo.uzh.ch/en/units/ess/staff/mariajsantos" target="_blank">
+                            Prof. Maria J. Santos
+                        </a>
+                    </li>
                 </ul>
             </div>
 
-
-        </div>
-    </div>
-
-    <!-- Funding and DOI -->
-    <div class="col-md-6 mt-4">
-        <div class="mt-3 doi-section">
-
+            <!-- Keywords -->
+            <div class="col-md-6">
+            </div>
 
         </div>
 
-        <h4 class="funding-title">Funding Organization</h4>
-        <div class="funding-logos single-logo">
-            <div class="funding-logo-wrapper">
-                <img src="../theme/images/logos_resized/DIZH" class="funding-logo"
-                    alt="Funding Logo">
+        <div class="row mt-5">
+            <div class="col-12">
+                <h3>Findings & Relevance</h3>
+                <p class="project-findings-text">
+                    Together these results will not only advance our understanding of drought effects, but also enable us to test the use of EBVs towards process understanding, the development of seamless products that will make use of new data delivered by upcoming missions, and to deliver products aimed at the different actors from civil society to land managers, first as early adopters but later as general users, so that our understanding of the biodiversity-enabled ecosystem response and resilience to drought can translate to actionable knowledge across scales.
+                </p>
             </div>
         </div>
+
     </div>
+</div>
+
+<!-- Funding and DOI -->
+<div class="col-md-6 mt-4">
+    <div class="mt-3 doi-section">
+        <h3>Additional info:</h3> <a href="https://eo4society.esa.int/projects/eo4resilience/" target="_blank">https://eo4society.esa.int/projects/eo4resilience/</a>
+        </p>
+
+
+    </div>
+
+    <h4 class="funding-title">Funding Organization</h4>
+    <div class="funding-logos single-logo">
+        <div class="funding-logo-wrapper">
+            <img src="../theme/images/logos_resized/esa" class="funding-logo" alt="Funding Logo">
+        </div>
+    </div>
+</div>
 
 </div>
 
@@ -154,7 +169,7 @@
             </div>
         </div>
     </footer>
-
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 </body>
 
 </html>

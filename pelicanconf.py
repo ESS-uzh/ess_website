@@ -18,8 +18,25 @@ with open(TOPICS_FILE, "r", encoding="utf-8") as f:
 with open(PROJECTS_FILE, "r", encoding="utf-8") as f:
     ALL_PROJECTS = json.load(f)
 
+
+def normalize_project(p):
+    return {
+        "id": p.get("id"),
+        "name": p.get("name", "Untitled"),
+        "description": p.get("description") or p.get("short_description", ""),
+        "img": p.get("img", ""),
+        "lat": p.get("lat"),
+        "lon": p.get("lon"),
+        "location": p.get("location", ""),
+        "tags": p.get("tags", []),
+        "polygon": p.get("polygon", []),
+    }
+
+
+ALL_PROJECTS = [normalize_project(p) for p in ALL_PROJECTS]
+
 # Select by IDs instead of sorting
-RECENT_PROJECT_IDS = [1, 2, 5]  # manual choice
+RECENT_PROJECT_IDS = [8, 6]  # manual choice
 RECENT_PROJECTS = [p for p in ALL_PROJECTS if p["id"] in RECENT_PROJECT_IDS]
 
 JINJA_FILTERS = {
@@ -30,6 +47,7 @@ JINJA_FILTERS = {
 JINJA_GLOBALS = {
     "all_topics": ALL_TOPICS,
     "recent_projects": RECENT_PROJECTS,
+    "all_projects": ALL_PROJECTS,
     "generate_map": generate_map,
 }
 

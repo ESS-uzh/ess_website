@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap JavaScript Bundle (includes Popper.js for dropdowns) -->
@@ -48,7 +49,7 @@
                                 </li>
                                 <li>
                                     <a class="dropdown-item"
-                                        href="../topics/social-ecological-systems/index.html">Social Ecological Systems</a>
+                                        href="../topics/sustainable-development/index.html">Sustainable Development</a>
                                 </li>
                             </ul>
                         </li>
@@ -65,79 +66,40 @@
 
 <div class="container">
     <div class="container-fluid px-0">
+
+        <!-- TOP SECTION: Image + Project Info -->
         <div class="row g-0 d-flex align-items-stretch">
 
-            <!-- Left Column: Image with Map Overlay -->
+            <!-- Left column Image -->
             <div class="col-md-6 position-relative">
-
-                <!-- Map Overlay -->
-                <div class="map-overlay">
-                    <div class="map-container-project">
-                        
-    <div id="project-map-4" style="width:100%; height:300px;"></div>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-    <script>
-        const map = L.map('project-map-4');
-        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            maxZoom: 19
-        }).addTo(map);
-
-        
-        const polygon = L.polygon([[35.8732, -118.5952], [35.1114, -118.1984], [35.4818, -117.9338], [35.8732, -118.5952]]).addTo(map)
-            .bindPopup("Modelling biodiversity and ecosystem services loss scenarios");
-        map.fitBounds(polygon.getBounds());  // automatically fit map to polygon
-        
-    </script>
-    
-                    </div>
-                </div>
             </div>
 
             <!-- Right Column: Project Info -->
             <div class="col-md-6 d-flex flex-column justify-content-center px-4">
-                <h1 class="project-title">Modelling biodiversity and ecosystem services loss scenarios</h1>
-                <p class="project-description">Better understanding the impacts of biodiversity loss and ecosystem degradation is important for our society and economy. Healthy ecosystems underpin all the UN SDGs; and our economies and businesses remain dependent on the robustness of natural assets. The BES (Biodiversity and Ecosystem Services) Scenarios Modelling Initiative aims to provide meaningful and quantified BES futures at a highly granular level and agglomerate data to provide globally applicable regional views.</p>
-
-                <!-- Participants -->
-                <h3 class="mt-4">Participants</h3>
-                <ul>
-                    <li>Dr. Martin O. Reader</li>
-                    <li>Prof. Maria J. Santos</li>
-                </ul>
+                <h1 class="project-title">Scanning4Africa</h1>
+                <p class="project-description">Forests and agroforestry systems in the Global South are critical for biodiversity, carbon storage, and local livelihoods. Yet, affordable and sustainable systems to monitor their three-dimensional structure are lack-ing. Current approaches either rely on expensive, high-end sensors operated by external experts, which leads to limited temporal coverage, dependency on external providers, and loss of local data sovereignty. Or on conventional manual methods such as measuring tree diameters and heights with tapes and hypsometers, which are labour-intensive, time-consuming, and unable to capture the full structural complexity of ecosystems. Mission: To enable sustained, high-resolution monitoring of the three-dimensional structure of forests and agroforestry systems in the Global South. We will design and deploy a fully open, low-cost, easy-to-operate mobile laser scanning package, complete with a medium-range laptop, pre-installed processing software, and offline training materials. Coupled with capacity-building programmes and community data govern-ance frameworks, this system will empower local practitioners and researchers to independently collect, process, and own structural data, enabling repeated monitoring over time and contributing to both local management and global observation missions.</p>
             </div>
 
+        </div>
+
+        <!-- BOTTOM SECTION: Participants + Keywords -->
+        <div class="row mt-5">
+
+            <!-- Participants -->
+            <div class="col-md-6">
+            </div>
+
+            <!-- Keywords -->
+            <div class="col-md-6">
+            </div>
 
         </div>
+
+
     </div>
+</div>
 
-    <!-- Funding and DOI -->
-    <div class="col-md-6 mt-4">
-        <div class="mt-3 doi-section">
-
-
-        </div>
-
-        <h4 class="funding-title">Funding Organization</h4>
-        <div class="funding-logos ">
-            <div class="funding-logo-wrapper">
-                <img src="../theme/images/logos_resized/WWF" class="funding-logo"
-                    alt="Funding Logo">
-            </div>
-            <div class="funding-logo-wrapper">
-                <img src="../theme/images/logos_resized/Swiss-Re" class="funding-logo"
-                    alt="Funding Logo">
-            </div>
-            <div class="funding-logo-wrapper">
-                <img src="../theme/images/logos_resized/AXA" class="funding-logo"
-                    alt="Funding Logo">
-            </div>
-            <div class="funding-logo-wrapper">
-                <img src="../theme/images/logos_resized/EY" class="funding-logo"
-                    alt="Funding Logo">
-            </div>
-        </div>
-    </div>
+<!-- Funding and DOI -->
 
 </div>
 
@@ -164,7 +126,7 @@
             </div>
         </div>
     </footer>
-
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 </body>
 
 </html>

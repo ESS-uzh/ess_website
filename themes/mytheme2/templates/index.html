@@ -55,6 +55,8 @@
         </div>
     </div>
 
+
+
     <!-- Research Topics Section -->
     <div class="my-5">
         <div class="section-title-container">
@@ -76,5 +78,148 @@
         </div>
     </div>
 
+    <!-- Project Map Section -->
+    <div class="my-5">
+        <div class="section-title-container">
+            <h3 class="section-title">Our Research around the world</h3>
+            <p class="text-center text-muted">
+                Explore where our research projects are located
+            </p>
+        </div>
+
+        <div id="projects-map"></div>
+    </div>
+
+    <section class="global-projects">
+        <h2 class="section-title">Global Projects</h2>
+
+        <div class="global-grid">
+            {% for project in all_projects if project.lat == 0 and project.lon == 0 %}
+            <a class="global-card" href="{{ SITEURL }}/projects/{{ project.id }}.html">
+
+                <div class="global-card-content">
+                    <h3>{{ project.name }}</h3>
+
+                    {% if project.tags %}
+                    <div class="tags">
+                        {% for tag in project.tags %}
+                        <span class="tag">{{ tag }}</span>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+                </div>
+
+            </a>
+            {% endfor %}
+        </div>
+    </section>
+
+
 </div>
+
+...
+
+</div>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        const map = L.map('projects-map');
+
+        L.tileLayer(
+            'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png',
+            {
+                attribution: '&copy; OpenStreetMap & CartoDB'
+            }
+        ).addTo(map);
+
+        const bounds = [];
+
+        const projects = [
+            {% for project in all_projects %}
+        {
+            id: {{ project.id }},
+        name: `{{ project.name|escape }}`,
+        img: `{{ SITEURL }}/theme/images/{{ project.img }}`,
+        description: `{{ (project.description or '')[:220]|striptags|escape }}`,
+        lat: {{ project.lat if project.lat is not none else 'null' }},
+        lon: {{ project.lon if project.lon is not none else 'null' }},
+        location: `{{ project.location|default('')|escape }}`,
+        tags: {{ project.tags | default([]) | tojson }},
+        polygon: {{ project.polygon | default([]) | tojson }}
+        },
+        {% endfor %}
+    ];
+
+    const mapProjects = [];
+    const globalProjects = [];
+
+    // Split logic
+    projects.forEach(p => {
+
+        const isGlobal =
+            p.lat === null ||
+            p.lon === null ||
+            (p.lat === 0 && p.lon === 0);
+
+        if (isGlobal) {
+            globalProjects.push(p);
+            return;
+        }
+
+        mapProjects.push(p);
+
+        const marker = L.marker([p.lat, p.lon]).addTo(map);
+
+        marker.bindPopup(`
+            <div class="map-popup">
+                <img src="${p.img}" alt="${p.name}">
+                <h5>${p.name}</h5>
+                <p>${p.description || ''}...</p>
+
+                <p>
+                    <strong>Location:</strong><br>
+                    ${p.location || ''}
+                </p>
+
+                ${p.tags && p.tags.length
+                ? `<div class="project-tag">${p.tags.join(", ")}</div>`
+                : ''
+            }
+
+                <div class="mt-3">
+                    <a href="{{ SITEURL }}/projects/${p.id}.html"
+                       class="btn btn-sm btn-primary">
+                        View Project
+                    </a>
+                </div>
+            </div>
+        `);
+
+        bounds.push([p.lat, p.lon]);
+
+        if (p.polygon && p.polygon.length > 0) {
+            L.polygon(p.polygon, {
+                color: '#0d6efd',
+                weight: 2,
+                fillOpacity: 0.15
+            }).addTo(map)
+                .bindPopup(`<strong>${p.name}</strong>`);
+        }
+    });
+
+    // Fit map
+    if (bounds.length > 0) {
+        map.fitBounds(bounds, { padding: [50, 50] });
+    } else {
+        map.setView([46.8, 8.3], 5);
+    }
+
+    // Optional debug
+    console.log("Global projects:", globalProjects);
+});
+</script>
+
+
 {% endblock %}

@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap JavaScript Bundle (includes Popper.js for dropdowns) -->
@@ -48,7 +49,7 @@
                                 </li>
                                 <li>
                                     <a class="dropdown-item"
-                                        href="../topics/social-ecological-systems/index.html">Social Ecological Systems</a>
+                                        href="../topics/sustainable-development/index.html">Sustainable Development</a>
                                 </li>
                             </ul>
                         </li>
@@ -65,75 +66,115 @@
 
 <div class="container">
     <div class="container-fluid px-0">
+
+        <!-- TOP SECTION: Image + Project Info -->
         <div class="row g-0 d-flex align-items-stretch">
 
-            <!-- Left Column: Image with Map Overlay -->
+            <!-- Left column Image -->
             <div class="col-md-6 position-relative">
-
-                <!-- Map Overlay -->
-                <div class="map-overlay">
-                    <div class="map-container-project">
-                        
-    <div id="project-map-6" style="width:100%; height:300px;"></div>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-    <script>
-        const map = L.map('project-map-6');
-        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            maxZoom: 19
-        }).addTo(map);
-
-        
-        const polygon = L.polygon([[35.8732, -118.5952], [35.1114, -118.1984], [35.4818, -117.9338], [35.8732, -118.5952]]).addTo(map)
-            .bindPopup("Impacts of drought on ecosystem resilience, biodiversity and functioning in the Mediterranean Basin");
-        map.fitBounds(polygon.getBounds());  // automatically fit map to polygon
-        
-    </script>
-    
-                    </div>
-                </div>
+                <img src="../theme/images/proj_6_obsgession.PNG" class="img-fluid mx-auto d-block"
+                    style="max-height: 500px; object-fit: cover;" alt="Obsgession">
             </div>
 
             <!-- Right Column: Project Info -->
             <div class="col-md-6 d-flex flex-column justify-content-center px-4">
-                <h1 class="project-title">Impacts of drought on ecosystem resilience, biodiversity and functioning in the Mediterranean Basin</h1>
-                <p class="project-description"></p>
+                <h1 class="project-title">Obsgession</h1>
+                <p class="project-description">The OBSGESSION project aims to advance our understanding of freshwater and terrestrial biodiversity dynamics and their underlying drivers. Within the ESS group at UZH, we mainly focus on the insufficient characterization of uncertainty in biodiversity data products derived from remote sensing across multiple processing levels. A central challenge is not only to quantify uncertainty but to disentangle and attribute its sources, that is, identifying individual contributors and their relative influence on overall uncertainty budgets. Integrating this uncertainty information with biodiversity products will deepen ecosystem understanding and support more informed conservation planning.Our methods are primarily developed using AVIRIS-4 imaging spectroscopy data, though the framework is designed to generalize other sensors. To develop and validate remote-sensing-derived biodiversity products alongside our deep-learning-based and traditional machine learning approaches for uncertainty propagation and estimation, we collected field data from grassland and forest sites in the Swiss National Park (shown in Figure 1), the French Alps, and a temperate forest ecosystem near Zurich. Our in-situ dataset combines leaf and canopy spectroscopy with lab-derived plant functional traits.</p>
+            </div>
 
-                <!-- Participants -->
-                <h3 class="mt-4">Participants</h3>
-                <ul>
-                    <li>Matilde Torrassa</li>
-                    <li>Prof. Maria J. Santos</li>
+        </div>
+
+        <!-- BOTTOM SECTION: Participants + Keywords -->
+        <div class="row mt-5">
+
+            <!-- Participants -->
+            <div class="col-md-6">
+                <h3>Participants</h3>
+                <ul class="participants-list">
+                    <li>
+                        <a href="https://www.geo.uzh.ch/en/units/ess/staff/tizianakoch" target="_blank">
+                            Dr. Tiziana Koch
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.geo.uzh.ch/en/units/ess/staff/karamankaan.html" target="_blank">
+                            Dr. Kaan Karaman
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.geo.uzh.ch/en/units/rss/staff/andreashueni" target="_blank">
+                            Dr. Andreas Hüni
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.geo.uzh.ch/en/units/ess/staff/christianrossi" target="_blank">
+                            Dr. Christian Rossi
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.geo.uzh.ch/en/units/ess/staff/mariajsantos" target="_blank">
+                            Prof. Maria J. Santos
+                        </a>
+                    </li>
                 </ul>
             </div>
 
+            <!-- Keywords -->
+            <div class="col-md-6">
+                <h3>Keywords</h3>
+                <div>
+                    <span class="badge bg-secondary me-1 mb-1">
+                        Biodiversity Products
+                    </span>
+                    <span class="badge bg-secondary me-1 mb-1">
+                        Remote Sensing Data
+                    </span>
+                    <span class="badge bg-secondary me-1 mb-1">
+                        Uncertainty Estimation
+                    </span>
+                    <span class="badge bg-secondary me-1 mb-1">
+                        Epistemic Uncertainty (Model Uncertainty)
+                    </span>
+                    <span class="badge bg-secondary me-1 mb-1">
+                        Aleatoric Uncertainty (Data Uncertainty)
+                    </span>
+                    <span class="badge bg-secondary me-1 mb-1">
+                        Representation Uncertainty
+                    </span>
+                </div>
+            </div>
 
         </div>
+
+
+    </div>
+</div>
+
+<!-- Funding and DOI -->
+<div class="col-md-6 mt-4">
+    <div class="mt-3 doi-section">
+        <h3>Additional info:</h3> <a href="https://obsgession.eu/about" target="_blank">https://obsgession.eu/about</a>
+        </p>
+
+
     </div>
 
-    <!-- Funding and DOI -->
-    <div class="col-md-6 mt-4">
-        <div class="mt-3 doi-section">
-
-
+    <h4 class="funding-title">Funding Organization</h4>
+    <div class="funding-logos ">
+        <div class="funding-logo-wrapper">
+            <img src="../theme/images/logos_resized/Horizon2020" class="funding-logo" alt="Funding Logo">
         </div>
-
-        <h4 class="funding-title">Funding Organization</h4>
-        <div class="funding-logos ">
-            <div class="funding-logo-wrapper">
-                <img src="../theme/images/logos_resized/pnrr" class="funding-logo"
-                    alt="Funding Logo">
-            </div>
-            <div class="funding-logo-wrapper">
-                <img src="../theme/images/logos_resized/CIMA" class="funding-logo"
-                    alt="Funding Logo">
-            </div>
-            <div class="funding-logo-wrapper">
-                <img src="../theme/images/logos_resized/UNIGEN" class="funding-logo"
-                    alt="Funding Logo">
-            </div>
+        <div class="funding-logo-wrapper">
+            <img src="../theme/images/logos_resized/EU" class="funding-logo" alt="Funding Logo">
+        </div>
+        <div class="funding-logo-wrapper">
+            <img src="../theme/images/logos_resized/swiss" class="funding-logo" alt="Funding Logo">
+        </div>
+        <div class="funding-logo-wrapper">
+            <img src="../theme/images/logos_resized/UKRI" class="funding-logo" alt="Funding Logo">
         </div>
     </div>
+</div>
 
 </div>
 
@@ -160,7 +201,7 @@
             </div>
         </div>
     </footer>
-
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,660 @@
+[
+    {
+        "id": 1,
+        "name": "Pangea",
+        "description": "The tropics are experiencing dramatic changes as a result of climate change and land-use change. Shifts in carbon flux dynamics, water cycling, and species composition are resulting in feedbacks with globally important consequences. However, tropical forests are not a monolith. They vary enormously in terms of species diversity, climate, soils, human impact, and much more. As a result, tropical forest ecosystems will almost certainly vary in response to climate change and land-use change. Yet, these differences remain highly uncertain and poorly understood. In 2024, we engaged over 800 people in an effort to scope a NASA decadal Terrestrial Ecology campaign in the tropics.",
+        "lat": 0,
+        "lon": 0,
+        "tags": [],
+        "participants": [],
+        "funding": [],
+        "polygon": []
+    },
+    {
+        "id": 2,
+        "name": "RediLEEP",
+        "description": "Ecosystem resilience is the capacity of an ecosystem to withstand natural and human-induced changes while maintaining core functions over time and space. Response diversity (RD)—the variability in responses to environmental changes among ecosystem components—is a crucial mechanism underpinning ecosystem resilience. By enhancing adaptive capacity, RD contributes to ecosystem stability and long-term functionality. Despite this, RD remains insufficiently understood and underutilized in ecological management, conservation, and policy design. Researchers have identified several critical uncertainties that hinder the scientific advancement and practical application of RD. In addition, and perhaps due to the research gaps, despite a wide consensus of RD’s importance for ecosystem resilience, RD is often overlooked in policy frameworks, restoration practices, and monitoring and management schemes. ReDiLEEP aims to close these gaps by establishing an interdisciplinary Doctoral Network. By conducting cutting-edge research and equipping doctoral candidates with specialized expertise, ReDiLEEP will catalyse long-term advancements in ecosystem resilience and management. In particular, the program will - build theoretical foundations - develop measurable approaches - connect research to practice. ReDiLEEP will serve as a pivotal initiative, creating a robust science-policy-practice interface that firmly establishes RD as a cornerstone of ecosystem resilience. The program employs an integrated approach, empowering doctoral candidates with a comprehensive learning experience that spans theoretical, empirical, and practical domains. Through interdisciplinary collaboration, ReDiLEEP bridges critical gaps between ecological research, policy design, and practical application. Furthermore, participants will actively contribute to transformative change by aligning their work with the EU Biodiversity Strategy for 2030 and supporting the objectives of the UN Decade on Ecosystem Restoration.",
+        "lat": 0,
+        "lon": 0,
+        "tags": [],
+        "participants": [],
+        "funding": [],
+        "polygon": []
+    },
+    {
+        "id": 3,
+        "name": "EO4Resilience",
+        "description": "In this project we aim to (i) derive a set of EBVs using a combination of existing airborne and spaceborne hyperspectral optical and SAR data, representative of CHIME and ROSE-L upcoming missions, (ii) test the set of EBVs over a gradient of drought exposure represented by three test sites, (iii) develop and test two approaches to integrate multiple EBVs, namely (a) a data-driven approach and (b) a causal inference and discovery approach based on hypothesized relationships and on the discovery of potential new causal links, (iv) simulate and develop a novel integrative metric that captures the trade-offs between photosynthesis and water exchange that responds to the need to couple hydraulic and photosynthesis traits, and (v) use these approaches (single EBV analysis, multiple EBV analysis and novel integrated metric) to examine under which conditions there is biodiversity-enabled drought resilience.",
+        "findings": "Together these results will not only advance our understanding of drought effects, but also enable us to test the use of EBVs towards process understanding, the development of seamless products that will make use of new data delivered by upcoming missions, and to deliver products aimed at the different actors from civil society to land managers, first as early adopters but later as general users, so that our understanding of the biodiversity-enabled ecosystem response and resilience to drought can translate to actionable knowledge across scales.",
+        "img": "proj_3_eo4resilience.png",
+        "lat": 46.4100,
+        "lon": 8.7500,
+        "location": "Laegern, Switzerland; Ticino, Italy; Puéchabon, France",
+        "tags": [
+            "Biodiversity"
+        ],
+        "participants": [
+            {
+                "name": "Dr. Vladimir Wingate",
+                "url": "https://www.geo.uzh.ch/en/units/ess/staff/vladimirwingate"
+            },
+            {
+                "name": "Dr. Martin O. Reader",
+                "url": "https://www.geo.uzh.ch/en/units/ess/staff/martinoliverreader"
+            },
+            {
+                "name": "Prof. Maria J. Santos",
+                "url": "https://www.geo.uzh.ch/en/units/ess/staff/mariajsantos"
+            }
+        ],
+        "info": "https://eo4society.esa.int/projects/eo4resilience/",
+        "funding": [
+            [
+                "esa",
+                "European Space agency"
+            ]
+        ],
+        "polygon": []
+    },
+    {
+        "id": 4,
+        "name": "Scanning4Africa",
+        "description": "Forests and agroforestry systems in the Global South are critical for biodiversity, carbon storage, and local livelihoods. Yet, affordable and sustainable systems to monitor their three-dimensional structure are lack-ing. Current approaches either rely on expensive, high-end sensors operated by external experts, which leads to limited temporal coverage, dependency on external providers, and loss of local data sovereignty. Or on conventional manual methods such as measuring tree diameters and heights with tapes and hypsometers, which are labour-intensive, time-consuming, and unable to capture the full structural complexity of ecosystems. Mission: To enable sustained, high-resolution monitoring of the three-dimensional structure of forests and agroforestry systems in the Global South. We will design and deploy a fully open, low-cost, easy-to-operate mobile laser scanning package, complete with a medium-range laptop, pre-installed processing software, and offline training materials. Coupled with capacity-building programmes and community data govern-ance frameworks, this system will empower local practitioners and researchers to independently collect, process, and own structural data, enabling repeated monitoring over time and contributing to both local management and global observation missions.",
+        "lat": 0,
+        "lon": 0,
+        "tags": [],
+        "participants": [],
+        "funding": [],
+        "polygon": []
+    },
+    {
+        "id": 5,
+        "name": "HiBiDiS",
+        "description": "With this Proposal, SITAEL and its subcontractors answer to ITT and illustrate how the team intends, within the SCOUT initiative, to consolidate the HiBiDiS mission concept, a small satellite hyperspectral LEO Earth Observation mission aiming at assessing Essential Biodiversity Variables of selected ecosystems.",
+        "lat": 0,
+        "lon": 0,
+        "tags": [],
+        "participants": [],
+        "funding": [],
+        "polygon": []
+    },
+    {
+        "id": 6,
+        "name": "Obsgession",
+        "description": "The OBSGESSION project aims to advance our understanding of freshwater and terrestrial biodiversity dynamics and their underlying drivers. Within the ESS group at UZH, we mainly focus on the insufficient characterization of uncertainty in biodiversity data products derived from remote sensing across multiple processing levels. A central challenge is not only to quantify uncertainty but to disentangle and attribute its sources, that is, identifying individual contributors and their relative influence on overall uncertainty budgets. Integrating this uncertainty information with biodiversity products will deepen ecosystem understanding and support more informed conservation planning.Our methods are primarily developed using AVIRIS-4 imaging spectroscopy data, though the framework is designed to generalize other sensors. To develop and validate remote-sensing-derived biodiversity products alongside our deep-learning-based and traditional machine learning approaches for uncertainty propagation and estimation, we collected field data from grassland and forest sites in the Swiss National Park (shown in Figure 1), the French Alps, and a temperate forest ecosystem near Zurich. Our in-situ dataset combines leaf and canopy spectroscopy with lab-derived plant functional traits.",
+        "short_description": "Addressing the challenges of declining freshwater and terrestrial biodiversity..",
+        "img": "proj_6_obsgession.PNG",
+        "lat": 54.5260,
+        "lon": 15.2551,
+        "location": "Europe",
+        "tags": [
+            "Biodiversity",
+            "Sustainable Development"
+        ],
+        "participants": [
+            {
+                "name": "Dr. Tiziana Koch",
+                "url": "https://www.geo.uzh.ch/en/units/ess/staff/tizianakoch"
+            },
+            {
+                "name": "Dr. Kaan Karaman",
+                "url": "https://www.geo.uzh.ch/en/units/ess/staff/karamankaan.html"
+            },
+            {
+                "name": "Dr. Andreas Hüni",
+                "url": "https://www.geo.uzh.ch/en/units/rss/staff/andreashueni"
+            },
+            {
+                "name": "Dr. Christian Rossi",
+                "url": "https://www.geo.uzh.ch/en/units/ess/staff/christianrossi"
+            },
+            {
+                "name": "Prof. Maria J. Santos",
+                "url": "https://www.geo.uzh.ch/en/units/ess/staff/mariajsantos"
+            }
+        ],
+        "keywords": [
+            "Biodiversity Products",
+            "Remote Sensing Data",
+            "Uncertainty Estimation",
+            "Epistemic Uncertainty (Model Uncertainty)",
+            "Aleatoric Uncertainty (Data Uncertainty)",
+            "Representation Uncertainty"
+        ],
+        "info": "https://obsgession.eu/about",
+        "funding": [
+            [
+                "Horizon2020",
+                "Horizon Europe"
+            ],
+            [
+                "EU",
+                "European Union"
+            ],
+            [
+                "swiss",
+                "Swiss Confederation"
+            ],
+            [
+                "UKRI",
+                "UK Research and Innovation"
+            ]
+        ],
+        "polygon": [
+            [
+                47.4576,
+                8.4468
+            ],
+            [
+                47.4870,
+                8.4473
+            ],
+            [
+                47.4882,
+                8.2975
+            ],
+            [
+                47.4576,
+                8.4468
+            ]
+        ]
+    },
+    {
+        "id": 7,
+        "name": "Sustainability Discourses",
+        "description": "Understanding and tracking urban sustainability discourses. We develop automated models to analyse urban sustainability discourses based on media data. In particular, we are interested in the rise and fall of different topics, who positions themselves in which way and in the stories that are told about urban sustainability over time. We also look back - how has the discourse around urban sustainability developed over time?",
+        "short_description": "Understanding and tracking urban sustainability discourses..",
+        "img": "river.jpg",
+        "lat": 47.377964,
+        "lon": 8.551129,
+        "location": "Europe",
+        "tags": [
+            "Sustainable Development"
+        ],
+        "participants": [
+            {
+                "name": "Myriam Pham-Truffert",
+                "url": "https://www.geo.uzh.ch/en/units/ess/staff/myriamphamtruffert"
+            },
+            {
+                "name": "Dr. Mario Angst"
+            }
+        ],
+        "info": "https://sustainability.discourses.ch",
+        "funding": [
+            [
+                "DIZH",
+                "Digitalization Initiative of the Zurich Higher Education Ins"
+            ]
+        ],
+        "polygon": []
+    },
+    {
+        "id": 8,
+        "name": "The Circle Future Earth",
+        "description": "The strategic goal, 'A living Earth Observation (EO) ecosystem for a living planet,' necessitates investigating new EO domains based on scientific users' needs. This comprehensive approach must cover the entire EO ecosystem, integrating satellite fleets, in-situ data, applications, and digital infrastructure. The focus is on identifying innovative methods, addressing gaps, and proposing solutions grounded in scientific requirements. The development of a science-driven EO reference architecture, prioritized across different EO systems, and analyzed over varying timelines (today, 2030, 2050), will support a dynamic, evolving EO ecosystem to meet future demands (EO blueprint looking at the time horizon 2050).Within the project, we perform a literature review to assess the current use and future scientific needs of EO to answer the following questions: Where/how do transitions in ecosystems occur? What is the land biosphere response to human activities?",
+        "findings": "Identifying and understanding ecosystem transitions is key to local and global sustainability, and EO has a unique role in monitoring and modelling these transitions. Current usage of EO to study critical transitions focuses on landscape to regional scale transitions, using low to medium spatial resolution imagery. Given the new Sentinel-2C and 2D missions, Landsat Next, and the VIIRS sensors replacing MODIS capabilities, comparable data should be available for several decades (Ustin & Middleton, 2024). This consistency of data, providing long-term harmonised datasets, combined with expanding future EO capacity and usability, are key to the more comprehensive analyses of ecosystem transitions. Currently, measurement requirements are met for ecosystem extent and most types of ecosystem transition (Geller et al., 2023; Skidmore et al., 2020). For individual transitions, and their drivers, very high spatial resolution imagery, high spectral resolution and dense time series for temporal resolution can give more precise and timely classifications. In situ data at scales relevant to the transitions are key to understanding the underlying processes and validating EO and models. Perhaps the most important requirement given the long-term nature of many transitions is the length and continuity of data. Sustained observation enables detection of slow or subtle changes, enables us to form accurate baselines from which to detect change, and allows the retrospective analysis of transitions and their antecedent conditions.The land biosphere response to human activity is a critical area for global sustainability, and one in which EO has a unique role to play. However, the complexity of quantifying the land biosphere, and monitoring and attributing its responses, means that multiple indicators are required, across different types of remote sensing. Current EO capacity is sufficient to assess many of the facets of the land biosphere and its response to human activity (Geller et al., 2022; Skidmore et al., 2020). Some identified gaps include the need for global wall-to-wall LiDAR, higher spectral resolution at high to medium resolutions (Geller et al., 2022), and freely available very high resolution imagery (Ustin & Middleton, 2024). However, EO-relevant in situ data is perhaps more important for the calibration and validation of the vast amount of imagery available (Cavender-Bares et al., 2022). Similarly, improving the accessibility and usability of data through analysis ready products, harmonisation and data fusion can reduce the complexity of analysis and streamline the scientific process. Finally, maintaining continuity of consistent products is a critical requirement for assessing the long-term impacts of humans and climate change on the biosphere.",
+        "img": "proj_8_circle.png",
+        "lat": 0,
+        "lon": 0,
+        "location": "Global",
+        "tags": [
+            "Biodiversity",
+            "Ecosystem Services"
+        ],
+        "participants": [
+            {
+                "name": "Dr. Martin O. Reader",
+                "url": "https://www.geo.uzh.ch/en/units/ess/staff/martinoliverreader"
+            },
+            {
+                "name": "Prof. Maria J. Santos",
+                "url": "https://www.geo.uzh.ch/en/units/ess/staff/mariajsantos"
+            }
+        ],
+        "funding": [
+            [
+                "esa",
+                "European Space agency"
+            ]
+        ],
+        "polygon": [
+            [
+                35.8732,
+                -118.5952
+            ],
+            [
+                35.1114,
+                -118.1984
+            ],
+            [
+                35.4818,
+                -117.9338
+            ],
+            [
+                35.8732,
+                -118.5952
+            ]
+        ]
+    },
+    {
+        "id": 9,
+        "name": "Modelling biodiversity and ecosystem services loss scenarios",
+        "description": "Swiss Re Foundation, AXA Research Fund, and WWF as enabling partners, with EY as a service contributor to Swiss Re, are excited to announce the launch of the BES (Biodiversity and Ecosystem Services) Scenarios Modelling Initiative.Better understanding the impacts of biodiversity loss and ecosystem degradation is important for our society and economy. Healthy ecosystems underpin all the UN SDGs; and our economies and businesses remain dependent on the robustness of natural assets. The BES Scenarios Modelling Initiative aims to provide meaningful and quantified BES futures at a highly granular level and agglomerate data to provide globally applicable regional views.",
+        "findings": "We establish response curves where land use has a robust relationship with BES service indicators, then indicate turning points where impacts of land use shift or accelerate. We found most relationships included these turning points, and that land use had consistent negative relationships with biodiversity metrics and regulating service supply, and positive relationships with most material services. However, only grazing, livestock, and access to nature had consistent robust relationships with land use. Land use may also have legacy effects on BES. We found that incorporating historical land use change very consistently improved model fit and parsimony, but only to a small degree. Finally, we selected sustainable, business as usual, regional rivalry and high growth future land use scenarios to input into our models, to compare the impacts on BES. However, given the robust models found, typically with positive relationships between land use and ecosystem services, higher land use in certain areas or scenarios led to higher ecosystem service values. We believe BES scenarios will contribute valuable input to policy makers, businesses, consumers and civil society on expected states of biodiversity and ecosystem services. They will support actions to improve biodiversity and ecosystem services.'The scenarios may shed further light about potential tipping points of ecosystem services – which is crucial information for livelihoods and businesses.'",
+        "img": "proj_9_modellingbiodiv.png",
+        "lat": 0,
+        "lon": 0,
+        "location": "Global",
+        "tags": [
+            "Biodiversity",
+            "Ecosystem Services",
+            "Sustainable Development"
+        ],
+        "participants": [
+            {
+                "name": "Dr. Martin O. Reader",
+                "url": "https://www.geo.uzh.ch/en/units/ess/staff/martinoliverreader"
+            },
+            {
+                "name": "Prof. Maria J. Santos",
+                "url": "https://www.geo.uzh.ch/en/units/ess/staff/mariajsantos"
+            }
+        ],
+        "info": "https://www.swissre.com/institute/partnerships/modelling-biodiversity-ecosystem-boost-resilience.html",
+        "funding": [
+            [
+                "WWF",
+                "World Wildlife Fund"
+            ],
+            [
+                "Swiss-Re",
+                "Swiss-Re"
+            ],
+            [
+                "AXA",
+                "Insurance and pension provisioning in Switzerland"
+            ],
+            [
+                "EY",
+                "Ernst & Yung"
+            ]
+        ],
+        "polygon": [
+            [
+                35.8732,
+                -118.5952
+            ],
+            [
+                35.1114,
+                -118.1984
+            ],
+            [
+                35.4818,
+                -117.9338
+            ],
+            [
+                35.8732,
+                -118.5952
+            ]
+        ]
+    },
+    {
+        "id": 10,
+        "name": "ACTNOW",
+        "description": "The Amazon forest is the largest tropical forest and is undergoing rapid transformations because of climate change. The uptake of carbon is affected by increasing temperatures, elevated CO2 concentrations, but also by the more frequent occurrence of large-scale droughts. Earlier studies have highlighted differences across the spatially heterogeneous basin, but in situ measurements over this large area are sparse. Here we will combine data from multiple satellite instruments to unravel processes of carbon exchange across a range of time scales. This will deliver key constraints for improving climate model projections and contribute to capacity for monitoring reforestation and deforestation activities.",
+        "lat": -3.4653,
+        "lon": -62.2159,
+        "location": "Amazon",
+        "tags": [
+            "Biodiversty"
+        ],
+        "participants": [
+            {
+                "name": "Carlijin"
+            },
+            {
+                "name": "Gerbrand"
+            },
+            {
+                "name": "Stefan"
+            },
+            {
+                "name": "Prof. Maria J. Santos",
+                "url": "https://www.geo.uzh.ch/en/units/ess/staff/mariajsantos"
+            }
+        ],
+        "info": "https://www.nwo.nl/en/projects/enwgo002030",
+        "funding": [
+            [
+                "NWO",
+                "replace me"
+            ]
+        ],
+        "polygon": []
+    },
+    {
+        "id": 11,
+        "name": "BioScape",
+        "description": "BioSCape is a research project that uses remote sensing and field data to understand the distribution, function, and importance of biodiversity on land and in the water in the Greater Cape Floristic Region (GCFR), one of the world’s 36 biodiversity hotspots.",
+        "lat": -30.559483,
+        "lon": 22.937506,
+        "location": "South Africa",
+        "tags": [
+            "Biodiversty"
+        ],
+        "participants": [
+            {
+                "name": "Dr. Andreas Hüni",
+                "url": "https://www.geo.uzh.ch/en/department/Staff/andreashueni"
+            },
+            {
+                "name": "Prof. Maria J. Santos",
+                "url": "https://www.geo.uzh.ch/en/units/ess/staff/mariajsantos"
+            }
+        ],
+        "info": "https://www.bioscape.io/",
+        "funding": [
+            [
+                "UZH",
+                "University of Zurich"
+            ]
+        ],
+        "polygon": []
+    },
+    {
+        "id": 12,
+        "name": "Demand4Restoration",
+        "description": "Demand4Restoration is a research project that explores how integrating local, regional, and national restoration demands can improve the social and ecological effectiveness of restoration in Madagascar. By analyzing over 30 existing interventions and co-creating new ones with communities, the project generates practical insights to guide more equitable and sustainable restoration policies across the country.",
+        "img": "proj_12_dmandxrest.JPG",
+        "lat": -18.766947,
+        "lon": 46.869106,
+        "location": "Madagascar",
+        "tags": [
+            "Biodiversity",
+            "Climate Change",
+            "Ecosystem Services"
+        ],
+        "participants": [
+            {
+                "name": "Dr Estelle Raveloaritiana",
+                "url": "https://www.geo.uzh.ch/en/units/ess/staff/estelleraveloaritiana"
+            },
+            {
+                "name": "Sebastian"
+            },
+            {
+                "name": "Dr. Dominic Martin"
+            },
+            {
+                "name": "Prof. Maria J. Santos",
+                "url": "https://www.geo.uzh.ch/en/units/ess/staff/mariajsantos"
+            }
+        ],
+        "info": "https://demand4restoration.mg/",
+        "funding": [
+            [
+                "D4R.png",
+                "Madagascar",
+                "swiss",
+                "Swiss National Foundation"
+            ]
+        ],
+        "polygon": []
+    },
+    {
+        "id": 13,
+        "name": "Green4Climate",
+        "description": "Green4Clim uses the UZH Irchel campus as a real-world laboratory to investigate how vegetation composition and distribution may mitigate carbon impacts of campus activities. The project focuses on direct and indirect effects of vegetation management on CO2 sequestration through photosynthesis (direct) and on the energy consumption of buildings through shading and cooling effects (indirect). With a combination of leaf, soil and airborne drone measurements the current CO2 sources and sinks as well as temperature hot spots of all natural areas on Irchel Campus are quantified. Experiments will identify the locations, plant species and communities particularly suitable for binding CO2 and reducing temperatures. Green4Clim results will help design a management strategy for carbon mitigation that can also be transferred to urban areas to achieve climate and biodiversity goals. With Green4Clim, UZH will be at the forefront of real-world lab initiatives on how to use campus vegetation to reduce CO2 emissions.",
+        "lat": 47.3769,
+        "lon": 8.5417,
+        "location": "Zurich",
+        "tags": [
+            "Biodiversity",
+            "Climate Change",
+            "Ecosystem Services"
+        ],
+        "participants": [
+            {
+                "name": "Dr. Raleigh Grysko"
+            },
+            {
+                "name": "Dr. Eugenie Paul-Limoges"
+            },
+            {
+                "name": "Prof. Maria J. Santos",
+                "url": "https://www.geo.uzh.ch/en/units/ess/staff/mariajsantos"
+            }
+        ],
+        "info": "https://www.geo.uzh.ch/en/units/ess/news/Green4Clim.html",
+        "funding": [
+            [
+                "UZH",
+                "UZH"
+            ]
+        ],
+        "polygon": []
+    },
+    {
+        "id": 14,
+        "name": "Spatial Sustainable Finance",
+        "description": "Biodiversity loss and water scarcity are occurring at an unprecedented pace. Environmental degradation caused by economic activity induces long-lasting consequences affecting global health, food security and quality, poverty, migration and armed conflicts. Private-sector investors that follow sustainable finance principles represent an important lever to address global environmental and social challenges, as they can contribute to switching the production and consumption systems and counteract environmental degradation. Sustainable financial operations rely on sensitive, harmonized and objective environmental data, but as of today, even the most transparent companies disclose almost no data on their environmental impact and exposures. This project aims to develop a scientifically robust approach for rating companies with regard to their contribution and exposure to environmental degradation. The tremendous improvement and increased availability of Earth observation and complementary geodata offer enormous yet underused potential to assess biodiversity and water systems changes. Unlocking this potential provides new avenues to globally monitor biodiversity losses and water risks caused by company activities.",
+        "img": "proj_14_spacial_sus_fin.png",
+        "lat": 0,
+        "lon": 0,
+        "location": "Global",
+        "tags": [
+            "Biodiversity"
+        ],
+        "participants": [
+            {
+                "name": "Dr. Leon Hauser",
+                "url": "https://www.geo.uzh.ch/en/units/ess/staff/leonhauser"
+            },
+            {
+                "name": "Alex"
+            },
+            {
+                "name": "Prof. Maria J. Santos",
+                "url": "https://www.geo.uzh.ch/en/units/ess/staff/mariajsantos"
+            }
+        ],
+        "info": "https://www.spatial-sustainable-finance.ch/",
+        "doi_data": "",
+        "doi_pub": "",
+        "funding": [
+            [
+                "bridge",
+                "replace me"
+            ]
+        ],
+        "polygon": []
+    },
+    {
+        "id": 15,
+        "name": "RESPONSE: Human Traits",
+        "lat": 0.961883,
+        "lon": 114.554848,
+        "location": "Borneo",
+        "tags": [
+            "Biodiversity",
+            "Climate Change"
+        ],
+        "participants": [
+            {
+                "name": "Pérez Nathalia",
+                "url": "https://www.geo.uzh.ch/en/units/ess/staff/nathaliaperez"
+            },
+            {
+                "name": "Dr. Epping Maarten",
+                "url": "https://www.geo.uzh.ch/en/units/ess/staff/maarteneppinga"
+            },
+            {
+                "name": "Prof. Meredith Schuman"
+            },
+            {
+                "name": "Prof. Maria J. Santos",
+                "url": "https://www.geo.uzh.ch/en/units/ess/staff/mariajsantos"
+            }
+        ],
+        "info": "https://www.plantsciences.uzh.ch/en/research/fellowships/response/projects.html",
+        "funding": [
+            [
+                "EU_response",
+                "EU response"
+            ],
+            [
+                "URPP",
+                "URPP Global Change and Biodiversity"
+            ]
+        ],
+        "polygon": []
+    },
+    {
+        "id": 16,
+        "name": "RESPONSE: Charcoal in SSA",
+        "lat": 0.0000,
+        "lon": 20.0000,
+        "location": "Sub-Sharan Africa",
+        "tags": [
+            "Biodiversity",
+            "Climate Change"
+        ],
+        "participants": [
+            {
+                "name": "Dr. Sakala Dbwiso",
+                "url": "https://www.geo.uzh.ch/en/department/Staff/dabwisosakala"
+            },
+            {
+                "name": "Prof. Maria J. Santos",
+                "url": "https://www.geo.uzh.ch/en/units/ess/staff/mariajsantos"
+            }
+        ],
+        "info": "https://www.plantsciences.uzh.ch/en/research/fellowships/response/projects.html",
+        "funding": [
+            [
+                "UZH",
+                "UZH"
+            ],
+            [
+                "EU_response",
+                "EU response"
+            ]
+        ],
+        "polygon": []
+    },
+    {
+        "id": 17,
+        "name": "Impacts of drought on ecosystem resilience, biodiversity and functioning in the Mediterranean Basin",
+        "lat": 36.0000,
+        "lon": 18.0000,
+        "location": "Mediterranean Basin",
+        "tags": [
+            "Biodiversity",
+            "Climate Change"
+        ],
+        "participants": [
+            {
+                "name": "Dr. Matilde Torrassa"
+            },
+            {
+                "name": "Edoardo"
+            },
+            {
+                "name": "Prof. Maria J. Santos",
+                "url": "https://www.geo.uzh.ch/en/units/ess/staff/mariajsantos"
+            }
+        ],
+        "funding": [
+            [
+                "pnrr",
+                "Piano Nazionale di Ripresa and Resilienza"
+            ],
+            [
+                "CIMA",
+                "CIMA research foundation"
+            ],
+            [
+                "UNIGEN",
+                "University of Genova"
+            ]
+        ],
+        "polygon": [
+            [
+                35.8732,
+                -118.5952
+            ],
+            [
+                35.1114,
+                -118.1984
+            ],
+            [
+                35.4818,
+                -117.9338
+            ],
+            [
+                35.8732,
+                -118.5952
+            ]
+        ]
+    },
+    {
+        "id": 18,
+        "name": "SES archetypes",
+        "lat": 0,
+        "lon": 0,
+        "location": "Global",
+        "tags": [
+            "Biodiversity",
+            "Climate Change"
+        ],
+        "participants": [
+            {
+                "name": "Gupta Aman"
+            },
+            {
+                "name": "Dr. Epping Maarten",
+                "url": "https://www.geo.uzh.ch/en/units/ess/staff/maarteneppinga"
+            },
+            {
+                "name": "Prof. Maria J. Santos",
+                "url": "https://www.geo.uzh.ch/en/units/ess/staff/mariajsantos"
+            }
+        ],
+        "funding": [
+            [
+                "URPP",
+                "URPP Global Change and Biodiversity"
+            ]
+        ],
+        "polygon": []
+    },
+    {
+        "id": 19,
+        "name": "Moisture recycling in Amazon",
+        "lat": -3.4653,
+        "lon": -62.2159,
+        "location": "Amazon",
+        "tags": [
+            "Biodiversity",
+            "Climate Change"
+        ],
+        "participants": [
+            {
+                "name": "Dr. Nguyen Kien",
+                "url": "https://www.geo.uzh.ch/en/units/ess/staff/nguyenkien"
+            },
+            {
+                "name": "Prof. Maria J. Santos",
+                "url": "https://www.geo.uzh.ch/en/units/ess/staff/mariajsantos"
+            }
+        ],
+        "funding": [
+            [
+                "UZH",
+                "UZH"
+            ]
+        ],
+        "polygon": []
+    }
+]

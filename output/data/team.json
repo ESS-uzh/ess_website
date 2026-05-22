@@ -1,0 +1,170 @@
+[
+    {
+        "name": "Prof. Maria J. Santos",
+        "role": "Project Lead",
+        "img": "maria_santos.png",
+        "group": ""
+    },
+    {
+        "name": "Dr. Maarten Eppinga",
+        "role": "Research Scientist",
+        "img": "maarten_eppinga.png",
+        "group": ""
+    },
+    {
+        "name": "Dr. Diego Villamaina",
+        "role": "Engineer",
+        "img": "diego_villamaina.png",
+        "group": ""
+    },
+    {
+        "name": "Rita Ott",
+        "role": "HR",
+        "img": "rita_ott.png",
+        "group": ""
+    },
+    {
+        "name": "Martin Reader",
+        "role": "Postdoc",
+        "img": "martin_reader.png",
+        "group": "Biodiversity and Social-Ecological Processes"
+    },
+    {
+        "name": "Dabwiso Sakala",
+        "role": "PhD",
+        "img": "dabwiso_sakala.png",
+        "group": "Biodiversity and Social-Ecological Processes"
+    },
+    {
+        "name": "Kien Nguyen",
+        "role": "PhD",
+        "img": "kien_nguyen.png",
+        "group": "Biodiversity and Social-Ecological Processes"
+    },
+    {
+        "name": "Aman Gupta",
+        "role": "PhD",
+        "img": "aman_gupta.png",
+        "group": "Biodiversity and Social-Ecological Processes"
+    },
+    {
+        "name": "Nathalia Cardenas",
+        "role": "PhD",
+        "img": "nathalia_cardenas.png",
+        "group": "Biodiversity and Social-Ecological Processes"
+    },
+    {
+        "name": "Matilde Torrassa",
+        "role": "PhD",
+        "img": "matilde_torrassa.png",
+        "group": "Earth System Processes"
+    },
+    {
+        "name": "Carlijn Jalink",
+        "role": "PhD",
+        "img": "carlijn_jalink.png",
+        "group": "Earth System Processes"
+    },
+    {
+        "name": "John O'Connor",
+        "role": "PhD",
+        "img": "john_oconnor.png",
+        "group": "Earth System Processes"
+    },
+    {
+        "name": "Raleigh Grysko",
+        "role": "Postdoc",
+        "img": "raleigh_grysko.png",
+        "group": "Earth System Processes"
+    },
+    {
+        "name": "Eugenie Limoges",
+        "role": "Postdoc",
+        "img": "eugenie_limoges.png",
+        "group": "Earth System Processes"
+    },
+    {
+        "name": "Estelle Raveloaritiana",
+        "role": "Postdoc",
+        "img": "estelle_raveloaritiana.png",
+        "group": "Social-Ecological Processes"
+    },
+    {
+        "name": "Marlene Barille",
+        "role": "BSc researcher",
+        "img": "marlena_barille.png",
+        "group": "Social-Ecological Processes"
+    },
+    {
+        "name": "Moritz Wissmann",
+        "role": "BSc researcher",
+        "img": "moritz_wissmann.png",
+        "group": "Social-Ecological Processes"
+    },
+    {
+        "name": "Christian Rossi",
+        "role": "Postdoc",
+        "img": "christian_rossi.png",
+        "group": "Remote sensing of Biodiversity"
+    },
+    {
+        "name": "Tiziana Koch",
+        "role": "Postdoc",
+        "img": "tiziana_koch.png",
+        "group": "Remote sensing of Biodiversity"
+    },
+    {
+        "name": "Kaan Karaman",
+        "role": "Postdoc",
+        "img": "kaan_karaman.png",
+        "group": "Remote sensing of Biodiversity"
+    },
+    {
+        "name": "Jennifer Adams",
+        "role": "Postdoc",
+        "img": "jennifer_adams.png",
+        "group": "Remote sensing of Biodiversity"
+    },
+    {
+        "name": "Nargiz Ruter",
+        "role": "PhD",
+        "img": "nargiz_ruter.png",
+        "group": "Remote sensing of Biodiversity"
+    },
+    {
+        "name": "Carmen Meiller",
+        "role": "PhD",
+        "img": "carmen_meiller.png",
+        "group": "Remote sensing"
+    },
+    {
+        "name": "Mike Werferli",
+        "role": "PhD",
+        "img": "mike_werferli.png",
+        "group": "Remote sensing"
+    },
+    {
+        "name": "Leon Hauser",
+        "role": "Postdoc",
+        "img": "leon_hauser.png",
+        "group": "Sustainable Finance"
+    },
+    {
+        "name": "Mario Angst",
+        "role": "Asst Professor",
+        "img": "mario_angst.png",
+        "group": "Urban System"
+    },
+    {
+        "name": "Myriam Truffert",
+        "role": "PhD",
+        "img": "myriam_truffert.png",
+        "group": "Urban System"
+    },
+    {
+        "name": "Hoda Allahbakhshi",
+        "role": "Group Leader",
+        "img": "hoda_allahbakhshi.png",
+        "group": "Urban System"
+    }
+]

@@ -7,9 +7,8 @@ with open("content/data/projects.json") as f:
     projects = json.load(f)
 
 # Output folder for pre-generated maps
-maps_dir = Path("content/maps")
-maps_dir.mkdir(exist_ok=True)
-
+maps_dir = Path("content/static/maps")
+maps_dir.mkdir(parents=True, exist_ok=True)
 
 def compute_centroid(polygon):
     lats, lons = zip(*polygon)

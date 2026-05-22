@@ -87,11 +87,9 @@ TOPIC_URL = "topics/{slug}.html"
 PROJECTPAGE_SAVE_AS = "projects/{slug}.html"
 PROJECTPAGE_URL = "projects/{slug}.html"
 
-STATIC_PATHS = ["maps", "images", "extra"]
-EXTRA_PATH_METADATA = {
-    "images": {"path": "images"},
-}
-IGNORE_FILES = ["*_map.html"]
+STATIC_PATHS = ["maps", "images", "extra", "data"]
+
+READERS = {'html': None}
 
 # Topic pages
 TOPICPAGE_SAVE_AS = "topics/{slug}.html"

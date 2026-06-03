@@ -60,7 +60,7 @@
     <!-- Research Topics Section -->
     <div class="my-5">
         <div class="section-title-container">
-            <h3 class="section-title">Explore our research topics</h3>
+            <h3 class="section-title">Explore research topics</h3>
         </div>
 
         <div class="row row-cols-1 row-cols-md-2 g-4 mb-5">
@@ -81,7 +81,7 @@
     <!-- Project Map Section -->
     <div class="my-5">
         <div class="section-title-container">
-            <h3 class="section-title">Our Research around the world</h3>
+            <h3 class="section-title">Research around the world</h3>
             <p class="text-center text-muted">
                 Explore where our research projects are located
             </p>
@@ -91,7 +91,9 @@
     </div>
 
     <section class="global-projects">
-        <h2 class="section-title">Global Projects</h2>
+        <div class="section-title-container text-center">
+            <h2 class="section-title">Global Projects</h2>
+        </div>
 
         <div class="global-grid">
             {% for project in all_projects if project.lat == 0 and project.lon == 0 %}

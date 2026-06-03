@@ -1,9 +1,10 @@
 # load_topics.py
-
 import json
 from pelican import signals
 from pelican.contents import Page
 from slugify import slugify
+
+from plugins.project_config import REGION_ORDER
 
 TOPICS_FILE = "content/data/topics.json"
 PROJECTS_FILE = "content/data/projects.json"
@@ -27,6 +28,12 @@ def generate_topic_pages(generator):
 
         # Filter projects for this topic
         topic_projects = [p for p in projects if topic_name in p.get("tags", [])]
+
+        # Filter projects for this topic
+        topic_projects = sorted(
+            topic_projects,
+            key=lambda p: REGION_ORDER.get(p.get("region", "Global"), 999),
+        )
 
         # Build map data (skip global locations)
         project_map_data = []  # always define it
@@ -87,32 +94,16 @@ def generate_topic_pages(generator):
         # Attach fields used in the template
         page.topic_name = topic_name
         page.topic_description = topic.get("description", "")
+
+        # DEBUG projects order
+        # print(f"\nTOPIC: {topic_name}")
+        # for p in topic_projects:
+        #    print(f"{p.get('region')} - {p.get('name')}")
+
         page.projects = topic_projects
         page.topic_map = topic_map_html
 
         generator.pages.append(page)
-
-
-# def generate_map_for_single_project(project):
-#    """Fallback map function for generate_project.py."""
-#    polygon_js = ""
-#    if project.get("polygon"):
-#        polygon_js = f"L.polygon({project['polygon']}).addTo(map);"
-#
-#    return f"""
-#    <div id="project-map-{project['id']}" style="width:100%; height:300px;"></div>
-#    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-#    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-#    <script>
-#        const map = L.map('project-map-{project['id']}').setView([{project.get('lat',0)}, {project.get('lon',0)}], 5);
-#        L.tileLayer('https://tile.openstreetmap.org/{{z}}/{{x}}/{{y}}.png', {{
-#            maxZoom: 19
-#        }}).addTo(map);
-#        L.marker([{project.get('lat',0)}, {project.get('lon',0)}]).addTo(map)
-#         .bindPopup("{project.get('name')}");
-#        {polygon_js}
-#    </script>
-#    """
 
 
 def generate_map_for_single_project(project):

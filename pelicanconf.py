@@ -1,9 +1,14 @@
 # pelicanconf.py
-from slugify import slugify
-import os, sys, json
+import sys
 from pathlib import Path
 
-sys.path.insert(0, os.path.abspath("."))
+ROOT = Path(__file__).resolve().parent
+sys.path.insert(0, str(ROOT))
+
+from slugify import slugify
+import os, json
+from pathlib import Path
+from plugins.project_config import REGION_ORDER
 from generate_maps import generate_map
 
 # Paths
@@ -24,16 +29,22 @@ def normalize_project(p):
         "id": p.get("id"),
         "name": p.get("name", "Untitled"),
         "description": p.get("description") or p.get("short_description", ""),
+        "short_description": p.get("short_description", ""),
         "img": p.get("img", ""),
         "lat": p.get("lat"),
         "lon": p.get("lon"),
+        "region": p.get("region", "Global"),
         "location": p.get("location", ""),
         "tags": p.get("tags", []),
         "polygon": p.get("polygon", []),
     }
 
 
-ALL_PROJECTS = [normalize_project(p) for p in ALL_PROJECTS]
+UNSORTED_PROJECTS = [normalize_project(p) for p in ALL_PROJECTS]
+
+ALL_PROJECTS = sorted(
+    UNSORTED_PROJECTS, key=lambda p: REGION_ORDER.get(p.get("region", "Global"), 999)
+)
 
 # Select by IDs instead of sorting
 RECENT_PROJECT_IDS = [8, 6]  # manual choice
@@ -89,7 +100,7 @@ PROJECTPAGE_URL = "projects/{slug}.html"
 
 STATIC_PATHS = ["maps", "images", "extra", "data"]
 
-READERS = {'html': None}
+READERS = {"html": None}
 
 # Topic pages
 TOPICPAGE_SAVE_AS = "topics/{slug}.html"

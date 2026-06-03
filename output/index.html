@@ -89,7 +89,7 @@ class="active" aria-current="true"                     aria-label="Slide 1">
                                 alt="Obsgession">
                             <div class="carousel-text">
                                 <h3>Obsgession</h3>
-                                <p></p>
+                                <p>Integrating Uncertainty into Biodiversity Monitoring and Conservation Planning</p>
                             </div>
                         </div>
                     </a>
@@ -101,7 +101,7 @@ class="active" aria-current="true"                     aria-label="Slide 1">
                                 alt="The Circle Future Earth">
                             <div class="carousel-text">
                                 <h3>The Circle Future Earth</h3>
-                                <p></p>
+                                <p>Next-Generation Earth Observation for Ecosystem Change Detection</p>
                             </div>
                         </div>
                     </a>
@@ -126,7 +126,7 @@ class="active" aria-current="true"                     aria-label="Slide 1">
     <!-- Research Topics Section -->
     <div class="my-5">
         <div class="section-title-container">
-            <h3 class="section-title">Explore our research topics</h3>
+            <h3 class="section-title">Explore research topics</h3>
         </div>
 
         <div class="row row-cols-1 row-cols-md-2 g-4 mb-5">
@@ -172,7 +172,7 @@ class="active" aria-current="true"                     aria-label="Slide 1">
     <!-- Project Map Section -->
     <div class="my-5">
         <div class="section-title-container">
-            <h3 class="section-title">Our Research around the world</h3>
+            <h3 class="section-title">Research around the world</h3>
             <p class="text-center text-muted">
                 Explore where our research projects are located
             </p>
@@ -182,7 +182,9 @@ class="active" aria-current="true"                     aria-label="Slide 1">
     </div>
 
     <section class="global-projects">
-        <h2 class="section-title">Global Projects</h2>
+        <div class="section-title-container text-center">
+            <h2 class="section-title">Global Projects</h2>
+        </div>
 
         <div class="global-grid">
             <a class="global-card" href="./projects/1.html">
@@ -193,18 +195,18 @@ class="active" aria-current="true"                     aria-label="Slide 1">
                 </div>
 
             </a>
-            <a class="global-card" href="./projects/2.html">
-
-                <div class="global-card-content">
-                    <h3>RediLEEP</h3>
-
-                </div>
-
-            </a>
             <a class="global-card" href="./projects/4.html">
 
                 <div class="global-card-content">
                     <h3>Scanning4Africa</h3>
+
+                </div>
+
+            </a>
+            <a class="global-card" href="./projects/2.html">
+
+                <div class="global-card-content">
+                    <h3>RediLEEP</h3>
 
                 </div>
 
@@ -292,21 +294,32 @@ class="active" aria-current="true"                     aria-label="Slide 1">
 
         const projects = [
         {
+            id: 7,
+        name: `Sustainability Discourses`,
+        img: `./theme/images/proj_7_sus_dis.png`,
+        description: `Understanding and tracking urban sustainability discourses. We develop automated models to analyse urban sustainability discourses based on media data. In particular, we are interested in the rise and fall of different t`,
+        lat: 47.377964,
+        lon: 8.551129,
+        location: `Europe`,
+        tags: ["Sustainable Development"],
+        polygon: []
+        },
+        {
+            id: 13,
+        name: `Green4Climate`,
+        img: `./theme/images/`,
+        description: `Green4Clim uses the UZH Irchel campus as a real-world laboratory to investigate how vegetation composition and distribution may mitigate carbon impacts of campus activities. The project focuses on direct and indirect eff`,
+        lat: 47.3769,
+        lon: 8.5417,
+        location: `Zurich`,
+        tags: ["Biodiversity", "Climate Change", "Ecosystem Services"],
+        polygon: []
+        },
+        {
             id: 1,
         name: `Pangea`,
         img: `./theme/images/`,
         description: `The tropics are experiencing dramatic changes as a result of climate change and land-use change. Shifts in carbon flux dynamics, water cycling, and species composition are resulting in feedbacks with globally important c`,
-        lat: 0,
-        lon: 0,
-        location: ``,
-        tags: [],
-        polygon: []
-        },
-        {
-            id: 2,
-        name: `RediLEEP`,
-        img: `./theme/images/`,
-        description: `Ecosystem resilience is the capacity of an ecosystem to withstand natural and human-induced changes while maintaining core functions over time and space. Response diversity (RD)—the variability in responses to environmen`,
         lat: 0,
         lon: 0,
         location: ``,
@@ -325,28 +338,6 @@ class="active" aria-current="true"                     aria-label="Slide 1">
         polygon: []
         },
         {
-            id: 4,
-        name: `Scanning4Africa`,
-        img: `./theme/images/`,
-        description: `Forests and agroforestry systems in the Global South are critical for biodiversity, carbon storage, and local livelihoods. Yet, affordable and sustainable systems to monitor their three-dimensional structure are lack-ing`,
-        lat: 0,
-        lon: 0,
-        location: ``,
-        tags: [],
-        polygon: []
-        },
-        {
-            id: 5,
-        name: `HiBiDiS`,
-        img: `./theme/images/`,
-        description: `With this Proposal, SITAEL and its subcontractors answer to ITT and illustrate how the team intends, within the SCOUT initiative, to consolidate the HiBiDiS mission concept, a small satellite hyperspectral LEO Earth Obse`,
-        lat: 0,
-        lon: 0,
-        location: ``,
-        tags: [],
-        polygon: []
-        },
-        {
             id: 6,
         name: `Obsgession`,
         img: `./theme/images/proj_6_obsgession.PNG`,
@@ -358,36 +349,14 @@ class="active" aria-current="true"                     aria-label="Slide 1">
         polygon: [[47.4576, 8.4468], [47.487, 8.4473], [47.4882, 8.2975], [47.4576, 8.4468]]
         },
         {
-            id: 7,
-        name: `Sustainability Discourses`,
-        img: `./theme/images/proj_7_sus_dis.png`,
-        description: `Understanding and tracking urban sustainability discourses. We develop automated models to analyse urban sustainability discourses based on media data. In particular, we are interested in the rise and fall of different t`,
-        lat: 47.377964,
-        lon: 8.551129,
-        location: `Europe`,
-        tags: ["Sustainable Development"],
-        polygon: []
-        },
-        {
-            id: 8,
-        name: `The Circle Future Earth`,
-        img: `./theme/images/proj_8_circle.png`,
-        description: `The strategic goal, &#39;A living Earth Observation (EO) ecosystem for a living planet,&#39; necessitates investigating new EO domains based on scientific users&#39; needs. This comprehensive approach must cover the entire EO ecosys`,
-        lat: 0,
-        lon: 0,
-        location: `Global`,
-        tags: ["Biodiversity", "Ecosystem Services"],
-        polygon: [[35.8732, -118.5952], [35.1114, -118.1984], [35.4818, -117.9338], [35.8732, -118.5952]]
-        },
-        {
-            id: 9,
-        name: `Modelling biodiversity and ecosystem services loss scenarios`,
-        img: `./theme/images/proj_9_modellingbiodiv.png`,
-        description: `Swiss Re Foundation, AXA Research Fund, and WWF as enabling partners, with EY as a service contributor to Swiss Re, are excited to announce the launch of the BES (Biodiversity and Ecosystem Services) Scenarios Modelling`,
-        lat: 0,
-        lon: 0,
-        location: `Global`,
-        tags: ["Biodiversity", "Ecosystem Services", "Sustainable Development"],
+            id: 17,
+        name: `Impacts of drought on ecosystem resilience, biodiversity and functioning in the Mediterranean Basin`,
+        img: `./theme/images/`,
+        description: ``,
+        lat: 36.0,
+        lon: 18.0,
+        location: `Mediterranean Basin`,
+        tags: ["Biodiversity", "Climate Change"],
         polygon: [[35.8732, -118.5952], [35.1114, -118.1984], [35.4818, -117.9338], [35.8732, -118.5952]]
         },
         {
@@ -399,6 +368,28 @@ class="active" aria-current="true"                     aria-label="Slide 1">
         lon: -62.2159,
         location: `Amazon`,
         tags: ["Biodiversty"],
+        polygon: []
+        },
+        {
+            id: 19,
+        name: `Moisture recycling in Amazon`,
+        img: `./theme/images/`,
+        description: ``,
+        lat: -3.4653,
+        lon: -62.2159,
+        location: `Amazon`,
+        tags: ["Biodiversity", "Climate Change"],
+        polygon: []
+        },
+        {
+            id: 4,
+        name: `Scanning4Africa`,
+        img: `./theme/images/`,
+        description: `Forests and agroforestry systems in the Global South are critical for biodiversity, carbon storage, and local livelihoods. Yet, affordable and sustainable systems to monitor their three-dimensional structure are lack-ing`,
+        lat: 0,
+        lon: 0,
+        location: ``,
+        tags: [],
         polygon: []
         },
         {
@@ -424,25 +415,14 @@ class="active" aria-current="true"                     aria-label="Slide 1">
         polygon: []
         },
         {
-            id: 13,
-        name: `Green4Climate`,
+            id: 16,
+        name: `RESPONSE: Charcoal in SSA`,
         img: `./theme/images/`,
-        description: `Green4Clim uses the UZH Irchel campus as a real-world laboratory to investigate how vegetation composition and distribution may mitigate carbon impacts of campus activities. The project focuses on direct and indirect eff`,
-        lat: 47.3769,
-        lon: 8.5417,
-        location: `Zurich`,
-        tags: ["Biodiversity", "Climate Change", "Ecosystem Services"],
-        polygon: []
-        },
-        {
-            id: 14,
-        name: `Spatial Sustainable Finance`,
-        img: `./theme/images/proj_14_spacial_sus_fin.png`,
-        description: `Biodiversity loss and water scarcity are occurring at an unprecedented pace. Environmental degradation caused by economic activity induces long-lasting consequences affecting global health, food security and quality, pov`,
-        lat: 0,
-        lon: 0,
-        location: `Global`,
-        tags: ["Biodiversity"],
+        description: ``,
+        lat: 0.0,
+        lon: 20.0,
+        location: `Sub-Sharan Africa`,
+        tags: ["Biodiversity", "Climate Change"],
         polygon: []
         },
         {
@@ -457,26 +437,59 @@ class="active" aria-current="true"                     aria-label="Slide 1">
         polygon: []
         },
         {
-            id: 16,
-        name: `RESPONSE: Charcoal in SSA`,
+            id: 2,
+        name: `RediLEEP`,
         img: `./theme/images/`,
-        description: ``,
-        lat: 0.0,
-        lon: 20.0,
-        location: `Sub-Sharan Africa`,
-        tags: ["Biodiversity", "Climate Change"],
+        description: `Ecosystem resilience is the capacity of an ecosystem to withstand natural and human-induced changes while maintaining core functions over time and space. Response diversity (RD)—the variability in responses to environmen`,
+        lat: 0,
+        lon: 0,
+        location: ``,
+        tags: [],
         polygon: []
         },
         {
-            id: 17,
-        name: `Impacts of drought on ecosystem resilience, biodiversity and functioning in the Mediterranean Basin`,
+            id: 5,
+        name: `HiBiDiS`,
         img: `./theme/images/`,
-        description: ``,
-        lat: 36.0,
-        lon: 18.0,
-        location: `Mediterranean Basin`,
-        tags: ["Biodiversity", "Climate Change"],
+        description: `With this Proposal, SITAEL and its subcontractors answer to ITT and illustrate how the team intends, within the SCOUT initiative, to consolidate the HiBiDiS mission concept, a small satellite hyperspectral LEO Earth Obse`,
+        lat: 0,
+        lon: 0,
+        location: ``,
+        tags: [],
+        polygon: []
+        },
+        {
+            id: 8,
+        name: `The Circle Future Earth`,
+        img: `./theme/images/proj_8_circle.png`,
+        description: `The strategic goal, &#39;A living Earth Observation (EO) ecosystem for a living planet,&#39; necessitates investigating new EO domains based on scientific users&#39; needs. This comprehensive approach must cover the entire EO ecosys`,
+        lat: 0,
+        lon: 0,
+        location: `Global`,
+        tags: ["Biodiversity", "Ecosystem Services"],
         polygon: [[35.8732, -118.5952], [35.1114, -118.1984], [35.4818, -117.9338], [35.8732, -118.5952]]
+        },
+        {
+            id: 9,
+        name: `Modelling biodiversity and ecosystem services loss scenarios`,
+        img: `./theme/images/proj_9_modellingbiodiv.png`,
+        description: `Swiss Re Foundation, AXA Research Fund, and WWF as enabling partners, with EY as a service contributor to Swiss Re, are excited to announce the launch of the BES (Biodiversity and Ecosystem Services) Scenarios Modelling`,
+        lat: 0,
+        lon: 0,
+        location: `Global`,
+        tags: ["Biodiversity", "Ecosystem Services", "Sustainable Development"],
+        polygon: [[35.8732, -118.5952], [35.1114, -118.1984], [35.4818, -117.9338], [35.8732, -118.5952]]
+        },
+        {
+            id: 14,
+        name: `Spatial Sustainable Finance`,
+        img: `./theme/images/proj_14_spacial_sus_fin.png`,
+        description: `Biodiversity loss and water scarcity are occurring at an unprecedented pace. Environmental degradation caused by economic activity induces long-lasting consequences affecting global health, food security and quality, pov`,
+        lat: 0,
+        lon: 0,
+        location: `Global`,
+        tags: ["Biodiversity"],
+        polygon: []
         },
         {
             id: 18,
@@ -486,17 +499,6 @@ class="active" aria-current="true"                     aria-label="Slide 1">
         lat: 0,
         lon: 0,
         location: `Global`,
-        tags: ["Biodiversity", "Climate Change"],
-        polygon: []
-        },
-        {
-            id: 19,
-        name: `Moisture recycling in Amazon`,
-        img: `./theme/images/`,
-        description: ``,
-        lat: -3.4653,
-        lon: -62.2159,
-        location: `Amazon`,
         tags: ["Biodiversity", "Climate Change"],
         polygon: []
         },

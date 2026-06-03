@@ -79,10 +79,10 @@
                         <input list="location-suggestions" class="form-control" id="location-filter"
                             placeholder="Search by location">
                         <datalist id="location-suggestions">
-                            <option value="Global"></option>
-                            <option value="Global"></option>
-                            <option value="Madagascar"></option>
                             <option value="Zurich"></option>
+                            <option value="Madagascar"></option>
+                            <option value="Global"></option>
+                            <option value="Global"></option>
                         </datalist>
                     </div>
 
@@ -110,7 +110,7 @@
                 maxZoom: 19
             }).addTo(map);
 
-            const projects = [{"name": "Demand4Restoration", "lat": -18.766947, "lon": 46.869106, "id": 12, "polygon": []}, {"name": "Green4Climate", "lat": 47.3769, "lon": 8.5417, "id": 13, "polygon": []}];
+            const projects = [{"name": "Green4Climate", "lat": 47.3769, "lon": 8.5417, "id": 13, "polygon": []}, {"name": "Demand4Restoration", "lat": -18.766947, "lon": 46.869106, "id": 12, "polygon": []}];
             projects.forEach(p => {
                 if (p.lat && p.lon) {
                     L.marker([p.lat, p.lon]).addTo(map)
@@ -132,6 +132,30 @@
     <div class="col-12">
         <h5 class="card-title mb-3">Projects</h5>
         <div id="project-list" class="project-list">
+            <div class="card project-card mb-2" data-location="Zurich">
+                <div class="card-body d-flex flex-column flex-md-row justify-content-between align-items-start">
+                    <div>
+                        <h6 class="card-title mb-1">Green4Climate</h6>
+                        <p class="card-text mb-1">
+                            <small>Location: Zurich</small><br>
+                        </p>
+                    </div>
+                    <a href="../../projects/13.html" class="btn btn-outline-primary">View
+                        Project</a>
+                </div>
+            </div>
+            <div class="card project-card mb-2" data-location="Madagascar">
+                <div class="card-body d-flex flex-column flex-md-row justify-content-between align-items-start">
+                    <div>
+                        <h6 class="card-title mb-1">Demand4Restoration</h6>
+                        <p class="card-text mb-1">
+                            <small>Location: Madagascar</small><br>
+                        </p>
+                    </div>
+                    <a href="../../projects/12.html" class="btn btn-outline-primary">View
+                        Project</a>
+                </div>
+            </div>
             <div class="card project-card mb-2" data-location="Global">
                 <div class="card-body d-flex flex-column flex-md-row justify-content-between align-items-start">
                     <div>
@@ -153,30 +177,6 @@
                         </p>
                     </div>
                     <a href="../../projects/9.html" class="btn btn-outline-primary">View
-                        Project</a>
-                </div>
-            </div>
-            <div class="card project-card mb-2" data-location="Madagascar">
-                <div class="card-body d-flex flex-column flex-md-row justify-content-between align-items-start">
-                    <div>
-                        <h6 class="card-title mb-1">Demand4Restoration</h6>
-                        <p class="card-text mb-1">
-                            <small>Location: Madagascar</small><br>
-                        </p>
-                    </div>
-                    <a href="../../projects/12.html" class="btn btn-outline-primary">View
-                        Project</a>
-                </div>
-            </div>
-            <div class="card project-card mb-2" data-location="Zurich">
-                <div class="card-body d-flex flex-column flex-md-row justify-content-between align-items-start">
-                    <div>
-                        <h6 class="card-title mb-1">Green4Climate</h6>
-                        <p class="card-text mb-1">
-                            <small>Location: Zurich</small><br>
-                        </p>
-                    </div>
-                    <a href="../../projects/13.html" class="btn btn-outline-primary">View
                         Project</a>
                 </div>
             </div>

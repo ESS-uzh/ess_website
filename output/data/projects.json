@@ -5,6 +5,7 @@
         "description": "The tropics are experiencing dramatic changes as a result of climate change and land-use change. Shifts in carbon flux dynamics, water cycling, and species composition are resulting in feedbacks with globally important consequences. However, tropical forests are not a monolith. They vary enormously in terms of species diversity, climate, soils, human impact, and much more. As a result, tropical forest ecosystems will almost certainly vary in response to climate change and land-use change. Yet, these differences remain highly uncertain and poorly understood. In 2024, we engaged over 800 people in an effort to scope a NASA decadal Terrestrial Ecology campaign in the tropics.",
         "lat": 0,
         "lon": 0,
+        "region": "Europe",
         "tags": [],
         "participants": [],
         "funding": [],
@@ -16,6 +17,7 @@
         "description": "Ecosystem resilience is the capacity of an ecosystem to withstand natural and human-induced changes while maintaining core functions over time and space. Response diversity (RD)—the variability in responses to environmental changes among ecosystem components—is a crucial mechanism underpinning ecosystem resilience. By enhancing adaptive capacity, RD contributes to ecosystem stability and long-term functionality. Despite this, RD remains insufficiently understood and underutilized in ecological management, conservation, and policy design. Researchers have identified several critical uncertainties that hinder the scientific advancement and practical application of RD. In addition, and perhaps due to the research gaps, despite a wide consensus of RD’s importance for ecosystem resilience, RD is often overlooked in policy frameworks, restoration practices, and monitoring and management schemes. ReDiLEEP aims to close these gaps by establishing an interdisciplinary Doctoral Network. By conducting cutting-edge research and equipping doctoral candidates with specialized expertise, ReDiLEEP will catalyse long-term advancements in ecosystem resilience and management. In particular, the program will - build theoretical foundations - develop measurable approaches - connect research to practice. ReDiLEEP will serve as a pivotal initiative, creating a robust science-policy-practice interface that firmly establishes RD as a cornerstone of ecosystem resilience. The program employs an integrated approach, empowering doctoral candidates with a comprehensive learning experience that spans theoretical, empirical, and practical domains. Through interdisciplinary collaboration, ReDiLEEP bridges critical gaps between ecological research, policy design, and practical application. Furthermore, participants will actively contribute to transformative change by aligning their work with the EU Biodiversity Strategy for 2030 and supporting the objectives of the UN Decade on Ecosystem Restoration.",
         "lat": 0,
         "lon": 0,
+        "region": "Global",
         "tags": [],
         "participants": [],
         "funding": [],
@@ -29,6 +31,7 @@
         "img": "proj_3_eo4resilience.png",
         "lat": 46.4100,
         "lon": 8.7500,
+        "region": "Europe",
         "location": "Laegern, Switzerland; Ticino, Italy; Puéchabon, France",
         "tags": [
             "Biodiversity"
@@ -62,6 +65,7 @@
         "description": "Forests and agroforestry systems in the Global South are critical for biodiversity, carbon storage, and local livelihoods. Yet, affordable and sustainable systems to monitor their three-dimensional structure are lack-ing. Current approaches either rely on expensive, high-end sensors operated by external experts, which leads to limited temporal coverage, dependency on external providers, and loss of local data sovereignty. Or on conventional manual methods such as measuring tree diameters and heights with tapes and hypsometers, which are labour-intensive, time-consuming, and unable to capture the full structural complexity of ecosystems. Mission: To enable sustained, high-resolution monitoring of the three-dimensional structure of forests and agroforestry systems in the Global South. We will design and deploy a fully open, low-cost, easy-to-operate mobile laser scanning package, complete with a medium-range laptop, pre-installed processing software, and offline training materials. Coupled with capacity-building programmes and community data govern-ance frameworks, this system will empower local practitioners and researchers to independently collect, process, and own structural data, enabling repeated monitoring over time and contributing to both local management and global observation missions.",
         "lat": 0,
         "lon": 0,
+        "region": "Africa",
         "tags": [],
         "participants": [],
         "funding": [],
@@ -73,6 +77,7 @@
         "description": "With this Proposal, SITAEL and its subcontractors answer to ITT and illustrate how the team intends, within the SCOUT initiative, to consolidate the HiBiDiS mission concept, a small satellite hyperspectral LEO Earth Observation mission aiming at assessing Essential Biodiversity Variables of selected ecosystems.",
         "lat": 0,
         "lon": 0,
+        "region": "Global",
         "tags": [],
         "participants": [],
         "funding": [],
@@ -82,10 +87,11 @@
         "id": 6,
         "name": "Obsgession",
         "description": "The OBSGESSION project aims to advance our understanding of freshwater and terrestrial biodiversity dynamics and their underlying drivers. Within the ESS group at UZH, we mainly focus on the insufficient characterization of uncertainty in biodiversity data products derived from remote sensing across multiple processing levels. A central challenge is not only to quantify uncertainty but to disentangle and attribute its sources, that is, identifying individual contributors and their relative influence on overall uncertainty budgets. Integrating this uncertainty information with biodiversity products will deepen ecosystem understanding and support more informed conservation planning.Our methods are primarily developed using AVIRIS-4 imaging spectroscopy data, though the framework is designed to generalize other sensors. To develop and validate remote-sensing-derived biodiversity products alongside our deep-learning-based and traditional machine learning approaches for uncertainty propagation and estimation, we collected field data from grassland and forest sites in the Swiss National Park (shown in Figure 1), the French Alps, and a temperate forest ecosystem near Zurich. Our in-situ dataset combines leaf and canopy spectroscopy with lab-derived plant functional traits.",
-        "short_description": "Addressing the challenges of declining freshwater and terrestrial biodiversity..",
+        "short_description": "Integrating Uncertainty into Biodiversity Monitoring and Conservation Planning",
         "img": "proj_6_obsgession.PNG",
         "lat": 54.5260,
         "lon": 15.2551,
+        "region": "Europe",
         "location": "Europe",
         "tags": [
             "Biodiversity",
@@ -167,6 +173,7 @@
         "img": "proj_7_sus_dis.png",
         "lat": 47.377964,
         "lon": 8.551129,
+        "region": "CH",
         "location": "Europe",
         "tags": [
             "Sustainable Development"
@@ -193,10 +200,12 @@
         "id": 8,
         "name": "The Circle Future Earth",
         "description": "The strategic goal, 'A living Earth Observation (EO) ecosystem for a living planet,' necessitates investigating new EO domains based on scientific users' needs. This comprehensive approach must cover the entire EO ecosystem, integrating satellite fleets, in-situ data, applications, and digital infrastructure. The focus is on identifying innovative methods, addressing gaps, and proposing solutions grounded in scientific requirements. The development of a science-driven EO reference architecture, prioritized across different EO systems, and analyzed over varying timelines (today, 2030, 2050), will support a dynamic, evolving EO ecosystem to meet future demands (EO blueprint looking at the time horizon 2050).Within the project, we perform a literature review to assess the current use and future scientific needs of EO to answer the following questions: Where/how do transitions in ecosystems occur? What is the land biosphere response to human activities?",
+        "short_description": "Next-Generation Earth Observation for Ecosystem Change Detection",
         "findings": "Identifying and understanding ecosystem transitions is key to local and global sustainability, and EO has a unique role in monitoring and modelling these transitions. Current usage of EO to study critical transitions focuses on landscape to regional scale transitions, using low to medium spatial resolution imagery. Given the new Sentinel-2C and 2D missions, Landsat Next, and the VIIRS sensors replacing MODIS capabilities, comparable data should be available for several decades (Ustin & Middleton, 2024). This consistency of data, providing long-term harmonised datasets, combined with expanding future EO capacity and usability, are key to the more comprehensive analyses of ecosystem transitions. Currently, measurement requirements are met for ecosystem extent and most types of ecosystem transition (Geller et al., 2023; Skidmore et al., 2020). For individual transitions, and their drivers, very high spatial resolution imagery, high spectral resolution and dense time series for temporal resolution can give more precise and timely classifications. In situ data at scales relevant to the transitions are key to understanding the underlying processes and validating EO and models. Perhaps the most important requirement given the long-term nature of many transitions is the length and continuity of data. Sustained observation enables detection of slow or subtle changes, enables us to form accurate baselines from which to detect change, and allows the retrospective analysis of transitions and their antecedent conditions.The land biosphere response to human activity is a critical area for global sustainability, and one in which EO has a unique role to play. However, the complexity of quantifying the land biosphere, and monitoring and attributing its responses, means that multiple indicators are required, across different types of remote sensing. Current EO capacity is sufficient to assess many of the facets of the land biosphere and its response to human activity (Geller et al., 2022; Skidmore et al., 2020). Some identified gaps include the need for global wall-to-wall LiDAR, higher spectral resolution at high to medium resolutions (Geller et al., 2022), and freely available very high resolution imagery (Ustin & Middleton, 2024). However, EO-relevant in situ data is perhaps more important for the calibration and validation of the vast amount of imagery available (Cavender-Bares et al., 2022). Similarly, improving the accessibility and usability of data through analysis ready products, harmonisation and data fusion can reduce the complexity of analysis and streamline the scientific process. Finally, maintaining continuity of consistent products is a critical requirement for assessing the long-term impacts of humans and climate change on the biosphere.",
         "img": "proj_8_circle.png",
         "lat": 0,
         "lon": 0,
+        "region": "Global",
         "location": "Global",
         "tags": [
             "Biodiversity",
@@ -245,6 +254,7 @@
         "img": "proj_9_modellingbiodiv.png",
         "lat": 0,
         "lon": 0,
+        "region": "Global",
         "location": "Global",
         "tags": [
             "Biodiversity",
@@ -305,6 +315,7 @@
         "description": "The Amazon forest is the largest tropical forest and is undergoing rapid transformations because of climate change. The uptake of carbon is affected by increasing temperatures, elevated CO2 concentrations, but also by the more frequent occurrence of large-scale droughts. Earlier studies have highlighted differences across the spatially heterogeneous basin, but in situ measurements over this large area are sparse. Here we will combine data from multiple satellite instruments to unravel processes of carbon exchange across a range of time scales. This will deliver key constraints for improving climate model projections and contribute to capacity for monitoring reforestation and deforestation activities.",
         "lat": -3.4653,
         "lon": -62.2159,
+        "region": "Americas",
         "location": "Amazon",
         "tags": [
             "Biodiversty"
@@ -339,6 +350,7 @@
         "description": "BioSCape is a research project that uses remote sensing and field data to understand the distribution, function, and importance of biodiversity on land and in the water in the Greater Cape Floristic Region (GCFR), one of the world’s 36 biodiversity hotspots.",
         "lat": -30.559483,
         "lon": 22.937506,
+        "region": "Africa",
         "location": "South Africa",
         "tags": [
             "Biodiversty"
@@ -369,6 +381,7 @@
         "img": "proj_12_dmandxrest.JPG",
         "lat": -18.766947,
         "lon": 46.869106,
+        "region": "Africa",
         "location": "Madagascar",
         "tags": [
             "Biodiversity",
@@ -408,6 +421,7 @@
         "description": "Green4Clim uses the UZH Irchel campus as a real-world laboratory to investigate how vegetation composition and distribution may mitigate carbon impacts of campus activities. The project focuses on direct and indirect effects of vegetation management on CO2 sequestration through photosynthesis (direct) and on the energy consumption of buildings through shading and cooling effects (indirect). With a combination of leaf, soil and airborne drone measurements the current CO2 sources and sinks as well as temperature hot spots of all natural areas on Irchel Campus are quantified. Experiments will identify the locations, plant species and communities particularly suitable for binding CO2 and reducing temperatures. Green4Clim results will help design a management strategy for carbon mitigation that can also be transferred to urban areas to achieve climate and biodiversity goals. With Green4Clim, UZH will be at the forefront of real-world lab initiatives on how to use campus vegetation to reduce CO2 emissions.",
         "lat": 47.3769,
         "lon": 8.5417,
+        "region": "CH",
         "location": "Zurich",
         "tags": [
             "Biodiversity",
@@ -442,6 +456,7 @@
         "img": "proj_14_spacial_sus_fin.png",
         "lat": 0,
         "lon": 0,
+        "region": "Global",
         "location": "Global",
         "tags": [
             "Biodiversity"
@@ -475,6 +490,7 @@
         "name": "RESPONSE: Human Traits",
         "lat": 0.961883,
         "lon": 114.554848,
+        "region": "Asia",
         "location": "Borneo",
         "tags": [
             "Biodiversity",
@@ -515,6 +531,7 @@
         "name": "RESPONSE: Charcoal in SSA",
         "lat": 0.0000,
         "lon": 20.0000,
+        "region": "Africa",
         "location": "Sub-Sharan Africa",
         "tags": [
             "Biodiversity",
@@ -548,6 +565,7 @@
         "name": "Impacts of drought on ecosystem resilience, biodiversity and functioning in the Mediterranean Basin",
         "lat": 36.0000,
         "lon": 18.0000,
+        "region": "Europe",
         "location": "Mediterranean Basin",
         "tags": [
             "Biodiversity",
@@ -603,6 +621,7 @@
         "name": "SES archetypes",
         "lat": 0,
         "lon": 0,
+        "region": "Global",
         "location": "Global",
         "tags": [
             "Biodiversity",
@@ -634,6 +653,7 @@
         "name": "Moisture recycling in Amazon",
         "lat": -3.4653,
         "lon": -62.2159,
+        "region": "Americas",
         "location": "Amazon",
         "tags": [
             "Biodiversity",

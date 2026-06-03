@@ -79,13 +79,13 @@
                         <input list="location-suggestions" class="form-control" id="location-filter"
                             placeholder="Search by location">
                         <datalist id="location-suggestions">
-                            <option value="Madagascar"></option>
                             <option value="Zurich"></option>
-                            <option value="Borneo"></option>
-                            <option value="Sub-Sharan Africa"></option>
                             <option value="Mediterranean Basin"></option>
-                            <option value="Global"></option>
                             <option value="Amazon"></option>
+                            <option value="Madagascar"></option>
+                            <option value="Sub-Sharan Africa"></option>
+                            <option value="Borneo"></option>
+                            <option value="Global"></option>
                         </datalist>
                     </div>
 
@@ -113,7 +113,7 @@
                 maxZoom: 19
             }).addTo(map);
 
-            const projects = [{"name": "Demand4Restoration", "lat": -18.766947, "lon": 46.869106, "id": 12, "polygon": []}, {"name": "Green4Climate", "lat": 47.3769, "lon": 8.5417, "id": 13, "polygon": []}, {"name": "RESPONSE: Human Traits", "lat": 0.961883, "lon": 114.554848, "id": 15, "polygon": []}, {"name": "RESPONSE: Charcoal in SSA", "lat": 0.0, "lon": 20.0, "id": 16, "polygon": []}, {"name": "Impacts of drought on ecosystem resilience, biodiversity and functioning in the Mediterranean Basin", "lat": 36.0, "lon": 18.0, "id": 17, "polygon": [[35.8732, -118.5952], [35.1114, -118.1984], [35.4818, -117.9338], [35.8732, -118.5952]]}, {"name": "Moisture recycling in Amazon", "lat": -3.4653, "lon": -62.2159, "id": 19, "polygon": []}];
+            const projects = [{"name": "Green4Climate", "lat": 47.3769, "lon": 8.5417, "id": 13, "polygon": []}, {"name": "Impacts of drought on ecosystem resilience, biodiversity and functioning in the Mediterranean Basin", "lat": 36.0, "lon": 18.0, "id": 17, "polygon": [[35.8732, -118.5952], [35.1114, -118.1984], [35.4818, -117.9338], [35.8732, -118.5952]]}, {"name": "Moisture recycling in Amazon", "lat": -3.4653, "lon": -62.2159, "id": 19, "polygon": []}, {"name": "Demand4Restoration", "lat": -18.766947, "lon": 46.869106, "id": 12, "polygon": []}, {"name": "RESPONSE: Charcoal in SSA", "lat": 0.0, "lon": 20.0, "id": 16, "polygon": []}, {"name": "RESPONSE: Human Traits", "lat": 0.961883, "lon": 114.554848, "id": 15, "polygon": []}];
             projects.forEach(p => {
                 if (p.lat && p.lon) {
                     L.marker([p.lat, p.lon]).addTo(map)
@@ -135,18 +135,6 @@
     <div class="col-12">
         <h5 class="card-title mb-3">Projects</h5>
         <div id="project-list" class="project-list">
-            <div class="card project-card mb-2" data-location="Madagascar">
-                <div class="card-body d-flex flex-column flex-md-row justify-content-between align-items-start">
-                    <div>
-                        <h6 class="card-title mb-1">Demand4Restoration</h6>
-                        <p class="card-text mb-1">
-                            <small>Location: Madagascar</small><br>
-                        </p>
-                    </div>
-                    <a href="../../projects/12.html" class="btn btn-outline-primary">View
-                        Project</a>
-                </div>
-            </div>
             <div class="card project-card mb-2" data-location="Zurich">
                 <div class="card-body d-flex flex-column flex-md-row justify-content-between align-items-start">
                     <div>
@@ -156,30 +144,6 @@
                         </p>
                     </div>
                     <a href="../../projects/13.html" class="btn btn-outline-primary">View
-                        Project</a>
-                </div>
-            </div>
-            <div class="card project-card mb-2" data-location="Borneo">
-                <div class="card-body d-flex flex-column flex-md-row justify-content-between align-items-start">
-                    <div>
-                        <h6 class="card-title mb-1">RESPONSE: Human Traits</h6>
-                        <p class="card-text mb-1">
-                            <small>Location: Borneo</small><br>
-                        </p>
-                    </div>
-                    <a href="../../projects/15.html" class="btn btn-outline-primary">View
-                        Project</a>
-                </div>
-            </div>
-            <div class="card project-card mb-2" data-location="Sub-Sharan Africa">
-                <div class="card-body d-flex flex-column flex-md-row justify-content-between align-items-start">
-                    <div>
-                        <h6 class="card-title mb-1">RESPONSE: Charcoal in SSA</h6>
-                        <p class="card-text mb-1">
-                            <small>Location: Sub-Sharan Africa</small><br>
-                        </p>
-                    </div>
-                    <a href="../../projects/16.html" class="btn btn-outline-primary">View
                         Project</a>
                 </div>
             </div>
@@ -195,18 +159,6 @@
                         Project</a>
                 </div>
             </div>
-            <div class="card project-card mb-2" data-location="Global">
-                <div class="card-body d-flex flex-column flex-md-row justify-content-between align-items-start">
-                    <div>
-                        <h6 class="card-title mb-1">SES archetypes</h6>
-                        <p class="card-text mb-1">
-                            <small>Location: Global</small><br>
-                        </p>
-                    </div>
-                    <a href="../../projects/18.html" class="btn btn-outline-primary">View
-                        Project</a>
-                </div>
-            </div>
             <div class="card project-card mb-2" data-location="Amazon">
                 <div class="card-body d-flex flex-column flex-md-row justify-content-between align-items-start">
                     <div>
@@ -216,6 +168,54 @@
                         </p>
                     </div>
                     <a href="../../projects/19.html" class="btn btn-outline-primary">View
+                        Project</a>
+                </div>
+            </div>
+            <div class="card project-card mb-2" data-location="Madagascar">
+                <div class="card-body d-flex flex-column flex-md-row justify-content-between align-items-start">
+                    <div>
+                        <h6 class="card-title mb-1">Demand4Restoration</h6>
+                        <p class="card-text mb-1">
+                            <small>Location: Madagascar</small><br>
+                        </p>
+                    </div>
+                    <a href="../../projects/12.html" class="btn btn-outline-primary">View
+                        Project</a>
+                </div>
+            </div>
+            <div class="card project-card mb-2" data-location="Sub-Sharan Africa">
+                <div class="card-body d-flex flex-column flex-md-row justify-content-between align-items-start">
+                    <div>
+                        <h6 class="card-title mb-1">RESPONSE: Charcoal in SSA</h6>
+                        <p class="card-text mb-1">
+                            <small>Location: Sub-Sharan Africa</small><br>
+                        </p>
+                    </div>
+                    <a href="../../projects/16.html" class="btn btn-outline-primary">View
+                        Project</a>
+                </div>
+            </div>
+            <div class="card project-card mb-2" data-location="Borneo">
+                <div class="card-body d-flex flex-column flex-md-row justify-content-between align-items-start">
+                    <div>
+                        <h6 class="card-title mb-1">RESPONSE: Human Traits</h6>
+                        <p class="card-text mb-1">
+                            <small>Location: Borneo</small><br>
+                        </p>
+                    </div>
+                    <a href="../../projects/15.html" class="btn btn-outline-primary">View
+                        Project</a>
+                </div>
+            </div>
+            <div class="card project-card mb-2" data-location="Global">
+                <div class="card-body d-flex flex-column flex-md-row justify-content-between align-items-start">
+                    <div>
+                        <h6 class="card-title mb-1">SES archetypes</h6>
+                        <p class="card-text mb-1">
+                            <small>Location: Global</small><br>
+                        </p>
+                    </div>
+                    <a href="../../projects/18.html" class="btn btn-outline-primary">View
                         Project</a>
                 </div>
             </div>

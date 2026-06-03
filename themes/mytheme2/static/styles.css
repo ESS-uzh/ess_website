@@ -1,421 +1,590 @@
-/* Light background for the entire page */
-.page-background {
-    background-color: #eafaea;
-    /* Light green */
-    min-height: 100vh;
-    /* Ensure full height */
-    padding: 30px 0;
-    /* Some spacing around */
+:root {
+    --bg: #f4f7fb;
+    --surface: #ffffff;
+    --text: #0f172a;
+    --muted: #64748b;
+    --primary: #2563eb;
+    --border: #e2e8f0;
+
+    /* Typography Scale */
+    --text-hero: 3.5rem;
+    --text-section: 2rem;
+    --text-card-title: 1.25rem;
+    --text-body: 1rem;
+    --text-small: 0.875rem;
 }
 
-/* Footer Styling */
+/* =========================
+   PAGE BACKGROUND
+========================= */
+
+.page-background {
+    background: linear-gradient(to bottom, var(--bg), #eef3f9);
+    min-height: 100vh;
+    padding: 2rem 0;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
 .footer {
-    background-color: rgba(0, 0, 0, 0.8);
-    /* Dark background with transparency */
-    color: white;
+    background-color: var(--text);
+    color: var(--surface);
     text-align: center;
+    font-size: var(--text-small);
+    padding: 2rem 1rem;
 }
 
 .footer a {
-    color: #f8d210;
-    /* Light yellow for links */
+    color: var(--primary);
     text-decoration: none;
+    transition: color 0.2s ease;
 }
 
 .footer a:hover {
+    color: var(--primary-dark);
     text-decoration: underline;
 }
 
-/* Logo Styling */
+
+/* =========================
+   FOOTER LOGO
+========================= */
+
 .footer-logo {
-    max-height: 200px;
-    max-width: 200px;
-    /* Adjust logo size */
-    margin: 0 10px;
-    /* Spacing between logos */
+    max-height: 120px;
+    max-width: 120px;
+    margin: 0 0.75rem;
 }
 
 
-/* Make navbar light grey with transparency */
+/* =========================
+   NAVBAR
+========================= */
+
 .navbar {
-    background-color: #f1f1f1 !important;
-    /* Light grey with 80% opacity */
-    backdrop-filter: blur(200px);
-    /* Optional: Adds a subtle blur effect */
+    background: rgba(255, 255, 255, 0.9) !important;
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+    padding: 1rem 2rem;
 }
 
+/* =========================
+   NAVBAR LINKS
+========================= */
 
-/* Style navbar links */
 .navbar-nav .nav-link {
-    font-size: 1.5rem;
-    /* Increase font size */
-    font-weight: bold;
-    color: #007BFF;
+    font-size: var(--text-body);
+    font-weight: 600;
+    color: var(--text);
+    transition: color 0.2s ease;
 }
 
 .navbar-nav .nav-link:hover {
-    color: #0056b3;
-    /* Darker blue on hover */
+    color: var(--primary);
 }
 
-/* Style the navbar title */
+
+/* =========================
+   NAVBAR TITLE
+========================= */
+
 .navbar-title {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #007BFF;
-}
-
-.navbar-title:hover {
-    color: #0056b3;
+    font-size: var(--text-card-title);
+    font-weight: 700;
+    color: var(--text);
     text-decoration: none;
 }
 
-/* Style dropdown menu */
-.dropdown-menu {
-    background-color: #f8f9fa;
-    border-radius: 5px;
+.navbar-title:hover {
+    color: var(--primary);
 }
 
-/* Hover effect on dropdown items */
-.dropdown-item:hover {
-    background-color: #007bff;
-    color: white;
+/* =========================
+   DROPDOWN MENU
+========================= */
+
+.dropdown-menu {
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 0.5rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
+
+.dropdown-item {
+    font-size: var(--text-body);
+    color: var(--text);
+    border-radius: 8px;
+    transition: background-color 0.2s ease;
+}
+
+.dropdown-item:hover {
+    background-color: var(--primary);
+    color: var(--surface);
+}
+
+
+/* =========================
+   WELCOME SECTION
+========================= */
 
 .container-welcome {
-    background-color: #eafaea;
-    padding: 100px;
-}
-
-
-.container.mt-4 {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    border: 1px solid #cceccc;
-    /* Light green border */
-}
-
-.section-title {
-    font-family: 'Playfair Display', serif;
-    /* Elegant, professional font */
-    font-size: 1.3rem;
-    /* Adjust size */
-    font-weight: bold;
-    /* Make it stand out */
-    letter-spacing: 1px;
-    /* Slight spacing for elegance */
-    text-transform: capitalize;
-    /* Only first letter uppercase */
-    color: #004466;
-    /* Dark blue for contrast */
-}
-
-.section-title-container {
-    /* Dark blue to contrast with light blue box */
-    background: rgba(173, 216, 230, 0.2);
-    /* Light blue with transparency */
-    backdrop-filter: blur(5px);
-    /* Optional: Adds a nice blur effect */
-    padding: 20px;
-    /* Space inside the box */
-    border-radius: 10px;
-    /* Rounded corners */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    /* Subtle shadow for elevated effect */
+    background: transparent;
+    padding: 6rem 2rem;
     text-align: center;
-    /* Center text */
-    max-width: 600px;
-    /* Optional: Limits width */
-    margin: 0 auto 20px auto;
-    /* Center the box and add margin below */
 }
 
 .welcome-text {
-    font-size: 3rem;
-    font-weight: bold;
-    color: #007BFF;
-    margin-bottom: 20px;
+    font-size: var(--text-hero);
+    font-weight: 700;
+    color: var(--text);
+    line-height: 1.1;
+    margin-bottom: 1rem;
 }
 
-/* Add space between navbar and content */
+
+/* =========================
+   MAIN CONTAINER
+========================= */
+
+.container.mt-4 {
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 2rem;
+}
+
+
+/* =========================
+   SECTION TITLES
+========================= */
+
+.section-title {
+    font-size: var(--text-section);
+    font-weight: 700;
+    color: var(--text);
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    margin-bottom: 0.5rem;
+}
+
+.section-title-container {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 2rem auto;
+}
+
+
+/* =========================
+   BODY
+========================= */
+
 body {
     padding-top: 20px;
-    background-color: #f9f9f9;
+    background: linear-gradient(to bottom, var(--bg), #eef3f9);
+    color: var(--text);
+    font-family: 'Inter', sans-serif;
+    font-size: var(--text-body);
 }
 
-/* General Page Styling */
-h2,
+
+/* =========================
+   TYPOGRAPHY
+========================= */
+
+h2 {
+    margin-bottom: 1rem;
+    color: var(--text);
+}
+
 p {
-    margin-bottom: 20px;
+    margin-bottom: 1rem;
+    color: var(--muted);
+    line-height: 1.7;
 }
 
-/* Add padding between sections */
+
+/* =========================
+   SECTION SPACING
+========================= */
+
 .container>div {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 
-/* Card styling */
+
+/* =========================
+   CARDS
+========================= */
+
 .card {
     height: 100%;
     width: 100%;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    transition: transform 0.2s, box-shadow 0.2s;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-/* Card image styling */
-.card img {
-    width: 100%;
-    height: 200px;
-    /* Set a fixed height */
-    object-fit: cover;
-    /* Maintain aspect ratio and crop if necessary */
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
 }
 
-/* Card image styling */
+.card-title {
+    font-size: var(--text-card-title);
+    font-weight: 600;
+    color: var(--text);
+}
+
+
+/* =========================
+   CARD IMAGES
+========================= */
+
+.card img,
 .card-img-top {
-    height: 200px;
+    width: 100%;
+    height: 220px;
     object-fit: cover;
 }
 
-/* Add consistent spacing between elements */
+
+/* =========================
+   SECTION MARGINS
+========================= */
+
 .mb-5,
 .my-5 {
-    margin-bottom: 0.1rem !important;
-    margin-top: 0.1rem !important;
+    margin-top: 2rem !important;
+    margin-bottom: 2rem !important;
 }
 
-/* Map Styling */
+
+/* =========================
+   MAP
+========================= */
+
 .map-container {
     width: 100%;
     height: 500px;
-    border: 2px solid #ddd;
-    border-radius: 5px;
+    border: 1px solid var(--border);
+    border-radius: 20px;
     overflow: hidden;
-    background-color: transparent;
+    background-color: var(--surface);
 }
 
-/* Ensures the carousel has a fixed height */
+
+/* =========================
+   CAROUSEL
+========================= */
+
+.carousel,
+.carousel-inner,
+.carousel-item,
 .carousel-image-container {
     position: relative;
     width: 100%;
     aspect-ratio: 16 / 9;
-    background-color: #eafaea;
+    border-radius: 24px;
+    overflow: hidden;
 }
 
 .carousel-image-container img {
     width: 100%;
     height: 100%;
     object-fit: contain;
-    background-color: ;
-    /* optional */
+    background-color: var(--surface);
 }
 
-/* Styles the text overlay */
+
+/* =========================
+   CAROUSEL TEXT OVERLAY
+========================= */
+
 .carousel-text {
     position: absolute;
-    bottom: 20px;
+    bottom: 2rem;
     left: 50%;
     transform: translateX(-50%);
-    background: rgba(0, 0, 0, 0.5);
-    /* Semi-transparent black */
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
+    background: rgba(15, 23, 42, 0.75);
+    color: var(--surface);
+    padding: 1rem 2rem;
+    border-radius: 16px;
     text-align: center;
     width: 80%;
+    backdrop-filter: blur(10px);
 }
 
-/* Styles carousel indicators (dots) */
+.carousel-text h3 {
+    font-size: var(--text-section);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.carousel-text p {
+    color: rgba(255, 255, 255, 0.85);
+    margin: 0;
+}
+
+
+/* =========================
+   CAROUSEL INDICATORS
+========================= */
+
 .carousel-indicators button {
-    background-color: white;
+    background-color: var(--surface);
     width: 10px;
     height: 10px;
     border-radius: 50%;
 }
 
-/* Style carousel navigation arrows */
+
+/* =========================
+   CAROUSEL ARROWS
+========================= */
+
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-color: rgba(0, 0, 0, 0.5);
-    /* Semi-transparent arrows */
+    background-color: rgba(15, 23, 42, 0.6);
     border-radius: 50%;
+    padding: 1.5rem;
 }
 
-/* Make sure the whole carousel item is clickable */
-.carousel-link {
-    display: block;
-    width: 100%;
-    height: 100%;
-    text-decoration: none;
-    /* Remove default underline */
-}
-
-/* Optional: When hovering, slightly darken the image */
-.carousel-link img {
-    transition: 0.3s ease-in-out;
-}
-
-.carousel-link:hover img {
-    filter: brightness(90%);
-}
+/* =========================
+   PROJECT MAP
+========================= */
 
 #projects-map {
     height: 650px;
     width: 100%;
-    border-radius: 18px;
+    border-radius: 24px;
     overflow: hidden;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    border: 1px solid var(--border);
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
 }
+
+
+/* =========================
+   MAP POPUP
+========================= */
 
 .map-popup img {
     width: 100%;
-    border-radius: 10px;
-    margin-bottom: 10px;
+    border-radius: 12px;
+    margin-bottom: 1rem;
 }
 
 .map-popup h5 {
+    font-size: var(--text-card-title);
     font-weight: 600;
+    color: var(--text);
     margin-bottom: 0.5rem;
 }
 
 .map-popup p {
-    font-size: 0.9rem;
+    font-size: var(--text-small);
+    color: var(--muted);
     margin-bottom: 0.5rem;
+    line-height: 1.5;
 }
+
+
+/* =========================
+   PROJECT TAGS
+========================= */
 
 .project-tag {
     display: inline-block;
-    background: #e9f2ff;
-    color: #0d6efd;
-    padding: 2px 8px;
-    border-radius: 20px;
-    font-size: 0.75rem;
-    margin-top: 6px;
+    background: rgba(37, 99, 235, 0.1);
+    color: var(--primary);
+    padding: 0.35rem 0.75rem;
+    border-radius: 999px;
+    font-size: var(--text-small);
+    font-weight: 500;
+    margin-top: 0.5rem;
 }
 
-/* Style for the research topic titles */
+
+/* =========================
+   RESEARCH TOPIC CARD TITLES
+========================= */
+
 .card .card-body .card-title {
     margin-top: auto;
-    padding: 15px 10px;
-    font-weight: bold;
-    color: #007BFF;
+    padding: 1rem;
+    font-size: var(--text-card-title);
+    font-weight: 600;
+    color: var(--text);
     text-align: center;
-    font-size: 1.3rem;
-    background-color: #f1f1f1;
-    border-top: 1px solid #ddd;
+    background-color: #f8fafc;
+    border-top: 1px solid var(--border);
     display: flex;
-    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    height: 80px;
-    /* Ensure same height for all card-body */
+    min-height: 90px;
 }
 
-/* Hover effect for cards */
+
+/* =========================
+   CARD HOVER
+========================= */
+
 .card:hover {
-    height: 100%;
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transform: translateY(-6px);
+    box-shadow: 0 16px 32px rgba(15, 23, 42, 0.08);
 }
 
-/* More space between cards */
+
+/* =========================
+   CARD SPACING
+========================= */
+
 .row-cols-md-2 .col {
-    margin-bottom: 20px;
+    margin-bottom: 1.5rem;
 }
 
-/* Card Styling for Project List */
+
+/* =========================
+   PROJECT CARDS
+========================= */
+
 .project-card {
-    background-color: #f0f8ff;
-    /* Light blueish background */
-    transition: transform 0.2s, box-shadow 0.2s;
-    border: none;
-    border-radius: 10px;
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 20px;
     overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .project-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 123, 255, 0.2);
-    background-color: #e6f2ff;
-    /* Slightly darker on hover */
+    transform: translateY(-4px);
+    box-shadow: 0 14px 30px rgba(15, 23, 42, 0.08);
 }
 
-/* Card Title */
+
+/* =========================
+   PROJECT CARD TITLE
+========================= */
+
 .project-card .card-title {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #007BFF;
-    margin-bottom: 10px;
+    font-size: var(--text-card-title);
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 0.75rem;
 }
 
-/* Card Text */
+
+/* =========================
+   PROJECT CARD TEXT
+========================= */
+
 .project-card .card-text {
-    color: #555;
+    color: var(--muted);
+    font-size: var(--text-body);
+    line-height: 1.6;
 }
 
-/* Add subtle animation */
+
+/* =========================
+   LINKS
+========================= */
+
 .stretched-link:hover {
-    color: #0056b3;
+    color: var(--primary);
     text-decoration: none;
 }
 
-/* Maintain fixed height for filter card */
+
+/* =========================
+   FILTER CARD
+========================= */
+
 .filter-card {
     min-height: 350px;
     max-height: 350px;
+    border-radius: 20px;
 }
 
-/* Project list with scrollable container */
+
+/* =========================
+   PROJECT LIST
+========================= */
+
 .project-list-container {
     max-height: 250px;
-    /* Keep consistent size */
     overflow-y: auto;
 }
 
-/* Project Image */
+
+/* =========================
+   PROJECT IMAGE
+========================= */
+
 .project-image {
     max-width: 100%;
     height: 250px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
 }
+
+
+/* =========================
+   GRID FIXES
+========================= */
 
 .row.g-0 {
     margin-left: 0;
     margin-right: 0;
 }
 
-/* Ensure the left column image takes full height */
 .col-md-6 {
     position: relative;
 }
 
-/* Ensure the left column (image + map) takes more space */
 .col-md-6.position-relative {
     flex: 1.5;
-    /* Make it bigger compared to the right column */
     max-height: 600px;
-    /* Prevent excessive stretching */
 }
 
-/* Style the title and description */
+
+/* =========================
+   PROJECT DETAIL PAGE
+========================= */
+
 .project-title {
-    font-size: 2rem;
-    font-weight: bold;
+    font-size: var(--text-section);
+    font-weight: 700;
+    color: var(--text);
+    line-height: 1.2;
     text-transform: capitalize;
 }
 
 .project-description {
-    font-size: 1.2rem;
-    color: #555;
+    font-size: 1.05rem;
+    color: var(--muted);
+    line-height: 1.8;
     text-align: justify;
     hyphens: auto;
 }
+
+/* =========================
+   GLOBAL PROJECTS SECTION
+========================= */
 
 .project-findings-text {
     max-width: 900px;
@@ -423,34 +592,38 @@ p {
     font-size: 1.05rem;
     text-align: justify;
     hyphens: auto;
+    color: var(--text);
 }
 
 .global-projects {
     margin-top: 3rem;
 }
 
-/* smaller + green title */
+/* Section title */
 .global-projects .section-title {
-    font-size: 1.25rem;
-    margin-bottom: 1rem;
+    font-size: 2rem;
     font-weight: 600;
-    color: #6fbf8f !important;
-    /* light green */
+    color: var(--text);
+    margin-bottom: 1rem;
+    letter-spacing: -0.02em;
 }
 
+/* Grid layout */
 .global-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 1rem;
 }
 
+/* Card */
 .global-card {
     display: block;
     padding: 1rem;
     border-radius: 12px;
-    border: 1px solid #e5e5e5;
-    background: #fff;
+    border: 1px solid var(--border);
+    background: var(--surface);
     text-decoration: none;
+    color: var(--text);
     transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
@@ -459,13 +632,14 @@ p {
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
 }
 
+/* Card title */
 .global-card h3 {
     font-size: 1rem;
-    /* slightly smaller */
     margin-bottom: 0.5rem;
-    color: #1f2d1f;
+    color: var(--text);
 }
 
+/* Tags */
 .tags {
     margin-top: 0.5rem;
 }
@@ -475,38 +649,35 @@ p {
     font-size: 0.75rem;
     padding: 2px 8px;
     border-radius: 999px;
-    background: #e8f5ee;
-    /* light green tint */
-    color: #2f7d4a;
+    background: rgba(37, 99, 235, 0.08);
+    color: var(--primary);
     margin-right: 4px;
     margin-top: 4px;
 }
 
-
-/* DOI Buttons */
+/* Buttons */
 .btn-outline-primary,
 .btn-outline-success {
     font-size: 1rem;
     padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 6px;
 }
 
-/* Participants & Funding */
+/* List items */
 .list-group-item {
-    background: #f9f9f9;
-    border: none;
+    background: var(--surface);
+    border: 1px solid var(--border);
 }
 
-
+/* DOI / metadata section */
 .doi-section {
     margin-bottom: 100px;
-    /* Adjust as needed */
 }
 
 .funding-info {
     font-size: 1.2rem;
     font-weight: bold;
-    color: #007bff;
+    color: var(--primary);
 }
 
 .participants-list li {
@@ -518,6 +689,7 @@ p {
     margin-bottom: 40px;
 }
 
+/* Funding logos */
 .funding-logos {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -534,39 +706,20 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-
     height: 120px;
-
-    background: #fff;
+    background: var(--surface);
     border-radius: 6px;
     padding: 10px;
-
     overflow: hidden;
 }
 
 .funding-logo {
     max-width: 100%;
     max-height: 100%;
-    width: auto;
-    height: auto;
-
     object-fit: contain;
     display: block;
-
 }
 
 .funding-logo:hover {
-    filter: grayscale(0%);
     transform: scale(1.05);
-}
-
-.team-photo {
-    width: 180px;
-    height: 180px;
-    object-fit: cover;
-    object-position: 50% 30%;
-    /* ← shift focus upward */
-    border-radius: 12px;
-    background-color: #f6f6f6;
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
 }

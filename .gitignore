@@ -2,3 +2,4 @@
 __pycache__/
 plugins/__pycache__/
 content/static/maps/*.html
+output/

@@ -438,7 +438,10 @@ p {
     min-height: 90px;
 }
 
-
+.card-text {
+    line-height: 1.4;
+    min-height: 3em;
+}
 
 /* =========================
    CARD HOVER
@@ -601,11 +604,19 @@ p {
 }
 
 .project-description {
-    font-size: 1.2.rem;
+    font-size: 1.2rem;
     color: var(--muted);
-    line-height: 1.4;
-    text-align: left;
+    line-height: 1.5;
+
+    text-align: justify;
+    text-justify: inter-word;
+    text-wrap: pretty;
+
     hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+
+    overflow-wrap: break-word;
 }
 
 .project-description-index {
@@ -761,35 +772,4 @@ p {
     border: 1px solid var(--border);
     border-radius: 12px;
     background: white;
-    position: relative;
-}
-
-#graph-wrapper {
-    position: relative;
-}
-
-#reset-graph {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-
-    z-index: 99999;
-
-    padding: 8px 14px;
-    border-radius: 10px;
-
-    background: rgba(49, 130, 206, 0.15);
-    border: 1px solid rgba(49, 130, 206, 0.4);
-
-    cursor: pointer;
-}
-
-#reset-graph:hover {
-    background: rgba(49, 130, 206, 0.2);
-    transform: translateY(-1px);
-}
-
-#reset-graph:active {
-    transform: translateY(0px);
-    background: rgba(49, 130, 206, 0.3);
 }

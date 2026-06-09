@@ -70,6 +70,9 @@
                     <img src="{{ SITEURL }}/theme/images/{{ topic.img }}" class="card-img-top" alt="{{ topic.name }}">
                     <div class="card-body">
                         <h5 class="card-title text-center">{{ topic.name }}</h5>
+                        <p class="card-text small text-muted text-center mt-2">
+                            {{ topic.description }}
+                        </p>
                     </div>
                     <a href="{{ SITEURL }}/topics/{{ topic.name | slugify }}/index.html" class="stretched-link"></a>
                 </div>

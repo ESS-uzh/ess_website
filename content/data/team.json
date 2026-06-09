@@ -31,13 +31,13 @@
     },
     {
         "name": "Dabwiso Sakala",
-        "role": "PhD",
+        "role": "Alumni",
         "img": "dabwiso_sakala.png",
         "group": "Biodiversity and Social-Ecological Processes"
     },
     {
         "name": "Kien Nguyen",
-        "role": "PhD",
+        "role": "Alumni",
         "img": "kien_nguyen.png",
         "group": "Biodiversity and Social-Ecological Processes"
     },
@@ -55,7 +55,7 @@
     },
     {
         "name": "Matilde Torrassa",
-        "role": "PhD",
+        "role": "Alumni",
         "img": "matilde_torrassa.png",
         "group": "Earth System Processes"
     },
@@ -73,13 +73,13 @@
     },
     {
         "name": "Raleigh Grysko",
-        "role": "Postdoc",
+        "role": "Alumni",
         "img": "raleigh_grysko.png",
         "group": "Earth System Processes"
     },
     {
         "name": "Eugenie Limoges",
-        "role": "Postdoc",
+        "role": "Alumni",
         "img": "eugenie_limoges.png",
         "group": "Earth System Processes"
     },
@@ -121,7 +121,7 @@
     },
     {
         "name": "Jennifer Adams",
-        "role": "Postdoc",
+        "role": "Alumni",
         "img": "jennifer_adams.png",
         "group": "Remote sensing of Biodiversity"
     },
@@ -156,7 +156,7 @@
         "group": "Urban System"
     },
     {
-        "name": "Myriam Truffert",
+        "name": "Myriam Pham-Truffert",
         "role": "PhD",
         "img": "myriam_truffert.png",
         "group": "Urban System"

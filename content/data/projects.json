@@ -3,10 +3,13 @@
         "id": 1,
         "name": "Pangea",
         "description": "The tropics are experiencing dramatic changes as a result of climate change and land-use change. Shifts in carbon flux dynamics, water cycling, and species composition are resulting in feedbacks with globally important consequences. However, tropical forests are not a monolith. They vary enormously in terms of species diversity, climate, soils, human impact, and much more. As a result, tropical forest ecosystems will almost certainly vary in response to climate change and land-use change. Yet, these differences remain highly uncertain and poorly understood. In 2024, we engaged over 800 people in an effort to scope a NASA decadal Terrestrial Ecology campaign in the tropics.",
+        "short_description": "Tropical Forest Responses to Climate and Land-Use Change",
         "lat": 0,
         "lon": 0,
         "region": "Europe",
-        "tags": [],
+        "tags": [
+            "Biodiversity"
+        ],
         "participants": [],
         "funding": [],
         "polygon": []
@@ -15,10 +18,13 @@
         "id": 2,
         "name": "RediLEEP",
         "description": "Ecosystem resilience is the capacity of an ecosystem to withstand natural and human-induced changes while maintaining core functions over time and space. Response diversity (RD)—the variability in responses to environmental changes among ecosystem components—is a crucial mechanism underpinning ecosystem resilience. By enhancing adaptive capacity, RD contributes to ecosystem stability and long-term functionality. Despite this, RD remains insufficiently understood and underutilized in ecological management, conservation, and policy design. Researchers have identified several critical uncertainties that hinder the scientific advancement and practical application of RD. In addition, and perhaps due to the research gaps, despite a wide consensus of RD’s importance for ecosystem resilience, RD is often overlooked in policy frameworks, restoration practices, and monitoring and management schemes. ReDiLEEP aims to close these gaps by establishing an interdisciplinary Doctoral Network. By conducting cutting-edge research and equipping doctoral candidates with specialized expertise, ReDiLEEP will catalyse long-term advancements in ecosystem resilience and management. In particular, the program will - build theoretical foundations - develop measurable approaches - connect research to practice. ReDiLEEP will serve as a pivotal initiative, creating a robust science-policy-practice interface that firmly establishes RD as a cornerstone of ecosystem resilience. The program employs an integrated approach, empowering doctoral candidates with a comprehensive learning experience that spans theoretical, empirical, and practical domains. Through interdisciplinary collaboration, ReDiLEEP bridges critical gaps between ecological research, policy design, and practical application. Furthermore, participants will actively contribute to transformative change by aligning their work with the EU Biodiversity Strategy for 2030 and supporting the objectives of the UN Decade on Ecosystem Restoration.",
+        "short_description": "Bridging Theory and Practice in Response Diversity for Ecosystem Resilience",
         "lat": 0,
         "lon": 0,
         "region": "Global",
-        "tags": [],
+        "tags": [
+            "Biodiversity"
+        ],
         "participants": [],
         "funding": [],
         "polygon": []
@@ -27,6 +33,7 @@
         "id": 3,
         "name": "EO4Resilience",
         "description": "In this project we aim to (i) derive a set of EBVs using a combination of existing airborne and spaceborne hyperspectral optical and SAR data, representative of CHIME and ROSE-L upcoming missions, (ii) test the set of EBVs over a gradient of drought exposure represented by three test sites, (iii) develop and test two approaches to integrate multiple EBVs, namely (a) a data-driven approach and (b) a causal inference and discovery approach based on hypothesized relationships and on the discovery of potential new causal links, (iv) simulate and develop a novel integrative metric that captures the trade-offs between photosynthesis and water exchange that responds to the need to couple hydraulic and photosynthesis traits, and (v) use these approaches (single EBV analysis, multiple EBV analysis and novel integrated metric) to examine under which conditions there is biodiversity-enabled drought resilience.",
+        "short_description": "Monitoring Ecosystem Drought Resilience Using Essential Biodiversity Variables",
         "findings": "Together these results will not only advance our understanding of drought effects, but also enable us to test the use of EBVs towards process understanding, the development of seamless products that will make use of new data delivered by upcoming missions, and to deliver products aimed at the different actors from civil society to land managers, first as early adopters but later as general users, so that our understanding of the biodiversity-enabled ecosystem response and resilience to drought can translate to actionable knowledge across scales.",
         "img": "proj_3_eo4resilience.png",
         "lat": 46.4100,
@@ -63,10 +70,14 @@
         "id": 4,
         "name": "Scanning4Africa",
         "description": "Forests and agroforestry systems in the Global South are critical for biodiversity, carbon storage, and local livelihoods. Yet, affordable and sustainable systems to monitor their three-dimensional structure are lack-ing. Current approaches either rely on expensive, high-end sensors operated by external experts, which leads to limited temporal coverage, dependency on external providers, and loss of local data sovereignty. Or on conventional manual methods such as measuring tree diameters and heights with tapes and hypsometers, which are labour-intensive, time-consuming, and unable to capture the full structural complexity of ecosystems. Mission: To enable sustained, high-resolution monitoring of the three-dimensional structure of forests and agroforestry systems in the Global South. We will design and deploy a fully open, low-cost, easy-to-operate mobile laser scanning package, complete with a medium-range laptop, pre-installed processing software, and offline training materials. Coupled with capacity-building programmes and community data govern-ance frameworks, this system will empower local practitioners and researchers to independently collect, process, and own structural data, enabling repeated monitoring over time and contributing to both local management and global observation missions.",
-        "lat": 0,
-        "lon": 0,
+        "short_description": "Low-Cost 3D Forest Monitoring Systems for the Global South",
+        "lat": 0.0,
+        "lon": 20.0,
         "region": "Africa",
-        "tags": [],
+        "locatin": "Africa",
+        "tags": [
+            "Biodiversity"
+        ],
         "participants": [],
         "funding": [],
         "polygon": []
@@ -75,10 +86,13 @@
         "id": 5,
         "name": "HiBiDiS",
         "description": "With this Proposal, SITAEL and its subcontractors answer to ITT and illustrate how the team intends, within the SCOUT initiative, to consolidate the HiBiDiS mission concept, a small satellite hyperspectral LEO Earth Observation mission aiming at assessing Essential Biodiversity Variables of selected ecosystems.",
+        "short_description": "Hyperspectral Small-Satellite Mission for Biodiversity Assessment",
         "lat": 0,
         "lon": 0,
         "region": "Global",
-        "tags": [],
+        "tags": [
+            "Biodiversity"
+        ],
         "participants": [],
         "funding": [],
         "polygon": []
@@ -199,7 +213,7 @@
     {
         "id": 8,
         "name": "The Circle Future Earth",
-        "description": "The strategic goal, 'A living Earth Observation (EO) ecosystem for a living planet,' necessitates investigating new EO domains based on scientific users' needs. This comprehensive approach must cover the entire EO ecosystem, integrating satellite fleets, in-situ data, applications, and digital infrastructure. The focus is on identifying innovative methods, addressing gaps, and proposing solutions grounded in scientific requirements. The development of a science-driven EO reference architecture, prioritized across different EO systems, and analyzed over varying timelines (today, 2030, 2050), will support a dynamic, evolving EO ecosystem to meet future demands (EO blueprint looking at the time horizon 2050).Within the project, we perform a literature review to assess the current use and future scientific needs of EO to answer the following questions: Where/how do transitions in ecosystems occur? What is the land biosphere response to human activities?",
+        "description": "The strategic goal,'A living Earth Observation (EO) ecosystem for a living planet,' necessitates investigating new EO domains based on scientific users' needs. This comprehensive approach must cover the entire EO ecosystem, integrating satellite fleets, in-situ data, applications, and digital infrastructure. The focus is on identifying innovative methods, addressing gaps, and proposing solutions grounded in scientific requirements. The development of a science-driven EO reference architecture, prioritized across different EO systems, and analyzed over varying timelines (today, 2030, 2050), will support a dynamic, evolving EO ecosystem to meet future demands (EO blueprint looking at the time horizon 2050).Within the project, we perform a literature review to assess the current use and future scientific needs of EO to answer the following questions: Where/how do transitions in ecosystems occur? What is the land biosphere response to human activities?",
         "short_description": "Next-Generation Earth Observation for Ecosystem Change Detection",
         "findings": "Identifying and understanding ecosystem transitions is key to local and global sustainability, and EO has a unique role in monitoring and modelling these transitions. Current usage of EO to study critical transitions focuses on landscape to regional scale transitions, using low to medium spatial resolution imagery. Given the new Sentinel-2C and 2D missions, Landsat Next, and the VIIRS sensors replacing MODIS capabilities, comparable data should be available for several decades (Ustin & Middleton, 2024). This consistency of data, providing long-term harmonised datasets, combined with expanding future EO capacity and usability, are key to the more comprehensive analyses of ecosystem transitions. Currently, measurement requirements are met for ecosystem extent and most types of ecosystem transition (Geller et al., 2023; Skidmore et al., 2020). For individual transitions, and their drivers, very high spatial resolution imagery, high spectral resolution and dense time series for temporal resolution can give more precise and timely classifications. In situ data at scales relevant to the transitions are key to understanding the underlying processes and validating EO and models. Perhaps the most important requirement given the long-term nature of many transitions is the length and continuity of data. Sustained observation enables detection of slow or subtle changes, enables us to form accurate baselines from which to detect change, and allows the retrospective analysis of transitions and their antecedent conditions.The land biosphere response to human activity is a critical area for global sustainability, and one in which EO has a unique role to play. However, the complexity of quantifying the land biosphere, and monitoring and attributing its responses, means that multiple indicators are required, across different types of remote sensing. Current EO capacity is sufficient to assess many of the facets of the land biosphere and its response to human activity (Geller et al., 2022; Skidmore et al., 2020). Some identified gaps include the need for global wall-to-wall LiDAR, higher spectral resolution at high to medium resolutions (Geller et al., 2022), and freely available very high resolution imagery (Ustin & Middleton, 2024). However, EO-relevant in situ data is perhaps more important for the calibration and validation of the vast amount of imagery available (Cavender-Bares et al., 2022). Similarly, improving the accessibility and usability of data through analysis ready products, harmonisation and data fusion can reduce the complexity of analysis and streamline the scientific process. Finally, maintaining continuity of consistent products is a critical requirement for assessing the long-term impacts of humans and climate change on the biosphere.",
         "img": "proj_8_circle.png",
@@ -419,6 +433,7 @@
         "id": 13,
         "name": "Green4Climate",
         "description": "Green4Clim uses the UZH Irchel campus as a real-world laboratory to investigate how vegetation composition and distribution may mitigate carbon impacts of campus activities. The project focuses on direct and indirect effects of vegetation management on CO2 sequestration through photosynthesis (direct) and on the energy consumption of buildings through shading and cooling effects (indirect). With a combination of leaf, soil and airborne drone measurements the current CO2 sources and sinks as well as temperature hot spots of all natural areas on Irchel Campus are quantified. Experiments will identify the locations, plant species and communities particularly suitable for binding CO2 and reducing temperatures. Green4Clim results will help design a management strategy for carbon mitigation that can also be transferred to urban areas to achieve climate and biodiversity goals. With Green4Clim, UZH will be at the forefront of real-world lab initiatives on how to use campus vegetation to reduce CO2 emissions.",
+        "short_description": "Using Urban Vegetation to Reduce CO₂ and Heat on Campus",
         "lat": 47.3769,
         "lon": 8.5417,
         "region": "CH",
@@ -453,6 +468,7 @@
         "id": 14,
         "name": "Spatial Sustainable Finance",
         "description": "Biodiversity loss and water scarcity are occurring at an unprecedented pace. Environmental degradation caused by economic activity induces long-lasting consequences affecting global health, food security and quality, poverty, migration and armed conflicts. Private-sector investors that follow sustainable finance principles represent an important lever to address global environmental and social challenges, as they can contribute to switching the production and consumption systems and counteract environmental degradation. Sustainable financial operations rely on sensitive, harmonized and objective environmental data, but as of today, even the most transparent companies disclose almost no data on their environmental impact and exposures. This project aims to develop a scientifically robust approach for rating companies with regard to their contribution and exposure to environmental degradation. The tremendous improvement and increased availability of Earth observation and complementary geodata offer enormous yet underused potential to assess biodiversity and water systems changes. Unlocking this potential provides new avenues to globally monitor biodiversity losses and water risks caused by company activities.",
+        "short_description": "Linking Earth Observation to Sustainable Finance and Biodiversity Risk",
         "img": "proj_14_spacial_sus_fin.png",
         "lat": 0,
         "lon": 0,

@@ -36,6 +36,7 @@ def normalize_project(p):
         "region": p.get("region", "Global"),
         "location": p.get("location", ""),
         "tags": p.get("tags", []),
+        "participants": p.get("participants", []),
         "polygon": p.get("polygon", []),
     }
 
@@ -107,7 +108,6 @@ TOPICPAGE_SAVE_AS = "topics/{slug}.html"
 TOPICPAGE_URL = "topics/{slug}.html"
 
 DISPLAY_PAGES_ON_MENU = False
-
 
 # Debug prints
 print("Theme path:", THEME, "-> exists?", os.path.exists(THEME))

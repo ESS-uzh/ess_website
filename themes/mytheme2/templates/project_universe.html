@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container">
+
+    <h1>Project Universe</h1>
+
+    <div id="project-universe"></div>
+
+</div>
+
+<script>
+    window.projects = {{ all_projects | tojson }};
+</script>
+
+<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
+<script src="{{ SITEURL }}/theme/js/project-universe.js"></script>
+
+{% endblock %}

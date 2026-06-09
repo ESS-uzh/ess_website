@@ -102,6 +102,13 @@
                 <div class="global-card-content">
                     <h3>{{ project.name }}</h3>
 
+                    <!-- Short description -->
+                    {% if project.short_description %}
+                    <p class="project-description-index">
+                        {{ project.short_description }}
+                    </p>
+                    {% endif %}
+
                     {% if project.tags %}
                     <div class="tags">
                         {% for tag in project.tags %}
@@ -115,6 +122,21 @@
             {% endfor %}
         </div>
     </section>
+
+    <div class="my-5">
+        <div class="section-title-container">
+            <h3 class="section-title">Project Network</h3>
+        </div>
+
+        <div id="graph-wrapper" style="position: relative;">
+
+
+            <div id="project-universe"
+                style="width:100%;height:700px;border:1px solid #ddd;border-radius:10px;background:white;">
+            </div>
+
+        </div>
+    </div>
 
 
 </div>
@@ -220,8 +242,299 @@
 
     // Optional debug
     console.log("Global projects:", globalProjects);
+    /* ==========================
+   PROJECT UNIVERSE (CLEAN UX GRAPH)
+========================== */
+
+    const elements = [];
+    const areaMap = new Map();
+
+    /* --------------------------
+       BUILD GRAPH
+    -------------------------- */
+
+    projects.forEach(p => {
+
+        const projectId = `project-${p.id}`;
+
+        // PROJECT NODE (hidden label)
+        elements.push({
+            data: {
+                id: projectId,
+                label: p.name,
+                type: 'project'
+            }
+        });
+
+        (p.tags || []).forEach(tag => {
+
+            const cleanTag = tag.normalize().trim().toLowerCase();
+            const label = tag.trim();
+            const areaId = `area-${cleanTag}`;
+
+            if (!areaMap.has(cleanTag)) {
+
+                areaMap.set(cleanTag, true);
+
+                elements.push({
+                    data: {
+                        id: areaId,
+                        label: label,
+                        type: 'area'
+                    }
+                });
+            }
+
+            elements.push({
+                data: {
+                    source: areaId,
+                    target: projectId
+                }
+            });
+
+        });
+
+    });
+
+    /* --------------------------
+       INIT CYTOSCAPE
+    -------------------------- */
+
+    const cy = cytoscape({
+
+        container: document.getElementById('project-universe'),
+
+        elements: elements,
+
+        style: [
+
+            /* ===== AREAS (MAIN VIEW) ===== */
+            {
+                selector: 'node[type="area"]',
+                style: {
+                    'background-color': '#2f855a',
+                    'label': 'data(label)',
+                    'font-size': 14,
+                    'width': 42,
+                    'height': 42,
+                    'text-valign': 'center',
+                    'text-halign': 'center',
+                    'color': '#000'
+                }
+            },
+
+            /* ===== PROJECTS (DOTS ONLY) ===== */
+            {
+                selector: 'node[type="project"]',
+                style: {
+                    'background-color': '#3182ce',
+
+                    // IMPORTANT: keep label always available
+                    'label': 'data(label)',
+
+                    // make them visible enough to interact
+                    'width': 14,
+                    'height': 14,
+                    'opacity': 0.5,
+
+                    // hide text visually instead of removing it
+                    'font-size': 0
+                }
+            },
+
+            /* ===== EDGES ===== */
+            {
+                selector: 'edge',
+                style: {
+                    'width': 1,
+                    'line-color': '#ccc',
+                    'opacity': 0.25
+                }
+            }
+        ],
+
+        layout: {
+            name: 'cose',
+            animate: true
+        }
+    });
+
+
+    /* --------------------------
+       AREA CLICK → SHOW PROJECTS
+    -------------------------- */
+
+    cy.on('tap', 'node[type="area"]', function (evt) {
+
+        const node = evt.target;
+
+        const projects = node
+            .connectedEdges()
+            .connectedNodes()
+            .filter(n => n.data('type') === 'project');
+
+        cy.elements().stop().animate({
+            style: { opacity: 0.05 }
+        }, { duration: 150 });
+
+        node.animate({
+            style: { opacity: 1 }
+        }, { duration: 150 });
+
+        projects.animate({
+            style: {
+                opacity: 1,
+                width: 14,
+                height: 14
+            }
+        }, { duration: 150 });
+
+    });
+
+
+    // ==========================
+    // PROJECT HOVER (SHOW NAME)
+    // ==========================
+
+    cy.on('mouseover', 'node[type="project"]', function (evt) {
+
+        evt.target.style({
+            'font-size': 10,
+            'text-background-color': '#fff',
+            'text-background-opacity': 0.9,
+            'text-background-padding': 2,
+            'text-outline-color': '#fff',
+            'text-outline-width': 1
+        });
+
+    });
+
+    cy.on('mouseout', 'node[type="project"]', function (evt) {
+
+        evt.target.style({
+            'font-size': 0,
+            'text-background-opacity': 0
+        });
+
+    });
+
+    /* --------------------------
+       PROJECT CLICK → FOCUS
+    -------------------------- */
+
+    cy.on('tap', 'node[type="project"]', function (evt) {
+
+        const node = evt.target;
+        const neighborhood = node.closedNeighborhood();
+
+        cy.elements().stop().animate({
+            style: { opacity: 0.05 }
+        }, { duration: 150 });
+
+        neighborhood.animate({
+            style: { opacity: 1 }
+        }, { duration: 150 });
+
+    });
+
+
+    /* --------------------------
+       RESET BUTTON
+    -------------------------- */
+    document.addEventListener("DOMContentLoaded", function () {
+
+        const resetBtn = document.getElementById('reset-graph');
+
+        if (!resetBtn) return;
+
+        function resetGraph() {
+
+            // STOP ALL ANIMATIONS FIRST
+            cy.stop();
+
+            // RESET VISUAL STATE COMPLETELY
+            cy.elements().forEach(ele => {
+                ele.removeStyle(); // 🔥 CRITICAL: clears inline overrides
+            });
+
+            // REAPPLY BASE STATE VIA STYLE OVERRIDES
+            cy.nodes().forEach(n => {
+
+                if (n.data('type') === 'project') {
+                    n.style({
+                        opacity: 0.25,
+                        width: 10,
+                        height: 10,
+                        'font-size': 0,
+                        'label': ''
+                    });
+                }
+
+                if (n.data('type') === 'area') {
+                    n.style({
+                        opacity: 1,
+                        'label': n.data('label')
+                    });
+                }
+
+            });
+
+            cy.edges().forEach(e => {
+                e.style({
+                    opacity: 0.25
+                });
+            });
+
+            // RESET CAMERA
+            cy.fit();
+
+        }
+
+        resetBtn.addEventListener('click', resetGraph);
+
+    });
+    /* --------------------------
+       PROJECT SEARCH (NEW)
+    -------------------------- */
+
+    const searchInput = document.getElementById('graph-search');
+
+    if (searchInput) {
+
+        searchInput.addEventListener('input', (e) => {
+
+            const value = e.target.value.toLowerCase();
+
+            if (!value) {
+                cy.elements().style('opacity', 1);
+                return;
+            }
+
+            cy.elements().style('opacity', 0.05);
+
+            const matches = cy.nodes().filter(n =>
+                (n.data('label') || '').toLowerCase().includes(value)
+            );
+
+            matches.forEach(n => {
+
+                n.style('opacity', 1);
+
+                n.connectedEdges().style('opacity', 1);
+                n.connectedNodes().style('opacity', 1);
+
+                if (n.data('type') === 'area') {
+                    n.style('label', 'data(label)');
+                }
+
+            });
+
+        });
+    }
+
 });
 </script>
+<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 
 
 {% endblock %}

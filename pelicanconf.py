@@ -48,7 +48,7 @@ ALL_PROJECTS = sorted(
 )
 
 # Select by IDs instead of sorting
-RECENT_PROJECT_IDS = [8, 6]  # manual choice
+RECENT_PROJECT_IDS = [8, 4, 6, 1]  # manual choice
 RECENT_PROJECTS = [p for p in ALL_PROJECTS if p["id"] in RECENT_PROJECT_IDS]
 
 JINJA_FILTERS = {

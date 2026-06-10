@@ -133,7 +133,7 @@
 
         <div id="graph-wrapper" style="position: relative;">
 
-
+            <div id="graph-tooltip"></div>
             <div id="project-universe"
                 style="width:100%;height:700px;border:1px solid #ddd;border-radius:10px;background:white;">
             </div>
@@ -249,6 +249,13 @@
    PROJECT UNIVERSE (CLEAN UX GRAPH)
 ========================== */
 
+    const tagColors = {
+        "biodiversity": "#2f855a",
+        "climate change": "#3182ce",
+        "ecosystem services": "#dd6b20",
+        "sustainable development": "#805ad5"
+    };
+
     const elements = [];
     const areaMap = new Map();
 
@@ -283,7 +290,8 @@
                     data: {
                         id: areaId,
                         label: label,
-                        type: 'area'
+                        type: 'area',
+                        color: tagColors[cleanTag] || "#2f855a"
                     }
                 });
             }
@@ -315,7 +323,7 @@
             {
                 selector: 'node[type="area"]',
                 style: {
-                    'background-color': '#2f855a',
+                    'background-color': 'data(color)',
                     'label': 'data(label)',
                     'font-size': 14,
                     'width': 42,
@@ -441,61 +449,6 @@
     });
 
 
-    /* --------------------------
-       RESET BUTTON
-    -------------------------- */
-    document.addEventListener("DOMContentLoaded", function () {
-
-        const resetBtn = document.getElementById('reset-graph');
-
-        if (!resetBtn) return;
-
-        function resetGraph() {
-
-            // STOP ALL ANIMATIONS FIRST
-            cy.stop();
-
-            // RESET VISUAL STATE COMPLETELY
-            cy.elements().forEach(ele => {
-                ele.removeStyle(); // 🔥 CRITICAL: clears inline overrides
-            });
-
-            // REAPPLY BASE STATE VIA STYLE OVERRIDES
-            cy.nodes().forEach(n => {
-
-                if (n.data('type') === 'project') {
-                    n.style({
-                        opacity: 0.25,
-                        width: 10,
-                        height: 10,
-                        'font-size': 0,
-                        'label': ''
-                    });
-                }
-
-                if (n.data('type') === 'area') {
-                    n.style({
-                        opacity: 1,
-                        'label': n.data('label')
-                    });
-                }
-
-            });
-
-            cy.edges().forEach(e => {
-                e.style({
-                    opacity: 0.25
-                });
-            });
-
-            // RESET CAMERA
-            cy.fit();
-
-        }
-
-        resetBtn.addEventListener('click', resetGraph);
-
-    });
     /* --------------------------
        PROJECT SEARCH (NEW)
     -------------------------- */

@@ -34,7 +34,7 @@
                                 alt="{{ project.name }}">
                             <div class="carousel-text">
                                 <h3>{{ project.name }}</h3>
-                                <p>{{ project.short_description }}</p>
+                                <p>{{ project.short_description[:120] }}</p>
                             </div>
                         </div>
                     </a>
@@ -70,7 +70,7 @@
                     <img src="{{ SITEURL }}/theme/images/{{ topic.img }}" class="card-img-top" alt="{{ topic.name }}">
                     <div class="card-body">
                         <h5 class="card-title text-center">{{ topic.name }}</h5>
-                        <p class="card-text small text-muted text-center mt-2">
+                        <p class="card-text text-muted text-center mt-2">
                             {{ topic.description }}
                         </p>
                     </div>

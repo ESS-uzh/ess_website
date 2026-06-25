@@ -1056,3 +1056,40 @@ p {
     }
 
 }
+
+/* =========================
+   MOBILE SECTION SPACING
+========================= */
+
+@media (max-width:768px) {
+
+
+    /* reduce section padding */
+    .container>div {
+
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+
+    }
+
+
+    /* reduce Bootstrap section margins */
+    .mb-5,
+    .my-5 {
+
+        margin-top: 1rem !important;
+        margin-bottom: 1rem !important;
+
+    }
+
+
+    /* section title spacing */
+    .section-title-container {
+
+        padding: 0.5rem;
+        margin-bottom: 1rem;
+
+    }
+
+
+}

@@ -289,6 +289,36 @@ p {
     object-fit: cover;
 }
 
+/* =========================
+   RESEARCH TOPIC CARD BODY
+========================= */
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 1.25rem;
+}
+
+.card-title {
+    min-height: 4.5rem;
+    /* Reserve space for up to ~2 lines */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: var(--text-card-title);
+    font-weight: 600;
+}
+
+.card-text {
+    flex-grow: 1;
+    text-align: center;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
 
 /* =========================
    SECTION MARGINS
@@ -619,50 +649,67 @@ p {
 
 
 /* =========================
-   GRID FIXES
-========================= */
-
-.row.g-0 {
-    margin-left: 0;
-    margin-right: 0;
-}
-
-.col-md-6 {
-    position: relative;
-}
-
-.col-md-6.position-relative {
-    flex: 1.5;
-    max-height: 600px;
-}
-
-
-/* =========================
    PROJECT DETAIL PAGE
 ========================= */
 
-.project-title {
-    font-size: var(--text-section);
-    font-weight: 700;
-    color: var(--text);
-    line-height: 1.2;
-    text-transform: capitalize;
+
+.project-main-image {
+
+    width: 100%;
+    max-height: 550px;
+
+    object-fit: contain;
+
+    border-radius: 20px;
+
+    display: block;
+
+    background: white;
+
 }
 
+
+
+.project-title {
+
+    font-size: var(--text-section);
+
+    font-weight: 700;
+
+    color: var(--text);
+
+    line-height: 1.2;
+
+    text-transform: capitalize;
+
+}
+
+
+
 .project-description {
-    font-size: 1.2rem;
+
+    max-width: 1000px;
+
+    font-size: 1.15rem;
+
     color: var(--muted);
-    line-height: 1.5;
+
+    line-height: 1.7;
 
     text-align: justify;
-    text-justify: inter-word;
-    text-wrap: pretty;
 
-    hyphens: auto;
-    -webkit-hyphens: auto;
-    -ms-hyphens: auto;
+    text-justify: inter-word;
 
     overflow-wrap: break-word;
+
+}
+
+
+
+.project-info {
+
+    padding-top: 2rem;
+
 }
 
 .project-description-index {
@@ -879,6 +926,55 @@ p {
 
 
     /* research topic cards */
+    /* =========================
+   GRID FIXES
+========================= */
+
+    .row.g-0 {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .col-md-6 {
+        position: relative;
+    }
+
+    .col-md-6.position-relative {
+        flex: 1.5;
+        max-height: 600px;
+    }
+
+
+    /* =========================
+   PROJECT DETAIL PAGE
+========================= */
+
+    .project-title {
+        font-size: var(--text-section);
+        font-weight: 700;
+        color: var(--text);
+        line-height: 1.2;
+        text-transform: capitalize;
+    }
+
+    .project-description {
+
+        max-width: 1000px;
+
+        font-size: 1.15rem;
+
+        color: var(--muted);
+
+        line-height: 1.7;
+
+        text-align: justify;
+
+        text-justify: inter-word;
+
+        overflow-wrap: break-word;
+
+    }
+
     .card-title {
         font-size: 1.25rem;
     }
@@ -1091,5 +1187,47 @@ p {
 
     }
 
+
+}
+
+/* =========================
+   MOBILE TEXT LAYOUT
+========================= */
+
+@media (max-width:768px) {
+
+    .project-description,
+    .project-findings-text,
+    .project-description-index,
+    .card-text {
+
+        text-align: left !important;
+        text-justify: auto;
+        text-wrap: normal;
+        hyphens: none;
+        -webkit-hyphens: none;
+
+    }
+
+}
+
+@media(max-width:768px) {
+
+    .project-main-image {
+
+        max-height: 300px;
+
+    }
+
+
+    .project-description {
+
+        font-size: 1rem;
+
+        line-height: 1.6;
+
+        text-align: left;
+
+    }
 
 }

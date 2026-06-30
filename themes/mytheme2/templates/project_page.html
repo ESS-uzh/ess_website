@@ -6,21 +6,34 @@
 <div class="container">
     <div class="container-fluid px-0">
 
-        <!-- TOP SECTION: Image + Project Info -->
-        <div class="row g-0 d-flex align-items-stretch">
+        <!-- TOP SECTION: Image -->
+        <div class="row">
 
-            <!-- Left column Image -->
-            <div class="col-md-6 position-relative">
+            <div class="col-12">
+
                 {% if page.project.img %}
-                <img src="{{ SITEURL }}/theme/images/{{ page.project.img }}" class="img-fluid mx-auto d-block"
-                    style="max-height: 500px; object-fit: cover;" alt="{{ page.project.name }}">
+                <img src="{{ SITEURL }}/theme/images/{{ page.project.img }}" class="project-main-image"
+                    alt="{{ page.project.name }}">
                 {% endif %}
+
             </div>
 
-            <!-- Right Column: Project Info -->
-            <div class="col-md-6 d-flex flex-column justify-content-start px-4 pt-0">
-                <h1 class="project-title">{{ page.project.name }}</h1>
-                <p class="project-description">{{ page.project.description }}</p>
+        </div>
+
+
+        <!-- PROJECT INFO -->
+        <div class="row">
+
+            <div class="col-12 project-info">
+
+                <h1 class="project-title">
+                    {{ page.project.name }}
+                </h1>
+
+                <p class="project-description">
+                    {{ page.project.description }}
+                </p>
+
             </div>
 
         </div>

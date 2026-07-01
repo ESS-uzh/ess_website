@@ -19,8 +19,8 @@
     <!-- One Row per Group -->
     <div class="row g-4 justify-content-center">
         {% for person in group_people %}
-        <div class="col-6 col-md-3 col-lg-2">
-            <div class="card h-100 text-center shadow-sm">
+        <div class="col-6 col-md-4 col-lg-3">
+            <div class="card team-card h-100 text-center shadow-sm">
                 {% if person.img %}
                 <img src="{{ SITEURL }}/theme/images/{{ person.img }}" class="team-photo" alt="{{ person.name }}">
                 {% endif %}

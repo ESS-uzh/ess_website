@@ -524,7 +524,10 @@
     {
         "id": 15,
         "name": "RESPONSE: Human Traits",
+        "description": "Traditionally, tropical forests were considered challenging habitats that precluded early human habitation. Hence, old growth tropical forests were considered pristine habitats. Accumulating archaeological and ecological evidence has challenged this paradigm, although the consequences of early human settlement on tropical forest structure and resilience are still poorly understood. This project focuses on identifying long-term legacies of early human settlement in the tropical forests of Borneo, where human occupation dates back to at least 45,000 years. These legacies are studied using a combination of archaeological data synthesis, remote sensing and ecological fieldwork approaches.",
         "lat": 0.961883,
+        "short_description": "Ancient Human Footprints in Borneo's Tropical Forests",
+        "img": "proj_15_hum_tra.jpeg",
         "lon": 114.554848,
         "region": "Asia",
         "location": "Borneo",
@@ -542,11 +545,18 @@
                 "url": "https://www.geo.uzh.ch/en/units/ess/staff/maarteneppinga"
             },
             {
-                "name": "Prof. Meredith Schuman"
-            },
-            {
                 "name": "Prof. Maria J. Santos",
                 "url": "https://www.geo.uzh.ch/en/units/ess/staff/mariajsantos"
+            }
+        ],
+        "doi_pub": [
+            {
+                "title": "Spatiotemporal Distribution of Archaeological Sites in Borneo Over the Last 45,000 Years, with Emphasis on the Mid-Late Holocene",
+                "url": "https://doi.pangaea.de/10.1594/PANGAEA.973046"
+            },
+            {
+                "title": "Early Human Settlement in Bornean Forests Occurred Under Distinct Environmental Conditions",
+                "url": "https://www.zora.uzh.ch/entities/publication/a914d0e3-727a-4fdc-bef1-622e3527ebd9"
             }
         ],
         "info": "https://www.plantsciences.uzh.ch/en/research/fellowships/response/projects.html",
@@ -656,6 +666,9 @@
     {
         "id": 18,
         "name": "SES archetypes",
+        "description": "Advancement in remote sensing have drastically increased our ability to monitor land cover changes at high spatial and temporal resolution. Research on global forest dynamics has, until now, mainly focused on quantifying trends in areal cover per region. However, local studies have showed clear links between socio-economic drivers and spatio-temporal patterns of forest cover. This work has created a set of archetypes of social-ecological systems, and how spatio-temporal forest patterns emergence from the specific human-environment interactions within those archetypes. In this project, local spatio-temporal patterns of land cover and forest change are studied across the globe, providing a data-driven approach to linking forest dynamics to underlying socio-economic drivers such has human population growth.",
+        "short_description": "Linking Forest Dynamics to Social–Ecological Systems",
+        "img": "proj_18_ssa.jpeg",
         "lat": 0,
         "lon": 0,
         "region": "Global",
@@ -666,15 +679,29 @@
         ],
         "participants": [
             {
-                "name": "Gupta Aman"
+                "name": "Gupta Aman",
+                "url": "https://www.geo.uzh.ch/en/units/ess/staff/amangupta"
             },
             {
                 "name": "Dr. Epping Maarten",
                 "url": "https://www.geo.uzh.ch/en/units/ess/staff/maarteneppinga"
             },
             {
+                "name": "Dr. Reinhard Furrer"
+            },
+            {
                 "name": "Prof. Maria J. Santos",
                 "url": "https://www.geo.uzh.ch/en/units/ess/staff/mariajsantos"
+            }
+        ],
+        "doi_pub": [
+            {
+                "title": "The Effect of Dominant Land-Cover Transitions in Shaping Trajectories of Global Forest Change",
+                "url": "https://link.springer.com/article/10.1007/s00267-025-02245-8"
+            },
+            {
+                "title": "The effect of the type and speed of dominant land-cover transitions on patterns of tropical forest fragmentation",
+                "url": "https://link.springer.com/article/10.1007/s10980-025-02251-5"
             }
         ],
         "funding": [

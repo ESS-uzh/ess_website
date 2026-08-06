@@ -688,6 +688,9 @@
     {
         "id": 19,
         "name": "Moisture recycling in Amazon",
+        "description": "Most of our work relates to the interdependencies between moisture recycling - the flying rivers that maintain the forest in the Amazon and which are affected by deforestation, and the biodiversity of the Amazon. We have been using a model that tracks parcels of precipitable water to idnetify the sources of water (through evapotranspiration) and the sinks (i.e. where water precipitates). This enables us to link the effects of deforestation in cloe by and distant precipitation flows. We used this model already a few years ago to show that if deforestation occurs upstream to the so called arc of deforestation, the precipitation therein will decrease affecting the crops and their growth. Since then, we have expanded a bit more onto the feedbacks with the deforestation within the basin, first to show that this process has temporal legacies that are more prominent within the first 12 months since deforestation yet with extensions far out to 72 months after. These temporal delays are, to our knowledge, not well captured in models or accounted in policies. This led us to also examine responses, i.e. through the role of biodiversity. We know that functions of biodiversity mediate ecosystem effects of global change. Given the recent advances of remote sensing data, we were able for the first time to conduct a large scale analysis of the role of these functional aspects in mediating losses of moisture. These analyses show that indeed there is a fundamental role of plant functioning ain mediating these flying rivers, in particular when exposed to extreme weather events like droughts. As we develop further our EO capabilities to study biodiversity at large scales, we expect to make these causal links more concrete. We have been examining approaches to map hyperdominant species, which we hypothesize having a disproportionate contribution to these biosphere-atmosphere processes but without much success, yet.",
+        "short_description": "Biodiversity Controls on Amazon Moisture Recycling",
+        "img": "proj_19_moisture_recycling.jpeg",
         "lat": -3.4653,
         "lon": -62.2159,
         "region": "Americas",
@@ -704,6 +707,24 @@
             {
                 "name": "Prof. Maria J. Santos",
                 "url": "https://www.geo.uzh.ch/en/units/ess/staff/mariajsantos"
+            }
+        ],
+        "doi_pub": [
+            {
+                "title": "Atmospheric moisture contribution to the growing season in the Amazon arc of deforestation",
+                "url": "https://iopscience.iop.org/article/10.1088/1748-9326/ac12f0"
+            },
+            {
+                "title": "Deforestation-induced immediate and delayed shifts in moisture recycling: source and sink dynamics across the Amazon",
+                "url": "https://iopscience.iop.org/article/10.1088/1748-9326/adfd75/meta"
+            },
+            {
+                "title": "Plant traits mediate responses of Amazon rainforest’s evaporation to the 2010 extreme drought",
+                "url": "https://iopscience.iop.org/article/10.1088/1748-9326/ae7c8a/meta"
+            },
+            {
+                "title": "Brazil Nut Mapping and Effects on Biodiversity and Ecosystem Processes in the Amazon Using Remote Sensing",
+                "url": "https://ieeexplore.ieee.org/abstract/document/10282731"
             }
         ],
         "funding": [

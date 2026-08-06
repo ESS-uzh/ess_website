@@ -113,8 +113,16 @@
         {% endif %}
 
         {% if page.project.doi_pub %}
-        <p><strong>Publication DOI:</strong> <a href="{{ page.project.doi_pub }}" target="_blank">{{
-                page.project.doi_pub }}</a></p>
+        <p><strong>Publications:</strong></p>
+        <ul>
+            {% for pub in page.project.doi_pub %}
+            <li>
+                <a href="{{ pub.url }}" target="_blank" rel="noopener">
+                    {{ pub.title }}
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
         {% endif %}
     </div>
 

@@ -90,6 +90,7 @@ PLUGINS = [
     "generate_projects",
     "load_projects",
     "load_people",
+    "generate_instrument",
 ]
 
 # ---- URL settings ----

@@ -22,7 +22,13 @@
         <div class="col-6 col-md-4 col-lg-3">
             <div class="card team-card h-100 text-center shadow-sm">
                 {% if person.img %}
+                {% if person.url %}
+                <a href="{{ person.url }}" target="_blank" rel="noopener noreferrer">
+                    <img src="{{ SITEURL }}/theme/images/{{ person.img }}" class="team-photo" alt="{{ person.name }}">
+                </a>
+                {% else %}
                 <img src="{{ SITEURL }}/theme/images/{{ person.img }}" class="team-photo" alt="{{ person.name }}">
+                {% endif %}
                 {% endif %}
                 <div class="card-body">
                     <h5 class="card-title">{{ person.name }}</h5>

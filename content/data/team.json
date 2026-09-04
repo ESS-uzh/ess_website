@@ -3,61 +3,71 @@
         "name": "Prof. Maria J. Santos",
         "role": "Project Lead",
         "img": "maria_santos.png",
-        "group": ""
+        "group": "",
+        "url": "https://www.geo.uzh.ch/en/units/ess/staff/mariajsantos"
     },
     {
         "name": "Dr. Maarten Eppinga",
         "role": "Research Scientist",
         "img": "maarten_eppinga.png",
-        "group": ""
+        "group": "",
+        "url": "https://www.geo.uzh.ch/en/units/ess/staff/maarteneppinga"
     },
     {
         "name": "Dr. Diego Villamaina",
         "role": "Engineer",
         "img": "diego_villamaina.png",
-        "group": ""
+        "group": "",
+        "url": "https://www.geo.uzh.ch/en/units/ess/staff/villamainadiego"
     },
     {
         "name": "Rita Ott",
         "role": "HR",
         "img": "rita_ott.png",
-        "group": ""
+        "group": "",
+        "url": "https://www.geo.uzh.ch/en/department/Staff/ritaott"
     },
     {
         "name": "Dr. Martin Reader",
         "role": "Postdoc",
         "img": "martin_reader.png",
-        "group": "Biodiversity and Social-Ecological Processes"
+        "group": "Biodiversity and Social-Ecological Processes",
+        "url": "https://www.geo.uzh.ch/en/units/ess/staff/martinoliverreader"
     },
     {
         "name": "Dr. Dabwiso Sakala",
         "role": "Alumni",
         "img": "dabwiso_sakala.png",
-        "group": "Biodiversity and Social-Ecological Processes"
+        "group": "Biodiversity and Social-Ecological Processes",
+        "url": "https://www.geo.uzh.ch/en/units/ess/staff/sakaladabwiso"
     },
     {
         "name": "Dr. Kien Nguyen",
         "role": "Alumni",
         "img": "kien_nguyen.png",
-        "group": "Biodiversity and Social-Ecological Processes"
+        "group": "Biodiversity and Social-Ecological Processes",
+        "url": "https://www.geo.uzh.ch/en/units/ess/staff/nguyenkien"
     },
     {
         "name": "Aman Gupta",
         "role": "PhD",
         "img": "aman_gupta.png",
-        "group": "Biodiversity and Social-Ecological Processes"
+        "group": "Biodiversity and Social-Ecological Processes",
+        "url": "https://www.geo.uzh.ch/en/department/Staff/amangupta"
     },
     {
         "name": "Dr. Nathalia Pérez",
         "role": "PhD",
         "img": "nathalia_cardenas.png",
-        "group": "Biodiversity and Social-Ecological Processes"
+        "group": "Biodiversity and Social-Ecological Processes",
+        "url": "https://www.geo.uzh.ch/en/department/Staff/nathaliaperez"
     },
     {
         "name": "Dr. Vladimir Wingate",
         "role": "PostDoc",
         "img": "vladimir_wingate.jpg",
-        "group": "Biodiversity and Social-Ecological Processes"
+        "group": "Biodiversity and Social-Ecological Processes",
+        "url": "https://www.geo.uzh.ch/en/department/Staff/vladimirwingate"
     },
     {
         "name": "Dr. Matilde Torrassa",
@@ -93,37 +103,43 @@
         "name": "Dr. Estelle Raveloaritiana",
         "role": "Postdoc",
         "img": "estelle_raveloaritiana.png",
-        "group": "Social-Ecological Processes"
+        "group": "Social-Ecological Processes",
+        "url": "https://www.geo.uzh.ch/en/units/ess/staff/estelleraveloaritiana"
     },
     {
         "name": "Marlene Barille",
         "role": "BSc researcher",
         "img": "marlena_barille.png",
-        "group": "Social-Ecological Processes"
+        "group": "Social-Ecological Processes",
+        "url": "https://www.geo.uzh.ch/en/units/ess/staff/marlenarosabarille"
     },
     {
         "name": "Moritz Wissmann",
         "role": "BSc researcher",
         "img": "moritz_wissmann.png",
-        "group": "Social-Ecological Processes"
+        "group": "Social-Ecological Processes",
+        "url": "https://www.geo.uzh.ch/en/units/ess/staff/moritzwissmann"
     },
     {
         "name": "Dr. Christian Rossi",
         "role": "Postdoc",
         "img": "christian_rossi.png",
-        "group": "Remote sensing of Biodiversity"
+        "group": "Remote sensing of Biodiversity",
+        "url": "https://www.geo.uzh.ch/en/units/ess/staff/christianrossi"
     },
     {
         "name": "Dr. Tiziana Koch",
         "role": "Postdoc",
         "img": "tiziana_koch.png",
-        "group": "Remote sensing of Biodiversity"
+        "group": "Remote sensing of Biodiversity",
+        "url": "https://www.geo.uzh.ch/en/units/ess/staff/tizianakoch"
     },
     {
         "name": "Dr. Kaan Karaman",
         "role": "Postdoc",
         "img": "kaan_karaman.png",
-        "group": "Remote sensing of Biodiversity"
+        "group": "Remote sensing of Biodiversity",
+        "url": "https://www.geo.uzh.ch/en/units/ess/staff/karamankaan"
     },
     {
         "name": "Jennifer Adams",
@@ -135,25 +151,29 @@
         "name": "Nargiz Ruter",
         "role": "PhD",
         "img": "nargiz_ruter.png",
-        "group": "Remote sensing of Biodiversity"
+        "group": "Remote sensing of Biodiversity",
+        "url": "https://www.geo.uzh.ch/en/units/ess/staff/nargizsafaraliyeva"
     },
     {
         "name": "Carmen Meiller",
         "role": "PhD",
         "img": "carmen_meiller.png",
-        "group": "Remote sensing"
+        "group": "Remote sensing",
+        "url": "https://www.geo.uzh.ch/en/units/ess/staff/meillercarmen"
     },
     {
         "name": "Mike Werferli",
         "role": "PhD",
         "img": "mike_werferli.png",
-        "group": "Remote sensing"
+        "group": "Remote sensing",
+        "url": "https://www.geo.uzh.ch/en/department/Staff/werfelimike"
     },
     {
         "name": "Dr. Leon Hauser",
         "role": "Postdoc",
         "img": "leon_hauser.png",
-        "group": "Sustainable Finance"
+        "group": "Sustainable Finance",
+        "url": "https://www.geo.uzh.ch/en/units/ess/staff/leonhauser"
     },
     {
         "name": "Dr. Mario Angst",
@@ -165,12 +185,14 @@
         "name": "Dr. Myriam Pham-Truffert",
         "role": "PhD",
         "img": "myriam_truffert.png",
-        "group": "Urban System"
+        "group": "Urban System",
+        "url": "https://www.geo.uzh.ch/en/units/ess/staff/myriamphamtruffert"
     },
     {
         "name": "Dr. Hoda Allahbakhshi",
         "role": "Group Leader",
         "img": "hoda_allahbakhshi.png",
-        "group": "Urban System"
+        "group": "Urban System",
+        "url": "https://www.geo.uzh.ch/en/units/ess/staff/hodaallahbakhshi"
     }
 ]

@@ -149,6 +149,12 @@
             "Representation Uncertainty"
         ],
         "info": "https://obsgession.eu/about",
+        "doi_pub": [
+            {
+                "title": "Uncertainties in optical remote sensing of plant diversity",
+                "url": "https://www.sciencedirect.com/science/article/pii/S003442572600458X"
+            }
+        ],
         "funding": [
             [
                 "Horizon2020",

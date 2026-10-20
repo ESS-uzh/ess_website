@@ -565,11 +565,15 @@
                 "url": "https://www.zora.uzh.ch/entities/publication/a914d0e3-727a-4fdc-bef1-622e3527ebd9"
             }
         ],
-        "info": "https://www.plantsciences.uzh.ch/en/research/fellowships/response/projects.html",
+        "info": "https://www.plantsciences.uzh.ch/en/research/fellowships/response/projects/ESR22.html",
         "funding": [
             [
-                "EU_response",
-                "EU response"
+                "EU",
+                "EU"
+            ],
+            [
+                "RESPONSE_002.png",
+                "URPP Global Change and Biodiversity"
             ],
             [
                 "URPP",

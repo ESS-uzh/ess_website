@@ -573,7 +573,7 @@
             ],
             [
                 "RESPONSE_002.png",
-                "URPP Global Change and Biodiversity"
+                "RESPONSE"
             ],
             [
                 "URPP",
@@ -585,6 +585,8 @@
     {
         "id": 16,
         "name": "RESPONSE: Charcoal in SSA",
+        "description": "Charcoal production is an important source of energy and income across Sub-Saharan Africa, but it can also contribute to forest degradation, carbon emissions, and biodiversity loss. This research investigates how charcoal production and land-use change influence carbon storage and ecosystem functioning across African landscapes. By combining environmental data and spatial analysis, it aims to identify regions vulnerable to unsustainable biomass harvesting and improve our understanding of the interactions between human activities, land use, and the global carbon cycle. The findings can help inform land-use management and climate policies that balance energy needs and local livelihoods with the long-term conservation of ecosystems.",
+        "img": "proj_16_charc.png",
         "lat": 0.0000,
         "lon": 20.0000,
         "region": "Africa",
@@ -595,7 +597,7 @@
         ],
         "participants": [
             {
-                "name": "Dr. Sakala Dbwiso",
+                "name": "Dr. Sakala Dabwiso",
                 "url": "https://www.geo.uzh.ch/en/department/Staff/dabwisosakala"
             },
             {
